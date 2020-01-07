@@ -1,0 +1,1924 @@
+// out: ./style.css, compress: false, sourceMap: false
+
+// @import "rem.less";
+// @import "/wp/assets/source/css/normalize.css";
+// @import "/wp/assets/source/css/fontello.css";
+
+@import "normalize.css";
+@import "rem.less";
+@import "fontello.css";
+
+/* fonts */
+
+/* nanum square - regular */
+@font-face {
+    font-family: 'NanumSquare';
+    src: url('../font/nanumsquarer.eot');
+    src: url('../font/nanumsquarer.eot?#iefix') format('embedded-opentype'), 
+    url('../font/nanumsquarer.woff2') format('woff2'), 
+    url('../font/nanumsquarer.woff') format('woff'), 
+    url('../font/nanumsquarer.ttf') format('truetype'), 
+    url('../font/nanumsquarer.svg#nanumsquarerregular') format('svg');
+    font-weight: 400;
+}
+/* nanum square - bold */
+@font-face {
+    font-family: 'NanumSquare';
+    src: url('../font/nanumsquareb.eot');
+    src: url('../font/nanumsquareb.eot?#iefix') format('embedded-opentype'), 
+    url('../font/nanumsquareb.woff2') format('woff2'), 
+    url('../font/nanumsquareb.woff') format('woff'), 
+    url('../font/nanumsquareb.ttf') format('truetype'), 
+    url('../font/nanumsquareb.svg#nanumsquarebregular') format('svg');
+    font-weight: 800;
+}
+  
+/* basic */
+@min-width: 320px;
+@myfont: "NanumSquare";
+// @img-url: "../images";
+@img-url: "/wp/assets/source/images";
+@header-height: 100px;
+
+/* color */
+
+@main:#EA609E;
+@font01:#333;
+@font02: #555;
+@white:#fff;
+@black:#000;
+@gray:#999;
+
+/* mixin */
+.bold {
+    font-weight: 800;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.bottom {
+    vertical-align: bottom;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.no-list {
+    list-style: none;
+}
+
+.mapazero {
+    margin: 0;
+    padding: 0;
+}
+
+.zero {
+    font-size: 0;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.static {
+    position: static;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: -webkit-flex;
+    -webkit-align-item: center;
+    -webkit-justify-content: center;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+}
+
+.full-position {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pagenation {
+    .inline-block;
+    .center;
+    .zero;
+    margin:0 0 30px;
+    width: 100%;
+
+    a {
+        background: @white;
+    }
+
+    a,
+    strong {
+        .inline-block;
+        .top;
+        font-size: 14px;
+        color: #555;
+        border: 1px solid transparent;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        margin: 0 2px;
+        border-radius:16px;
+
+        &.jump,
+        &.move {
+            .zero;
+
+            i {
+                .relative;
+                line-height: 32px;
+            }
+        }
+    }
+
+    .active,
+    strong {
+        background: #444;
+        color: @white;
+        .normal;
+        border-color: transparent;
+    }
+}
+
+
+.box-sizing (@type:border-box) {
+    -webkit-box-sizing: @type;
+    -moz-box-sizing: @type;
+    box-sizing: @type;
+}
+
+.border-radius (@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.drop-shadow (@x:0, @y: 2px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+    -webkit-box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+    box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+.text-shadow (@string:0 1px 3px rgba(0, 0, 0, 0.25)) {
+    text-shadow: @string;
+}
+
+.opacity (@opacity) {
+    -webkit-opacity: @opacity;
+    -moz-opacity: @opacity;
+    opacity: @opacity;
+}
+
+.gradient (@startColor:#eee, @ingColor: #eee, @endColor: white) {
+    background-color: @startColor;
+    background: -webkit-linear-gradient(top, @startColor, @ingColor, @endColor);
+    background: -moz-linear-gradient(top, @startColor, @ingColor, @endColor);
+    background: -ms-linear-gradient(top, @startColor, @ingColor, @endColor);
+    background: -o-linear-gradient(top, @startColor, @ingColor, @endColor);
+}
+
+.gradienth (@startColor:#eee, @ingColor: #eee, @endColor: white) {
+    background-color: @startColor;
+    background: -webkit-linear-gradient(left, @startColor, @ingColor, @endColor);
+    background: -moz-linear-gradient(left, @startColor, @ingColor, @endColor);
+    background: -ms-linear-gradient(left, @startColor, @ingColor, @endColor);
+    background: -o-linear-gradient(left, @startColor, @ingColor, @endColor);
+}
+
+.ani(@time:0.1s) {
+    -webkit-transition: all @time ease;
+    -moz-transition: all @time ease;
+    -o-transition: all @time ease;
+    -ms-transition: all @time ease;
+    transition: all @time ease;
+}
+
+.container(@con-width) {
+    .relative;
+    .inline-block;
+    margin: 0 auto;
+    width: @con-width;
+    height: 100%;
+}
+
+.header-default() {
+    .inline-block;
+    .top;
+    .mapazero;
+}
+
+.blur(@blur) {
+    filter: blur(@blur);
+    -webkit-filter: blur(@blur);
+    -moz-filter: blur(@blur);
+    -o-filter: blur(@blur);
+}
+
+.ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.placeholder(@size, @color) {
+    .runChecks() when not (isunit(@size, px)) {
+        .rem(font-size, @size);
+    }
+
+    .runChecks() when (isunit(@size, px)) {
+        font-size: @size;
+    }
+
+    &::-webkit-input-placeholder {
+        .runChecks();
+        color: @color;
+    }
+
+    &:-moz-placeholder {
+        .runChecks();
+        color: @color;
+    }
+
+    &::-ms-input-placeholder {
+        .runChecks();
+        color: @color;
+    }
+}
+
+.full-background(@background) {
+    .block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: @background;
+}
+@keyframes fade {
+    from {
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+@keyframes height {
+    to {
+        height: auto;
+    }
+}
+/* header */
+* {
+    .box-sizing;
+}
+
+
+input,
+select,
+textarea {
+    .border-radius(0);
+/*
+    @media all and (max-width: 1199px) {
+        appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -webkit-appearance: none;
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+*/
+}
+
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+/*font*/
+html {
+    .mapazero;
+    min-width: @min-width;
+    width: 100%;
+    font-size: 14px;
+    min-height: 100%;
+}
+
+body {
+    font-family: @myfont, "Malgun Gothic", "apple sd gothic neo", sans-serif;
+    .mapazero;
+}
+
+.sr-only {
+    .absolute !important;
+    .hidden !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    clip: rect(0, 0, 0, 0) !important;
+    border: 0 !important;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+    .relative !important;
+    .block !important;
+    width:100% !important;
+    height: 60px !important;
+    background:#333 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    color:#fff;
+    .center;
+    line-height:60px;
+    font-size:18px;
+    z-index:9999;
+    
+}
+
+
+/* style */
+
+
+body {
+    
+    .container {
+        .left;
+        .top;
+        padding: 0;
+        min-width: 980px;
+    }
+
+    /* header */
+    header#header {
+        .relative;
+
+        .container {
+            .relative;
+            width: 980px;
+            height: 100px;
+            margin: 0 auto;
+            padding-top: 25px;
+
+            h1 {
+                background: url("@{img-url}/logo.png") no-repeat center / auto 100%;
+                .mapazero;
+                .zero;
+                width: 347px;
+                height: 50px;
+
+                a {
+                    .block;
+                    height: 100%;
+                }
+            }
+
+            div.util-menu {
+                .zero;
+
+                a {
+                    .block;
+                    .absolute;
+                    top: 42px;
+                    right: 0;
+                    background: none;
+    
+                    i {
+    
+                        &::before {
+                            margin: 0;
+                            font-size: 30px;
+                            color: #686868;
+                        }
+                    }
+
+                    &:hover,
+                    &.on {
+
+                        i {
+                            &::before {
+                                color: @main;
+                                .ani(0.4s);
+                            }
+                        }
+                    }
+
+                    &.off {
+
+                        i {
+    
+                            &::before {
+                                margin: 0;
+                                font-size: 30px;
+                                color: #686868;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.gnb_main {
+
+        header {
+            .relative;
+            min-width: 980px;
+
+            nav#main-menu {
+                .block;
+
+                div.home_btn {
+                    .absolute;
+                    z-index: 800;
+                    left: 50%;
+                    margin-left: -490px;
+                    .none;
+                        
+                    a.home {
+                        .inline-block;
+                        .zero;
+                        line-height: 60px;
+                        border-left: 1px solid #D9D9D9;
+                        border-right: 1px solid #D9D9D9;
+                        padding: 10px 20px 0 20px;
+
+                        i {
+    
+                            &::before {
+                                color: #ababab;
+                                font-size: 24px;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        .block;
+                    }
+                }
+                
+                ul.menu {
+                    .zero;
+                    .absolute;
+                    z-index: 600;
+                    left: 0;
+                    right: 0;
+                    top: 100px;
+                    .no-list;
+                    .mapazero;
+
+                    &::before {
+                        content: "";
+                        .block;
+                        background: #f6f6f6;
+                        border-top: 1px solid #d9d9d9;
+                        height: 70px;
+                        .none;
+                    }
+
+                    &.active {
+
+                        &::before {
+                            .block;
+                        }
+                    }
+
+                    &>li {
+                        .inline-block;
+                        .top;
+
+                        h2 {
+                            font-family: '나눔고딕';
+                            font-weight: 400;
+                            font-size: 16px;
+                            .absolute;
+                            top: -65px;
+                            left: 50%;
+
+                            a {
+                                .inline-block;
+                            }
+
+                            &:hover,
+                            &.on {
+
+                                &::after {
+                                    content: "";
+                                    .block;
+                                    .absolute;
+                                    bottom: -34px;
+                                    width: 62px;
+                                    height: 6px;
+                                    background: @main;
+                                }
+
+                                a {
+                                    font-weight: 600;
+                                    color: @main;
+                                }
+                            }
+                        }
+
+                        ul {
+                            .none;
+                            .absolute;
+                            .no-list;
+                            .mapazero;
+                            .left;
+                            z-index: 420;
+                            left: 50%;
+                            right: 0;
+                            top: 0;
+                            margin-left: -390px;
+                            .zero;
+                            .hidden;
+
+                            li {
+                                .inline-block;
+                                height: 0;
+                                margin: 0 24px 0 0;
+                                padding: 26px 0 0 0;
+
+                                span {
+                                    color: #555;
+                                    font-size: 16px;
+                                    margin-right: 5px;
+
+                                    &.active,
+                                    &:hover {
+                                        color: #333;
+                                        font-weight: 500;
+                                    }
+                                }
+
+                                a {
+                                    .relative;
+                                    .inline-block;
+                                    font-family: "나눔고딕";
+                                    font-size: 16px;
+                                    color: #555;
+                                    padding-bottom: 1px;
+
+                                    &.active,
+                                    &:hover {
+                                        color: #333;
+                                        font-weight: 500;
+
+                                        &::after {
+                                            content: "";
+                                            .block;
+                                            .absolute;
+                                            left:0;
+                                            right:0;
+                                            bottom:0;
+                                            height: 1px;
+                                            background:#333;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.on,
+                            &:hover {
+                                .block;
+
+                                li {
+                                    height: 70px;
+                                }
+                            }
+                        }
+
+                        &:nth-child(1) {
+
+                            h2 {
+                                margin-left: 0;
+                            }
+                        }
+
+                        &:nth-child(2) {
+
+                            h2 {
+                                margin-left: 110px;
+                            }
+                        }
+
+                        &:nth-child(3) {
+
+                            h2 {
+                                margin-left: 220px;
+                            }
+                        }
+
+                        &:nth-child(4) {
+
+                            h2 {
+                                margin-left: 330px;
+                            }
+                        }
+                    }
+                }
+
+                ul.allmenu {
+                    .absolute;
+                    z-index: 99999;
+                    left: 0;
+                    right: 0;
+                    top: 100px;
+                    .mapazero;
+                    .no-list;
+                    .center;
+                    background: @white;
+
+                    &>li {
+                        .inline-block;
+                        .top;
+                        width: 192px;
+                        margin-right: 60px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        h2 {
+                            font-size: 16px;
+                            font-family: '나눔고딕';
+                            font-weight: 400;
+                            color: #555;
+                            .mapazero;
+                            .absolute;
+                            top: -52px;
+                            left: 50%;
+
+                            a {
+                                .inline-block;
+                            }
+                        }
+
+                        &:nth-child(1) {
+
+                            h2 {
+                                margin-left: 0;
+                            }
+                        }
+
+                        &:nth-child(2) {
+
+                            h2 {
+                                margin-left: 110px;
+                            }
+                        }
+
+                        &:nth-child(3) {
+
+                            h2 {
+                                margin-left: 220px;
+                            }
+                        }
+
+                        &:nth-child(4) {
+
+                            h2 {
+                                margin-left: 330px;
+                            }
+                        }
+
+                        div {
+
+                            h3 {
+                                border-bottom: 1px solid @main;
+                                padding-bottom: 12px;
+                                margin-bottom: 10px;
+                                font-family: '나눔고딕';
+                                font-size: 20px;
+                                font-weight: 600;
+                                color: @main;
+                            }
+
+                            ul {
+                                .no-list;
+                                height: auto;
+                                max-height: 0;
+                                .hidden;
+                                margin: 0;
+                                padding: 10px 0 30px 0;
+    
+                                li {
+                                    margin-bottom: 16px;
+                                    padding-left: 10px;
+                                    .left;
+    
+                                    ul {
+                                        .inline-block;
+                                    }
+    
+                                    a {
+                                        .inline-block;
+                                        font-family: '나눔고딕';
+                                        font-size: 16px;
+                                        margin-left: 5px;
+    
+                                        &:active,
+                                        &:hover {
+                                            color: #333;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                button {
+                    .none;
+
+                    &.bg {
+                        .block;
+                        width: 100%;
+                        margin: 0;
+                        border: none;
+                        .zero;
+                        background: rgba(0, 0, 0, 0.4);
+                        z-index: 99;
+                        .absolute;
+                        left: 0;
+                        top: 100px;
+                        right: 0;
+                        bottom: 0;
+                        padding: 0;
+                        outline: none;
+                    }
+                }   
+                
+                &.show {
+                    ul.allmenu {
+
+                        & > li {
+
+                            ul {
+                                height: auto;
+                                max-height: 1000px;
+                            }
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+    }
+
+    &.gnb_sub {
+
+        header {
+            .relative;
+            min-width: 980px;
+
+            nav#main-menu {
+                .block;
+
+                div.home_btn {
+                    .absolute;
+                    z-index: 800;
+                    left: 50%;
+                    margin-left: -490px;
+                    .none;
+                        
+                    a.home {
+                        .inline-block;
+                        .zero;
+                        line-height: 60px;
+                        border-left: 1px solid #D9D9D9;
+                        border-right: 1px solid #D9D9D9;
+                        padding: 10px 20px 0 20px;
+
+                        i {
+    
+                            &::before {
+                                color: #ababab;
+                                font-size: 24px;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        .block;
+                    }
+                }
+                
+                ul.menu {
+                    .zero;
+                    .absolute;
+                    z-index: 600;
+                    left: 0;
+                    right: 0;
+                    top: 100px;
+                    .no-list;
+                    .mapazero;
+
+                    &::before {
+                        content: "";
+                        .block;
+                        background: #f6f6f6;
+                        border-top: 1px solid #d9d9d9;
+                        height: 70px;
+                        .none;
+                    }
+
+                    &.active {
+
+                        &::before {
+                            .block;
+                        }
+                    }
+
+                    &>li {
+                        .inline-block;
+                        .top;
+
+                        h2 {
+                            font-family: '나눔고딕';
+                            font-weight: 400;
+                            font-size: 16px;
+                            .absolute;
+                            top: -65px;
+                            left: 50%;
+
+                            a {
+                                .inline-block;
+                            }
+
+                            &:hover,
+                            &.on {
+
+                                &::after {
+                                    content: "";
+                                    .block;
+                                    .absolute;
+                                    bottom: -34px;
+                                    width: 62px;
+                                    height: 6px;
+                                    background: @main;
+                                }
+
+                                a {
+                                    font-weight: 600;
+                                    color: @main;
+                                }
+                            }
+                        }
+
+                        ul {
+                            .none;
+                            .absolute;
+                            .no-list;
+                            .mapazero;
+                            .left;
+                            z-index: 420;
+                            left: 50%;
+                            right: 0;
+                            top: 0;
+                            margin-left: -390px;
+                            .zero;
+                            .hidden;
+
+                            li {
+                                .inline-block;
+                                height: 0;
+                                margin: 0 24px 0 0;
+                                padding: 26px 0 0 0;
+
+                                span {
+                                    color: #555;
+                                    font-size: 16px;
+                                    margin-right: 5px;
+
+                                    &.active,
+                                    &:hover {
+                                        color: #333;
+                                        font-weight: 500;
+                                    }
+                                }
+
+                                a {
+                                    .relative;
+                                    .inline-block;
+                                    font-family: "나눔고딕";
+                                    font-size: 16px;
+                                    color: #555;
+                                    padding-bottom: 1px;
+
+                                    &.active,
+                                    &:hover {
+                                        color: #333;
+                                        font-weight: 500;
+
+                                        &::after {
+                                            content: "";
+                                            .block;
+                                            .absolute;
+                                            left:0;
+                                            right:0;
+                                            bottom:0;
+                                            height: 1px;
+                                            background:#333;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.on,
+                            &:hover {
+                                .block;
+
+                                li {
+                                    height: 70px;
+                                }
+                            }
+                        }
+
+                        &:nth-child(1) {
+
+                            h2 {
+                                margin-left: 0;
+                            }
+                        }
+
+                        &:nth-child(2) {
+
+                            h2 {
+                                margin-left: 110px;
+                            }
+                        }
+
+                        &:nth-child(3) {
+
+                            h2 {
+                                margin-left: 220px;
+                            }
+                        }
+
+                        &:nth-child(4) {
+
+                            h2 {
+                                margin-left: 330px;
+                            }
+                        }
+                    }
+                }
+
+                ul.allmenu {
+                    .absolute;
+                    z-index: 99999;
+                    left: 0;
+                    right: 0;
+                    top: 100px;
+                    .mapazero;
+                    .no-list;
+                    .center;
+                    background: @white;
+
+                    &>li {
+                        .inline-block;
+                        .top;
+                        width: 192px;
+                        margin-right: 60px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        h2 {
+                            font-size: 16px;
+                            font-family: '나눔고딕';
+                            font-weight: 400;
+                            color: #555;
+                            .mapazero;
+                            .absolute;
+                            top: -52px;
+                            left: 50%;
+
+                            a {
+                                .inline-block;
+                            }
+                        }
+
+                        &:nth-child(1) {
+
+                            h2 {
+                                margin-left: 0;
+                            }
+                        }
+
+                        &:nth-child(2) {
+
+                            h2 {
+                                margin-left: 110px;
+                            }
+                        }
+
+                        &:nth-child(3) {
+
+                            h2 {
+                                margin-left: 220px;
+                            }
+                        }
+
+                        &:nth-child(4) {
+
+                            h2 {
+                                margin-left: 330px;
+                            }
+                        }
+
+                        div {
+
+                            h3 {
+                                border-bottom: 1px solid @main;
+                                padding-bottom: 12px;
+                                margin-bottom: 10px;
+                                font-family: '나눔고딕';
+                                font-size: 20px;
+                                font-weight: 600;
+                                color: @main;
+                            }
+
+                            ul {
+                                .no-list;
+                                height: auto;
+                                max-height: 0;
+                                .hidden;
+                                margin: 0;
+                                padding: 10px 0 30px 0;
+    
+                                li {
+                                    margin-bottom: 16px;
+                                    padding-left: 10px;
+                                    .left;
+    
+                                    ul {
+                                        .inline-block;
+                                    }
+    
+                                    a {
+                                        .inline-block;
+                                        font-family: '나눔고딕';
+                                        font-size: 16px;
+                                        margin-left: 5px;
+    
+                                        &:active,
+                                        &:hover {
+                                            color: #333;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                button {
+                    .none;
+
+                    &.bg {
+                        .block;
+                        width: 100%;
+                        margin: 0;
+                        border: none;
+                        .zero;
+                        background: rgba(0, 0, 0, 0.4);
+                        z-index: 99;
+                        .absolute;
+                        left: 0;
+                        top: 100px;
+                        right: 0;
+                        bottom: 0;
+                        padding: 0;
+                        outline: none;
+                    }
+                }   
+                
+                &.show {
+                    ul.allmenu {
+
+                        & > li {
+
+                            ul {
+                                height: auto;
+                                max-height: 1000px;
+                            }
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+    }
+
+    /* content */
+    div#content {
+        
+        .container {
+            width: 100%;
+            background: url("@{img-url}/bg.jpg") no-repeat center / cover;
+
+            .main_wrap {
+                width: 980px;
+                margin: 0 auto; 
+                padding: 12px 0;
+
+                /* main_content */
+                section.main_content {
+                    .relative;
+
+                    &::after {
+                        content: "";
+                        clear: both;
+                        .block;
+                    }
+
+                    h2 {
+                        .zero;
+                        background: url("@{img-url}/main.jpg") no-repeat center / cover;
+                        width: 594px;
+                        height: 540px;
+                        float: left;
+                    }
+
+                    ul {
+                        .no-list;
+                        .mapazero;
+                        width: 374px;
+                        height: 540px;
+                        float: left;
+                        margin-left: 12px;
+
+                        &::after {
+                            content: "";
+                            clear: both;
+                            .block;
+                        }
+
+                        li {
+                            .inline-block;
+
+                            h5 {
+                                color: @white;
+                                font-size: 24px;
+                                font-family: '나눔고딕';
+                                font-weight: 600;
+                            }
+
+                            span {
+                                color: @white;
+                                .block;
+                                .normal;
+                                font-size: 16px;
+                                line-height: 24px;
+                                word-break: keep-all;
+                            }
+
+                            a {
+                                .inline-block;
+                                width: 100%;
+                                height: 100%;
+                                padding: 20px 0 0 20px;
+                            }
+
+                            &.c1 {
+                                background: url("@{img-url}/content1.jpg") no-repeat center / cover;
+                                width: 374px;
+                                height: 264px;
+                                margin-bottom: 12px;
+
+                                h5 {
+                                    margin-top: 55px;
+                                }
+
+                                span {
+                                    width: 250px;
+                                    margin-top: 20px;
+                                    line-height: 22px;
+                                }
+                            }
+
+                            &.c2 {
+                                background: url("@{img-url}/content2.jpg") no-repeat center / cover;
+                                width: 180px;
+                                height: 264px;
+                                margin-right: 12px;
+                                float: left;
+
+                                h5 {
+                                    width: 100px;
+                                    line-height: 28px;
+                                    margin: 0;
+
+                                    span {
+                                        line-height: 22px;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                            }
+
+                            &.c3 {
+                                background: url("@{img-url}/content3.jpg") no-repeat center / cover;
+                                width: 180px;
+                                height: 264px;
+                                float: left;
+
+                                h5 {
+                                    margin: 0;
+
+                                    span {
+                                        margin-bottom: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                /* notice */
+                section.notice_wrap {
+                    margin-top: 12px;
+                    .flex;
+                    
+                    a.info {
+                        .inline-block;
+                        background: url("@{img-url}/info.jpg") no-repeat center / cover;
+                        width: 227px;
+                        height: 212px;
+                        padding: 40px 0 0 26px;
+                        margin-right: 11px;
+
+                        span {
+                            font-family: '나눔고딕';
+                            font-weight: 600;
+                            font-size: 24px;
+                            color:#4D4D4D;
+                        }
+                    }
+
+                    ul.notice {
+                        .inline-block;
+                        .no-list;
+                        .mapazero;
+                        width: 738px;
+                        height: 212px;
+                        background: @white;
+
+                        &:after {
+                            content: "";
+                            .block;
+                            clear: both;
+                        }
+
+                        li.veiw {
+                            .relative;
+                            width: 246px;
+                            float: left;
+
+                            &::before {
+                                content: "";
+                                .block;
+                                width: 1px;
+                                height: 212px;
+                                background: #cecece;
+                                .absolute;
+                            }
+
+                            h3 {
+                                font-size: 16px;
+                                font-family: '나눔고딕';
+                                font-weight: 600;
+                                color: #555;
+                                margin: 20px 0 20px 15px;
+
+                                a {
+                                    .inline-block;
+                                    color: #555;
+                                }
+                            }
+
+                            button.btn {
+                                border: 1px solid #ccc;
+                                background: @white;
+                                width: 14px;
+                                height: 14px;
+                                padding: 0;
+                                cursor: pointer;
+                                outline: none;
+                                .zero;
+                                .absolute;
+                                top: 20px;
+
+                                &.left {
+                                    right: 32px;
+
+                                    i {
+                                        &::before {
+                                            margin: 0 10px 0 0;
+                                        }
+                                    }
+                                }
+
+                                &.right {
+                                    right: 15px;
+                                }
+
+                                i {
+                                    
+                                    &::before {
+                                        font-size: 10px;
+                                        color: #ccc;
+                                        .normal;
+                                    }
+                                }
+                            }
+
+                            ul {
+                                .no-list;
+                                .mapazero;
+                                padding: 0 15px;
+
+                                li {
+                                    .relative;
+                                    margin-bottom: 5px;
+                                    height: 70px;
+
+                                    &:first-child {
+                                        height: 60px;
+                                        
+                                        &::before {
+                                            .none;
+                                        }
+                                    }
+
+                                    &::before {
+                                        content: "";
+                                        .block;
+                                        width: 216px;
+                                        height: 1px;
+                                        background: #ccc;
+                                        margin-bottom: 10px;
+                                    }
+                                    
+                                    a {
+                                        .block;
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                        color: #555;
+                                        height: 36px;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+
+                                        p.new-icon {
+                                            .inline-block;
+                                            .top;
+                                            .zero;
+                                            margin: 2px 0 0 2px;
+                                            background: url("@{img-url}/new.png") no-repeat center / cover;
+                                            width: 13px;
+                                            height: 12px;
+                                        }
+
+                                        small.date {
+                                            .block;
+                                            .absolute;
+                                            bottom: 0;
+                                            font-size: 12px;
+                                            color: #888;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* material */
+        div.material {
+            background: #E5E5E5;
+            height: 225px;
+            padding: 20px 0;
+
+            .material_wrap {
+                .relative;
+                width: 980px;
+                margin: 0 auto;
+                .flex;
+
+                ul.tabs {
+                    .no-list;
+                    .mapazero;
+                    width: 116px;
+                    height: 182px;
+                    margin-right: 16px;
+    
+                    li {
+                        background: #efefef;
+                        border: 1px solid #cecece;
+                        height: 60px;
+
+                        &:nth-child(1) {
+                            border-bottom: none;
+                        }
+
+                        &:nth-child(2) {
+                            border-bottom: none;
+                        }
+    
+                        a {
+                            .block;
+                            .relative;
+                            line-height: 60px;
+                            font-family: '나눔고딕';
+                            font-weight: 400;
+                            font-size: 16px;
+                            padding: 0 14px;
+                            color: #555;
+
+                            &:hover,
+                            &.active {
+                                background: #4e7abb;
+                                color: @white;
+                                font-weight: 600;
+
+                                i {
+                                    &::before {
+                                        color: @white;
+                                    }
+                                }
+                            }
+
+                            i {
+                                .absolute;
+                                top: -2px;
+                                right: 15px;
+
+                                &::before {
+                                    font-size: 5px;
+                                    color: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                div.tab-contents {
+                    
+                    ul {
+                        .none;
+                        .no-list;
+                        .mapazero;
+                        width: 848px;
+                        height: 180px;
+    
+                        &::after {
+                            content: "";
+                            .block;
+                            clear: both;
+                        }
+
+                        &.active {
+                            .block;
+                        }
+
+                        &#tab02 {
+
+                            div.news-title {
+                                margin-top: 30px;
+                            }
+                        }
+    
+                        li {
+                            float: left;
+                            width: 200px;
+                            height: 179px;
+                            margin-right: 16px;
+                            padding: 10px;
+                            background: @white;
+                            border: 1px solid #eee;
+    
+                            &:last-child {
+                                margin-right: 0;
+                            }
+    
+                            a {
+                                .block;
+                                .center;
+    
+                                p.news-img {
+                                    .hidden;
+                                    .mapazero;
+                                    width: 100%;
+                                    height: 100px;
+    
+                                    img {
+                                        .none;
+                                    }
+                                }
+                               
+                                div.news-title {
+                                    width: 100%;
+                                    height: 50px;
+                                    margin-top: 20px;
+    
+                                    h5 {
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        color: #555;
+                                        width: 180px;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        margin: 0;
+                                    }
+        
+                                    p {
+                                        font-size: 12px;
+                                        color: #888;
+                                        margin: 5px 0 0 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                a.more {
+                    .block;
+                    .absolute;
+                    right: 2px;
+                    width: 52px;
+                    height: 52px;
+                    border-radius: 50px;
+                    border: 2px solid rgba(255, 255, 255, 0.5);
+                    background: rgba(0, 0, 0, 0.4);
+                    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+
+                    i {
+                        .relative;
+                        
+                        &::before {
+                            .absolute;
+                            top: 7px;
+                            left: 1px;
+                            color: @white;
+                            font-size: 34px;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* sub */
+        .sub_container {
+
+            h2 {
+                .mapazero;
+                margin-top: 70px;
+                font-size: 34px;
+                color: @white;
+                font-family: '나눔고딕';
+                font-weight: 600;
+                .center;
+                width: 100%;
+                height: 160px;
+                line-height: 160px;
+                background: url("@{img-url}/sub01.jpg") no-repeat center / cover;
+            }
+
+            div.guide {
+                background: #F3F3F3;
+                height: 250px;
+                padding: 30px 0;
+                border-bottom: 1px solid #ddd;
+
+                h3 {
+                    .mapazero;
+                    .center;
+                    font-family: '나눔고딕';
+                    font-weight: 600;
+                    color: #333;
+                    font-size: 20px;
+                }
+
+                p {
+                    .center;
+                    font-family: '나눔고딕';
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #333;
+                    margin-bottom: 8px;
+                    white-space: nowrap;
+
+                    span {
+                        color: #FF3E3E;
+                    }
+
+                    &.small {
+                        font-size: 14px;
+                        color: #555;
+                        margin: 0;
+                    }
+                }
+
+                .g02 {
+
+                    h3 {
+                        margin-top: 25px;
+                        &::before {
+                            content: "";
+                            .block;
+                            width: 40px;
+                            height: 4px;
+                            background: #D9D9D9;
+                            margin: 0 auto 20px auto;
+                        }
+                    }
+                }
+            }
+
+            section.contents {
+
+                ul.tabs {
+                    .mapazero;
+                    .no-list;
+                    width: 980px;
+                    height: 100px;
+                    margin: 0 auto;
+                    border: 1px solid #B2B2B2;
+                    border-right: none;
+
+                    &::after {
+                        content: "";
+                        .block;
+                        clear: both;
+                    }
+
+                    li {
+                        float: left;
+                        width: calc(100% / 7);
+                        height: 100px;
+                        border-right: 1px solid #B2B2B2;
+
+                        a {
+                            .block;
+                            width: 100%;
+                            height: 100px;
+                            line-height: 26px;
+                            padding: 26px 22px; 
+                            font-size: 20px;
+                            .center;
+
+                            &.line {
+                                line-height: 45px;
+                            }
+
+                            &.active,
+                            &:hover {
+                                color: @white;
+                                background: @main;
+                                font-weight: 600;
+                                box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+                            }
+                        }
+                    }
+                }
+
+                div.tab_contents {
+                    width: 980px;
+                    margin: 0 auto;
+                    .none;
+
+                    &.active {
+                        .block;
+                    }
+
+                    h5 {
+                        .relative;
+                        font-size: 18px;
+                        font-family: '나눔고딕';
+                        font-weight: 600;
+                        color: #333;
+                        margin: 0;
+                        padding-left: 18px;
+                     
+                        small {
+                            margin-right: 5px;
+                            font-size: 12px;
+                            .absolute;
+                            left: 0;
+                            top: 3px;
+                        }
+                    }
+
+                    ul {
+                        margin-top: 10px;
+                        .no-list;
+                        border: 2px solid #ebebeb;
+                        padding: 20px 0 20px 20px;
+
+                        li {
+                            font-size: 17px;
+                            color: #333;
+                        }
+                    }
+
+                    div.con01 {
+
+                        h5 {
+                            margin-top: 50px;
+                        }
+
+                        ul {
+
+                            li {
+                                font-weight: 600;
+                                color: #333;
+
+                                p {
+                                    margin: 8px 0 0 0;
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                    color: #555;
+                                }
+                            }
+                        }
+                    }
+
+                    div.con02 {
+
+                        h5 {
+                            margin-top: 40px;
+                        }
+
+                        ul {
+                            margin-bottom: 80px;
+
+                            li {
+                                font-weight: 400;
+                                color: #555;
+                                margin-top: 14px;
+
+                                &:first-child {
+                                    margin-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* footer */
+    footer#footer {
+        border-top: 1px solid #d9d9d9;
+
+        .container {
+            .relative;
+            width: 980px;
+            margin: 0 auto;
+            padding: 30px 0;
+
+            ul {
+                .no-list;
+                .mapazero;
+                margin-bottom: 15px;
+
+                li {
+                    .relative;
+                    .inline-block;
+                    margin-right: 20px;
+
+                    &::before {
+                        .absolute;
+                        content: "";
+                        .block;
+                        width: 1px;
+                        height: 10px;
+                        background:#c2c2c2;
+                        top: 3px;
+                        right: -14px;
+                    }
+
+                    &:last-child {
+
+                        &::before {
+                            .none;
+                        }
+                    }
+
+                    a {
+                        .block;
+                        font-family: '나눔고딕';
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #555;
+                    }
+                }
+            }
+
+            select#agency {
+                .absolute;
+                top: 30px;
+                right: 0;
+                width: 150px;
+                height: 30px;
+                border: 1px solid #dedede;
+                font-family: '나눔고딕';
+                font-size: 12px;
+                color: #555;
+                padding-left: 5px;
+                cursor: pointer;
+            }
+
+            address {
+                
+                p {
+                    .zero;
+                    margin: 0 0 5px 0;
+                    font-family: '나눔고딕';
+                    font-size: 12px;
+                    font-style: normal;
+                    color: #555;
+                }
+            }
+
+            p.copyright {
+                font-family: '나눔고딕';
+                font-size: 12px;
+                color: #555;
+                margin: 5px 0 0 0;
+            }
+        }
+    }
+}
