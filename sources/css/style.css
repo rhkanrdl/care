@@ -973,6 +973,7 @@ body div#content .container .main_wrap section.notice_wrap ul.notice {
   width: 738px;
   height: 212px;
   background: #fff;
+  overflow: hidden;
 }
 body div#content .container .main_wrap section.notice_wrap ul.notice:after {
   content: "";
@@ -1029,32 +1030,18 @@ body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw but
   color: #ccc;
   font-weight: 400;
 }
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding: 0 15px;
+body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw div.border {
+  overflow: hidden;
 }
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw ul li {
-  position: relative;
-  margin-bottom: 5px;
-  height: 70px;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw ul li:first-child {
-  height: 60px;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw ul li:first-child::before {
-  display: none;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw ul li::before {
-  content: "";
-  display: block;
+body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw div.border div.item {
   width: 216px;
-  height: 1px;
-  background: #ccc;
-  margin-bottom: 10px;
+  margin: 0 15px 10px;
+  padding: 0 0 10px;
+  position: relative;
+  height: 70px;
+  border-bottom: 1px solid #ccc;
 }
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw ul li a {
+body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw div.border div.item a {
   display: block;
   font-size: 14px;
   line-height: 18px;
@@ -1063,7 +1050,7 @@ body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw ul 
   text-overflow: ellipsis;
   overflow: hidden;
 }
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw ul li a p.new-icon {
+body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw div.border div.item a p.new-icon {
   display: inline-block;
   vertical-align: top;
   font-size: 0;
@@ -1072,10 +1059,10 @@ body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw ul 
   width: 13px;
   height: 12px;
 }
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw ul li a small.date {
+body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw div.border div.item a small.date {
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   font-size: 12px;
   color: #888;
 }

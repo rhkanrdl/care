@@ -920,7 +920,7 @@ body {
                         div {
                             .absolute;
                             .full-position;
-                            
+
                             ul {
                                 .none;
                                 .absolute;
@@ -1353,6 +1353,7 @@ body {
                         width: 738px;
                         height: 212px;
                         background: @white;
+                        overflow:hidden;
 
                         &:after {
                             content: "";
@@ -1423,62 +1424,46 @@ body {
                                 }
                             }
 
-                            ul {
-                                .no-list;
-                                .mapazero;
-                                padding: 0 15px;
+                            div.border {
+                                overflow:hidden;
 
-                                li {
+                                div.item {
+                                    width:216px;
+                                    margin: 0 15px 10px;
+                                    padding:0 0 10px;
                                     .relative;
-                                    margin-bottom: 5px;
                                     height: 70px;
-
-                                    &:first-child {
-                                        height: 60px;
+                                    border-bottom:1px solid #ccc;
                                         
-                                        &::before {
-                                            .none;
-                                        }
-                                    }
-
-                                    &::before {
-                                        content: "";
-                                        .block;
-                                        width: 216px;
-                                        height: 1px;
-                                        background: #ccc;
-                                        margin-bottom: 10px;
-                                    }
-                                    
-                                    a {
-                                        .block;
-                                        font-size: 14px;
-                                        line-height: 18px;
-                                        color: #555;
-                                        height: 36px;
-                                        text-overflow: ellipsis;
-                                        overflow: hidden;
-
-                                        p.new-icon {
-                                            .inline-block;
-                                            .top;
-                                            .zero;
-                                            margin: 2px 0 0 2px;
-                                            background: url("@{img-url}/new.png") no-repeat center / cover;
-                                            width: 13px;
-                                            height: 12px;
-                                        }
-
-                                        small.date {
+                                        a {
                                             .block;
-                                            .absolute;
-                                            bottom: 0;
-                                            font-size: 12px;
-                                            color: #888;
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                            color: #555;
+                                            height: 36px;
+                                            text-overflow: ellipsis;
+                                            overflow: hidden;
+    
+                                            p.new-icon {
+                                                .inline-block;
+                                                .top;
+                                                .zero;
+                                                margin: 2px 0 0 2px;
+                                                background: url("@{img-url}/new.png") no-repeat center / cover;
+                                                width: 13px;
+                                                height: 12px;
+                                            }
+    
+                                            small.date {
+                                                .block;
+                                                .absolute;
+                                                bottom: 10px;
+                                                font-size: 12px;
+                                                color: #888;
+                                            }
                                         }
                                     }
                                 }
-                            }
                         }
                     }
                 }

@@ -117,4 +117,26 @@ $(document).ready(function() {
 
         return false;
     });
+
+
+
+
+    for(var i=1;i<4;i++) {
+
+        $('li.notice0'+ i +' div.border').slick({
+            autoplay:false,
+            speed: 1000,
+            slidesToShow: 2,
+            dots:false,
+            infinite: true,
+            vertical:true,
+            draggable:false,
+            nextArrow:$('li.notice0'+ i +' .right'),
+            prevArrow:$('li.notice0'+ i +' .left')
+        });
+    }
+
+
+
+
 });
