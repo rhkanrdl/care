@@ -1,12 +1,12 @@
 // out: ./style.css, compress: false, sourceMap: false
 
-@import "rem.less";
-@import "/wp/assets/source/css/normalize.css";
-@import "/wp/assets/source/css/fontello.css";
-
-// @import "normalize.css";
 // @import "rem.less";
-// @import "fontello.css";
+// @import "/wp/assets/source/css/normalize.css";
+// @import "/wp/assets/source/css/fontello.css";
+
+@import "normalize.css";
+@import "rem.less";
+@import "fontello.css";
 
 /* fonts */
 
@@ -36,8 +36,8 @@
 /* basic */
 @min-width: 320px;
 @myfont: "NanumSquare";
-// @img-url: "../images";
-@img-url: "/wp/assets/source/images";
+@img-url: "../images";
+// @img-url: "/wp/assets/source/images";
 @header-height: 100px;
 
 /* color */
@@ -2870,18 +2870,76 @@ body {
                 }
             }
 
-            select#agency {
+            div.agency {
                 .absolute;
                 top: 30px;
                 right: 0;
-                width: 150px;
-                height: 30px;
-                border: 1px solid #dedede;
-                font-family: '나눔고딕';
+                width: auto;
+                height: 32px;
                 font-size: 12px;
                 color: #555;
-                padding-left: 5px;
-                cursor: pointer;
+                min-width:230px;
+
+                input {
+                    .none;
+                }
+                div.agency-link {
+                    .none;
+                    .absolute;
+                    right:0;
+                    left:0;
+                    bottom:30px;
+                    border:1px solid #999;
+                    background:#fff;
+                }
+
+                label {
+                    .block;
+                    border: 1px solid #dedede;
+
+                    i {
+                        position:absolute;
+                        right:10px;
+                        bottom:0px;
+                        transform: rotate(90deg);
+                        color:#bbb;
+                        .ani();
+                    }
+                }
+
+                a {
+                    .block;
+                    border-bottom:1px solid #dedede;
+
+                    &:last-of-type {
+                        border:none;
+                    }
+
+                    &:hover {
+                        background:#efefef;
+                    }
+                }
+
+                label,
+                a {
+                    line-height:32px;
+                    padding:0 5px;
+                }
+
+                input:checked + label {
+                    background:#eee;
+
+                    &>i {
+                        .ani();
+                        transform: rotate(270deg);
+                    }
+                }
+
+                input:checked + label + div.agency-link {
+                    .block;
+                }
+
+
             }
 
             address {
