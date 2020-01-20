@@ -1320,7 +1320,7 @@ body {
                     .flex;
                     
                     a.info {
-                        .inline-block;
+                        .block;
                         background: url("@{img-url}/info.jpg") no-repeat center / cover;
                         width: 227px;
                         height: 212px;
@@ -2591,10 +2591,15 @@ body {
                                                 word-break: keep-all;
                                                 margin-left: 420px;
                                                 margin-top: 10px;
-                                                line-height: 24px;
+                                                line-height: 26px;
 
                                                 &:nth-of-type(1) {
                                                     margin: 0;
+                                                }
+
+                                                span {
+                                                    .block;
+                                                    margin-left: 9px;
                                                 }
                                             }
                                         }
@@ -2748,58 +2753,6 @@ body {
                                             .block;
                                             font-size: 18px;
                                             color: #555;
-                                        }
-                                    }
-                                }
-
-                                ul.teamwork {
-                                    .mapazero;
-                                    .no-list;
-                                    .absolute;
-                                    top: 580px;
-                                    left: 90px;
-
-                                    li {
-                                        .inline-block;
-                                        width: 206px;
-                                        height: 54px;
-                                        background: @white;
-                                        border: 2px solid #CFCECE;
-                                        line-height: 54px;
-                                        margin-right: 87px;
-                                        .center;
-                                        font-size: 17px;
-
-                                        &::before {
-                                            content: "";
-                                            .block;
-                                            width: 123px;
-                                            height: 15px;
-                                            background: url("@{img-url}/arrow.svg") no-repeat center;
-                                            .absolute;
-                                            top: -34px;
-                                            left: 50%;
-                                            margin-left: -60px;
-                                        }
-
-                                        &:nth-child(2) {
-
-                                            &::before {
-                                                content: "";
-                                                .block;
-                                                left: 103px;
-                                            }
-                                        }
-
-                                        &:nth-child(3) {
-                                            margin-right: 0;
-
-                                            &::before {
-                                                content: "";
-                                                .block;
-                                                left: 50%;
-                                                margin-left: 234px;
-                                            }
                                         }
                                     }
                                 }
