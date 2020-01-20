@@ -1,5 +1,5 @@
-@import "/wp/assets/source/css/normalize.css";
-@import "/wp/assets/source/css/fontello.css";
+@import "normalize.css";
+@import "fontello.css";
 /* fonts */
 /* nanum square - regular */
 @font-face {
@@ -253,7 +253,7 @@ body header#header .container {
   padding-top: 15px;
 }
 body header#header .container h1 {
-  background: url("/wp/assets/source/images/logo.svg") no-repeat center / auto 100%;
+  background: url("../images/logo.svg") no-repeat center / auto 100%;
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -829,7 +829,7 @@ body div#content {
 }
 body div#content .container {
   width: 100%;
-  background: url("/wp/assets/source/images/bg.jpg") no-repeat center / cover;
+  background: url("../images/bg.jpg") no-repeat center / cover;
 }
 body div#content .container .main_wrap {
   width: 980px;
@@ -848,7 +848,7 @@ body div#content .container .main_wrap section.main_content::after {
 }
 body div#content .container .main_wrap section.main_content h2 {
   font-size: 0;
-  background: url("/wp/assets/source/images/main.jpg") no-repeat center / cover;
+  background: url("../images/main.jpg") no-repeat center / cover;
   width: 594px;
   height: 540px;
   float: left;
@@ -890,7 +890,7 @@ body div#content .container .main_wrap section.main_content ul li a {
   padding: 20px 0 0 20px;
 }
 body div#content .container .main_wrap section.main_content ul li.c1 {
-  background: url("/wp/assets/source/images/content1.jpg") no-repeat center / cover;
+  background: url("../images/content1.jpg") no-repeat center / cover;
   width: 374px;
   height: 264px;
   margin-bottom: 12px;
@@ -904,7 +904,7 @@ body div#content .container .main_wrap section.main_content ul li.c1 span {
   line-height: 22px;
 }
 body div#content .container .main_wrap section.main_content ul li.c2 {
-  background: url("/wp/assets/source/images/content2.jpg") no-repeat center / cover;
+  background: url("../images/content2.jpg") no-repeat center / cover;
   width: 180px;
   height: 264px;
   margin-right: 12px;
@@ -920,7 +920,7 @@ body div#content .container .main_wrap section.main_content ul li.c2 h5 span {
   margin-bottom: 10px;
 }
 body div#content .container .main_wrap section.main_content ul li.c3 {
-  background: url("/wp/assets/source/images/content3.jpg") no-repeat center / cover;
+  background: url("../images/content3.jpg") no-repeat center / cover;
   width: 180px;
   height: 264px;
   float: left;
@@ -942,7 +942,7 @@ body div#content .container .main_wrap section.notice_wrap {
 }
 body div#content .container .main_wrap section.notice_wrap a.info {
   display: block;
-  background: url("/wp/assets/source/images/info.jpg") no-repeat center / cover;
+  background: url("../images/info.jpg") no-repeat center / cover;
   width: 227px;
   height: 212px;
   padding: 40px 0 0 26px;
@@ -1042,7 +1042,7 @@ body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw div
   vertical-align: top;
   font-size: 0;
   margin: 2px 0 0 2px;
-  background: url("/wp/assets/source/images/new.png") no-repeat center / cover;
+  background: url("../images/new.png") no-repeat center / cover;
   width: 13px;
   height: 12px;
 }
@@ -1223,19 +1223,19 @@ body div#content .sub_container h2.sub_title.other {
 body div#content .sub_container h2.sub_title p {
   width: 980px;
   margin: 0 auto;
-  background: url("/wp/assets/source/images/sub01.jpg") no-repeat center / cover;
+  background: url("../images/sub01.jpg") no-repeat center / cover;
 }
 body div#content .sub_container h2.sub_title p.sub02 {
-  background: url("/wp/assets/source/images/sub02.jpg") no-repeat center / cover;
+  background: url("../images/sub02.jpg") no-repeat center / cover;
 }
 body div#content .sub_container h2.sub_title p.sub03 {
-  background: url("/wp/assets/source/images/sub03.jpg") no-repeat center / cover;
+  background: url("../images/sub03.jpg") no-repeat center / cover;
 }
 body div#content .sub_container h2.sub_title p.sub04 {
-  background: url("/wp/assets/source/images/sub04.jpg") no-repeat center / cover;
+  background: url("../images/sub04.jpg") no-repeat center / cover;
 }
 body div#content .sub_container h2.sub_title p.sub05 {
-  background: url("/wp/assets/source/images/sub05.jpg") no-repeat center / cover;
+  background: url("../images/sub05.jpg") no-repeat center / cover;
 }
 body div#content .sub_container div.hello {
   position: relative;
@@ -1264,7 +1264,7 @@ body div#content .sub_container div.hello ul {
   width: 980px;
   height: 840px;
   margin: 0 auto 60px auto;
-  background: url("/wp/assets/source/images/hello.jpg") no-repeat center / cover;
+  background: url("../images/hello.jpg") no-repeat center / cover;
   padding: 50px;
 }
 body div#content .sub_container div.hello ul li {
@@ -1509,7 +1509,7 @@ body div#content .sub_container section.operation_contents div.con01 ul li:first
   display: block;
   width: 24px;
   height: 25px;
-  background: url("/wp/assets/source/images/left.png") no-repeat center / cover;
+  background: url("../images/left.png") no-repeat center / cover;
 }
 body div#content .sub_container section.operation_contents div.con01 ul li:first-child::after {
   position: absolute;
@@ -1519,12 +1519,12 @@ body div#content .sub_container section.operation_contents div.con01 ul li:first
   display: block;
   width: 24px;
   height: 25px;
-  background: url("/wp/assets/source/images/right.png") no-repeat center / cover;
+  background: url("../images/right.png") no-repeat center / cover;
 }
 body div#content .sub_container section.operation_contents div.con01 ul li.image {
   width: 618px;
   height: 471px;
-  background: url("/wp/assets/source/images/coophn.svg") no-repeat center / cover;
+  background: url("../images/coophn.svg") no-repeat center / cover;
   font-size: 0;
   margin: 60px 0 0 180px;
 }
@@ -1598,17 +1598,17 @@ body div#content .sub_container section.operation_contents div.con03 dl dt.img01
   width: 71px;
   height: 66px;
   margin-left: 113px;
-  background: url("/wp/assets/source/images/value01.svg") no-repeat center / cover;
+  background: url("../images/value01.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.operation_contents div.con03 dl dt.img02 {
   width: 84px;
   margin-left: 108px;
-  background: url("/wp/assets/source/images/value02.svg") no-repeat center / cover;
+  background: url("../images/value02.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.operation_contents div.con03 dl dt.img03 {
   width: 71px;
   margin-left: 113px;
-  background: url("/wp/assets/source/images/value03.svg") no-repeat center / cover;
+  background: url("../images/value03.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.operation_contents div.con03 dl dd {
   margin: 26px 0 0;
@@ -1726,12 +1726,12 @@ body div#content .sub_container section.operation_contents div.con05 div ul li s
 body div#content .sub_container section.operation_contents div.con05 div ul li:nth-child(1) p {
   width: 220px;
   height: 128px;
-  background: url("/wp/assets/source/images/img1.jpg") no-repeat center / cover;
+  background: url("../images/img1.jpg") no-repeat center / cover;
 }
 body div#content .sub_container section.operation_contents div.con05 div ul li:nth-child(2) p {
   width: 220px;
   height: 128px;
-  background: url("/wp/assets/source/images/img2.jpg") no-repeat center / cover;
+  background: url("../images/img2.jpg") no-repeat center / cover;
 }
 body div#content .sub_container section.operation_contents div.con05 div ul li:nth-child(3) {
   margin-right: 0;
@@ -1739,7 +1739,7 @@ body div#content .sub_container section.operation_contents div.con05 div ul li:n
 body div#content .sub_container section.operation_contents div.con05 div ul li:nth-child(3) p {
   width: 220px;
   height: 128px;
-  background: url("/wp/assets/source/images/img3.jpg") no-repeat center / cover;
+  background: url("../images/img3.jpg") no-repeat center / cover;
 }
 body div#content .sub_container section.center_contents ul.tabs {
   margin: 0;
@@ -1874,7 +1874,7 @@ body div#content .sub_container section.center_contents div.tab_contents#tab02 d
   display: block;
   width: 24px;
   height: 25px;
-  background: url("/wp/assets/source/images/left.png") no-repeat center / cover;
+  background: url("../images/left.png") no-repeat center / cover;
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con01 ul li:first-child::after {
   position: absolute;
@@ -1884,12 +1884,12 @@ body div#content .sub_container section.center_contents div.tab_contents#tab02 d
   display: block;
   width: 24px;
   height: 25px;
-  background: url("/wp/assets/source/images/right.png") no-repeat center / cover;
+  background: url("../images/right.png") no-repeat center / cover;
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con01 ul li.image {
   width: 680px;
   height: 371px;
-  background: url("/wp/assets/source/images/mission.svg") no-repeat center / cover;
+  background: url("../images/mission.svg") no-repeat center / cover;
   font-size: 0;
   margin: 40px 0 0 150px;
 }
@@ -1909,22 +1909,22 @@ body div#content .sub_container section.center_contents div.tab_contents#tab02 d
 body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 dl dt.img01 {
   width: 64px;
   margin-left: 51px;
-  background: url("/wp/assets/source/images/vision01.svg") no-repeat center / cover;
+  background: url("../images/vision01.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 dl dt.img02 {
   width: 82px;
   margin-left: 41px;
-  background: url("/wp/assets/source/images/vision02.svg") no-repeat center / cover;
+  background: url("../images/vision02.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 dl dt.img03 {
   width: 60px;
   margin-left: 53px;
-  background: url("/wp/assets/source/images/vision03.svg") no-repeat center / cover;
+  background: url("../images/vision03.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 dl dt.img04 {
   width: 64px;
   margin-left: 50px;
-  background: url("/wp/assets/source/images/vision04.svg") no-repeat center / cover;
+  background: url("../images/vision04.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 dl dd {
   margin: 26px 0 0;
@@ -2025,7 +2025,7 @@ body div#content .sub_container section.center_contents div.tab_contents#tab03 d
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab03 div.con02 div {
   position: relative;
-  background: url("/wp/assets/source/images/organization.svg") no-repeat center / cover;
+  background: url("../images/organization.svg") no-repeat center / cover;
   width: 980px;
   height: 409px;
   margin-top: 30px;
@@ -2344,25 +2344,25 @@ body div#content .sub_container section.support_contents div.con01 ul li:nth-chi
   width: 56px;
   height: 72px;
   margin: 46px 0 0 55px;
-  background: url("/wp/assets/source/images/support01.svg") no-repeat center / cover;
+  background: url("../images/support01.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.support_contents div.con01 ul li:nth-child(2) h3 {
   width: 69px;
   height: 62px;
   margin: 54px 0 0 50px;
-  background: url("/wp/assets/source/images/support02.svg") no-repeat center / cover;
+  background: url("../images/support02.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.support_contents div.con01 ul li:nth-child(3) h3 {
   width: 71px;
   height: 70px;
   margin: 44px 0 0 48px;
-  background: url("/wp/assets/source/images/support03.svg") no-repeat center / cover;
+  background: url("../images/support03.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.support_contents div.con01 ul li:nth-child(4) h3 {
   width: 58px;
   height: 62px;
   margin: 51px 0 0 53px;
-  background: url("/wp/assets/source/images/support04.svg") no-repeat center / cover;
+  background: url("../images/support04.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.support_contents div.con01 ul li:nth-child(5) {
   border-right: none;
@@ -2371,12 +2371,12 @@ body div#content .sub_container section.support_contents div.con01 ul li:nth-chi
   width: 62px;
   height: 59px;
   margin: 54px 0 0 53px;
-  background: url("/wp/assets/source/images/support05.svg") no-repeat center / cover;
+  background: url("../images/support05.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.support_contents div.con01 h5 {
   width: 980px;
   height: 51px;
-  background: url("/wp/assets/source/images/account.svg") no-repeat center / cover;
+  background: url("../images/account.svg") no-repeat center / cover;
   color: #fff;
   font-weight: 500;
   font-size: 17px;

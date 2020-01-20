@@ -1,12 +1,12 @@
 // out: ./style.css, compress: false, sourceMap: false
 
-@import "rem.less";
-@import "/wp/assets/source/css/normalize.css";
-@import "/wp/assets/source/css/fontello.css";
-
-// @import "normalize.css";
 // @import "rem.less";
-// @import "fontello.css";
+// @import "/wp/assets/source/css/normalize.css";
+// @import "/wp/assets/source/css/fontello.css";
+
+@import "normalize.css";
+@import "rem.less";
+@import "fontello.css";
 
 /* fonts */
 
@@ -36,8 +36,8 @@
 /* basic */
 @min-width: 320px;
 @myfont: "NanumSquare";
-// @img-url: "../images";
-@img-url: "/wp/assets/source/images";
+@img-url: "../images";
+// @img-url: "/wp/assets/source/images";
 @header-height: 100px;
 
 /* color */
@@ -2687,127 +2687,6 @@ body {
                                             right: 0;
                                         }
                                     }
-                                }
-
-                                // h6 {
-                                //     width: 246px;
-                                //     height: 70px;
-                                //     background: @main;
-                                //     .center;
-                                //     line-height: 70px;
-                                //     border-radius: 10px;
-                                //     margin: 0 auto;
-
-                                //     a {
-                                //         .block;
-                                //         color: @white;
-                                //         font-size: 18px;
-                                //     }
-
-                                //     &::after {
-                                //         content: "";
-                                //         .block;
-                                //         width: 4px;
-                                //         height: 200px;
-                                //         .absolute;
-                                //         left: 50%;
-                                //         margin-left: -2px;
-                                //         background: #E5E5E5;
-                                //     }
-                                // }
-
-                                // p {
-                                //     .absolute;
-                                //     top: 100px;
-                                //     right: 0;
-                                //     width: 246px;
-                                //     height: 70px;
-                                //     background: @white;
-                                //     border: 4px dotted #CACAC8;
-                                //     line-height: 70px;
-                                //     border-radius: 10px;
-                                //     .center;
-                                //     font-size: 18px;
-                                //     color: #555;
-
-                                //     &::before {
-                                //         content: "";
-                                //         .block;
-                                //         width: 245px;
-                                //         height: 4px;
-                                //         .absolute;
-                                //         top: 30px;
-                                //         right: 240px;
-                                //         background: #E5E5E5;
-                                //     }
-                                // }
-
-                                ul.team {
-                                    
-                                    // .absolute;
-                                    // top: 320px;
-                                    // left: 120px;
-
-                                    // &::before {
-                                    //     content: "";
-                                    //     .block;
-                                    //     width: 720px;
-                                    //     height: 4px;
-                                    //     .absolute;
-                                    //     top: -70px;
-                                    //     right: 120px;
-                                    //     background: #E5E5E5;
-                                    // }
-
-                                    // li {
-                                    //     .inline-block;
-                                    //     .center;
-                                    //     width: 246px;
-                                    //     height: 70px;
-                                    //     background: @white;
-                                    //     border: 3px solid @main;
-                                    //     line-height: 70px;
-                                    //     border-radius: 10px;
-                                    //     margin-right: 57px;
-
-                                    //     &::before {
-                                    //         content: "";
-                                    //         .block;
-                                    //         width: 4px;
-                                    //         height: 70px;
-                                    //         .absolute;
-                                    //         top: -70px;
-                                    //         left: 50px;
-                                    //         // margin-left: 0;
-                                    //         background: #E5E5E5;
-                                    //     }
-
-                                    //     &:nth-child(2) {
-
-                                    //         &::before {
-                                    //             content: "";
-                                    //             .block;
-                                    //             left: 72px;
-                                    //         }
-                                    //     }
-
-                                    //     &:nth-child(3) {
-                                    //         margin-right: 0;
-
-                                    //         &::before {
-                                    //             content: "";
-                                    //             .block;
-                                    //             left: 50%;
-                                    //             margin-left: 290px;
-                                    //         }
-                                    //     }
-
-                                    //     a {
-                                    //         .block;
-                                    //         font-size: 18px;
-                                    //         color: #555;
-                                    //     }
-                                    // }
                                 }
                             }
                         }
