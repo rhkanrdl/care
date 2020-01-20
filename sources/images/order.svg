@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="831" height="251" viewBox="0 0 831 251">
+  <g id="그룹_362" data-name="그룹 362" transform="translate(-232 -1224)">
+    <rect id="사각형_177" data-name="사각형 177" width="227" height="113" rx="9" transform="translate(232 1224)" fill="#757575"/>
+    <rect id="사각형_183" data-name="사각형 183" width="227" height="82" rx="9" transform="translate(232 1362)" fill="#757575"/>
+    <rect id="사각형_185" data-name="사각형 185" width="227" height="102" rx="9" transform="translate(515 1362)" fill="#757575"/>
+    <rect id="사각형_179" data-name="사각형 179" width="227" height="93" rx="9" transform="translate(515 1224)" fill="#757575"/>
+    <rect id="사각형_181" data-name="사각형 181" width="227" height="86" rx="9" transform="translate(798 1224)" fill="#757575"/>
+    <path id="패스_455" data-name="패스 455" d="M0,0H227V41a9,9,0,0,1-9,9H9a9,9,0,0,1-9-9Z" transform="translate(232 1287)" fill="#faf8f8"/>
+    <path id="사각형_184" data-name="사각형 184" d="M0,0H227a0,0,0,0,1,0,0V41a9,9,0,0,1-9,9H9a9,9,0,0,1-9-9V0A0,0,0,0,1,0,0Z" transform="translate(232 1425)" fill="#faf8f8"/>
+    <path id="사각형_186" data-name="사각형 186" d="M0,0H227a0,0,0,0,1,0,0V41a9,9,0,0,1-9,9H9a9,9,0,0,1-9-9V0A0,0,0,0,1,0,0Z" transform="translate(515 1425)" fill="#faf8f8"/>
+    <path id="사각형_180" data-name="사각형 180" d="M0,0H227a0,0,0,0,1,0,0V41a9,9,0,0,1-9,9H9a9,9,0,0,1-9-9V0A0,0,0,0,1,0,0Z" transform="translate(515 1287)" fill="#faf8f8"/>
+    <path id="사각형_182" data-name="사각형 182" d="M0,0H227a0,0,0,0,1,0,0V41a9,9,0,0,1-9,9H9a9,9,0,0,1-9-9V0A0,0,0,0,1,0,0Z" transform="translate(798 1287)" fill="#faf8f8"/>
+    <g id="화살표" transform="translate(281.319 780.715)">
+      <path id="패스_454" data-name="패스 454" d="M197.2,521.654a1.648,1.648,0,0,0,1.2.507,1.678,1.678,0,0,0,1.155-.465l14.626-14.053a1.666,1.666,0,0,0,0-2.393l-14.676-14.1a1.663,1.663,0,1,0-2.3,2.4l13.43,12.906-13.38,12.856A1.656,1.656,0,0,0,197.2,521.654Z" fill="#bfbaba"/>
+    </g>
+    <g id="화살표-2" data-name="화살표" transform="translate(281.319 918.715)">
+      <path id="패스_454-2" data-name="패스 454" d="M197.2,521.654a1.648,1.648,0,0,0,1.2.507,1.678,1.678,0,0,0,1.155-.465l14.626-14.053a1.666,1.666,0,0,0,0-2.393l-14.676-14.1a1.663,1.663,0,1,0-2.3,2.4l13.43,12.906-13.38,12.856A1.656,1.656,0,0,0,197.2,521.654Z" fill="#bfbaba"/>
+    </g>
+    <g id="화살표-3" data-name="화살표" transform="translate(564.319 780.715)">
+      <path id="패스_454-3" data-name="패스 454" d="M197.2,521.654a1.648,1.648,0,0,0,1.2.507,1.678,1.678,0,0,0,1.155-.465l14.626-14.053a1.666,1.666,0,0,0,0-2.393l-14.676-14.1a1.663,1.663,0,1,0-2.3,2.4l13.43,12.906-13.38,12.856A1.656,1.656,0,0,0,197.2,521.654Z" fill="#bfbaba"/>
+    </g>
+    <g id="화살표-4" data-name="화살표" transform="translate(848.319 780.715)">
+      <path id="패스_454-4" data-name="패스 454" d="M197.2,521.654a1.648,1.648,0,0,0,1.2.507,1.678,1.678,0,0,0,1.155-.465l14.626-14.053a1.666,1.666,0,0,0,0-2.393l-14.676-14.1a1.663,1.663,0,1,0-2.3,2.4l13.43,12.906-13.38,12.856A1.656,1.656,0,0,0,197.2,521.654Z" fill="#bfbaba"/>
+    </g>
+    <text id="신청문의" transform="translate(311 1263)" fill="#fff" font-size="17" font-family="MalgunGothic, Malgun Gothic"><tspan x="0" y="0">신청문의</tspan></text>
+    <text id="예약확인_및_승인" data-name="예약확인 및 승인" transform="translate(282 1401)" fill="#fff" font-size="17" font-family="MalgunGothic, Malgun Gothic"><tspan x="0" y="0">예약확인</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">및</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">승인</tspan></text>
+    <text id="차량배차_및_이용" data-name="차량배차 및 이용" transform="translate(565 1401)" fill="#fff" font-size="17" font-family="MalgunGothic, Malgun Gothic"><tspan x="0" y="0">차량배차</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">및</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">이용</tspan></text>
+    <text id="신청서_작성_및_제출" data-name="신청서 작성 및 제출" transform="translate(553 1263)" fill="#fff" font-size="17" font-family="MalgunGothic, Malgun Gothic"><tspan x="0" y="0">신청서</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">작성</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">및</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">제출</tspan></text>
+    <text id="예약전화_시내-1일전_시외_및_읍면-2일전_" data-name="예약전화 (시내-1일전,
+시외 및 읍면-2일전)" transform="translate(912 1252)" fill="#fff" font-size="17" font-family="MalgunGothic, Malgun Gothic"><tspan x="-82.717" y="0">예약전화</tspan><tspan y="0" xml:space="preserve" font-family="SegoeUI, Segoe UI"> (</tspan><tspan y="0">시내</tspan><tspan y="0" font-family="SegoeUI, Segoe UI">-1</tspan><tspan y="0">일전</tspan><tspan y="0" font-family="SegoeUI, Segoe UI">,</tspan><tspan x="-74.703" y="22">시외</tspan><tspan y="22" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="22">및</tspan><tspan y="22" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="22">읍면</tspan><tspan y="22" font-family="SegoeUI, Segoe UI">-2</tspan><tspan y="22">일전</tspan><tspan y="22" font-family="SegoeUI, Segoe UI">)</tspan></text>
+    <text id="읍면동_주민센터_맞춤형_복지팀_및_통합돌봄지원센터" data-name="읍면동 주민센터 맞춤형
+복지팀 및 통합돌봄지원센터" transform="translate(346 1309)" fill="#555" font-size="15" font-family="MalgunGothic, Malgun Gothic"><tspan x="-79.109" y="0">읍면동</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">주민센터</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">맞춤형</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"></tspan><tspan x="-94.109" y="19">복지팀</tspan><tspan y="19" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="19">및</tspan><tspan y="19" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="19">통합돌봄지원센터</tspan></text>
+    <text id="통합돌봄_지원센터" data-name="통합돌봄 지원센터" transform="translate(345 1454)" fill="#555" font-size="15" font-family="MalgunGothic, Malgun Gothic"><tspan x="-62.054" y="0">통합돌봄</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">지원센터</tspan></text>
+    <text id="서비스_지원" data-name="서비스 지원" transform="translate(628 1454)" fill="#555" font-size="15" font-family="MalgunGothic, Malgun Gothic"><tspan x="-39.554" y="0">서비스</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">지원</tspan></text>
+    <text id="읍면동_주민센터_맞춤형_복지팀_및_통합돌봄지원센터-2" data-name="읍면동 주민센터 맞춤형
+복지팀 및 통합돌봄지원센터" transform="translate(629 1307)" fill="#555" font-size="15" font-family="MalgunGothic, Malgun Gothic"><tspan x="-79.109" y="0">읍면동</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">주민센터</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">맞춤형</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"></tspan><tspan x="-94.109" y="19">복지팀</tspan><tspan y="19" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="19">및</tspan><tspan y="19" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="19">통합돌봄지원센터</tspan></text>
+    <text id="통합돌봄_지원센터-2" data-name="통합돌봄 지원센터" transform="translate(912 1318)" fill="#555" font-size="15" font-family="MalgunGothic, Malgun Gothic"><tspan x="-62.054" y="0">통합돌봄</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0">지원센터</tspan></text>
+  </g>
+</svg>

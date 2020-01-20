@@ -39,7 +39,7 @@ $(document).ready(function() {
         $(".util-menu a").toggleClass("on");
         $("nav#main-menu button").toggleClass("bg");
         $("body").scrollTop(0);
-        $("nav#main-menu button.bg").css("height", $(document).height()-100);
+        $("nav#main-menu button.bg").css("height", $(document).height() - 100);
         $("nav#main-menu").toggleClass("show");
         $("nav#main-menu>ul").toggleClass("allmenu");
 
@@ -54,7 +54,7 @@ $(document).ready(function() {
         return false;
     });
 
-    $(document).on("click",".bg",function(){
+    $(document).on("click", ".bg", function() {
         $(".util-menu a").click();
     })
 
@@ -66,7 +66,7 @@ $(document).ready(function() {
         $(this).parent().addClass("on");
 
     });
-    
+
 
     $(".gnb_sub header").on("mouseleave", function() {
 
@@ -83,7 +83,7 @@ $(document).ready(function() {
         $(".util-menu a").toggleClass("on");
         $("nav#main-menu button").toggleClass("bg");
         $("body").scrollTop(0);
-        $("nav#main-menu button.bg").css("height", $(document).height()-100);
+        $("nav#main-menu button.bg").css("height", $(document).height() - 100);
         $("nav#main-menu").toggleClass("show");
         $("nav#main-menu>ul").toggleClass("allmenu");
 
@@ -119,24 +119,57 @@ $(document).ready(function() {
     });
 
 
+    $(".center_contents .tabs a").click(function() {
+        var tabs = $(this).attr("data");
+        $(".center_contents .tabs a").removeClass("active");
+        $(this).addClass("active");
+        $(".center_contents div.tab_contents").removeClass("active");
+        $(".center_contents #" + tabs).addClass("active");
+
+        return false;
+    });
 
 
-    for(var i=1;i<4;i++) {
+    for (var i = 1; i < 4; i++) {
 
-        $('li.notice0'+ i +' div.border').slick({
-            autoplay:false,
+        $('li.notice0' + i + ' div.border').slick({
+            autoplay: false,
             speed: 1000,
             slidesToShow: 2,
-            dots:false,
+            dots: false,
             infinite: true,
-            vertical:true,
-            draggable:false,
-            nextArrow:$('li.notice0'+ i +' .right'),
-            prevArrow:$('li.notice0'+ i +' .left')
+            vertical: true,
+            draggable: false,
+            nextArrow: $('li.notice0' + i + ' .right'),
+            prevArrow: $('li.notice0' + i + ' .left')
         });
     }
 
 
+     // map
 
+     var container = document.getElementById('map'); 
+     var options = {
+        center: new kakao.maps.LatLng(33.496309, 126.532741), 
+        level: 3 
+     };
+     
+     var map = new kakao.maps.Map(container, options);
 
+     map.setDraggable(true);
+
+     map.setZoomable(true);
+     
+     // 마커가 표시될 위치입니다 
+     var markerPosition  = new kakao.maps.LatLng(33.496309, 126.532741);
+     
+     // 마커를 생성합니다
+     var marker = new kakao.maps.Marker({
+         position: markerPosition
+     });
+     
+     // 마커가 지도 위에 표시되도록 설정합니다
+     marker.setMap(map);
+
+     
 });
