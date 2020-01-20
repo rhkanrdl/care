@@ -1,12 +1,12 @@
 // out: ./style.css, compress: false, sourceMap: false
 
-// @import "rem.less";
-// @import "/wp/assets/source/css/normalize.css";
-// @import "/wp/assets/source/css/fontello.css";
-
-@import "normalize.css";
 @import "rem.less";
-@import "fontello.css";
+@import "/wp/assets/source/css/normalize.css";
+@import "/wp/assets/source/css/fontello.css";
+
+// @import "normalize.css";
+// @import "rem.less";
+// @import "fontello.css";
 
 /* fonts */
 
@@ -36,8 +36,8 @@
 /* basic */
 @min-width: 320px;
 @myfont: "NanumSquare";
-@img-url: "../images";
-// @img-url: "/wp/assets/source/images";
+// @img-url: "../images";
+@img-url: "/wp/assets/source/images";
 @header-height: 100px;
 
 /* color */
@@ -2525,7 +2525,7 @@ body {
 
                         div.con01 {
                             .relative;
-                            margin-bottom: 130px;
+                            margin-bottom: 30px;
 
                             ul {
                                 margin-top: 10px;
@@ -2549,7 +2549,7 @@ body {
                                 margin-top: 20px;
 
                                 ul {
-                                    margin: 0 0 60px 0;
+                                    margin: 0 0 130px 0;
                                     padding: 0;
                                     border: none;
                                     border-top: 2px solid @main;
@@ -2632,129 +2632,182 @@ body {
 
                             div {
                                 .relative;
-                                height: 660px;
+                                background: url("@{img-url}/organization.svg") no-repeat center / cover;
+                                width: 980px;
+                                height: 409px;
                                 margin-top: 30px;
-
-                                h6 {
-                                    width: 150px;
-                                    height: 150px;
-                                    background: @main;
-                                    .center;
-                                    line-height: 150px;
-                                    border-radius: 50%;
-                                    margin: 0 auto;
-
-                                    a {
-                                        .block;
-                                        color: @white;
-                                        font-size: 18px;
-                                    }
-
-                                    &::after {
-                                        content: "";
-                                        .block;
-                                        width: 4px;
-                                        height: 200px;
-                                        .absolute;
-                                        left: 50%;
-                                        margin-left: -2px;
-                                        background: #E5E5E5;
-                                    }
-                                }
-
-                                p {
-                                    .absolute;
-                                    top: 120px;
-                                    right: 123px;
-                                    width: 150px;
-                                    height: 150px;
-                                    background: @white;
-                                    border: 4px dotted #CACAC8;
-                                    line-height: 150px;
-                                    border-radius: 50%;
-                                    .center;
-                                    font-size: 18px;
-                                    color: #555;
-
-                                    &::before {
-                                        content: "";
-                                        .block;
-                                        width: 216px;
-                                        height: 4px;
-                                        .absolute;
-                                        top: 72px;
-                                        right: 146px;
-                                        background: #E5E5E5;
-                                    }
-                                }
+                               
 
                                 ul.team {
                                     .mapazero;
                                     .no-list;
-                                    .absolute;
-                                    top: 380px;
-                                    left: 120px;
-
-                                    &::before {
-                                        content: "";
-                                        .block;
-                                        width: 590px;
-                                        height: 4px;
-                                        .absolute;
-                                        top: -70px;
-                                        right: 75px;
-                                        background: #E5E5E5;
-                                    }
 
                                     li {
-                                        .inline-block;
+                                        .absolute;
+                                        width: 246px;
+                                        height: 70px;
+                                        line-height: 72px;
                                         .center;
-                                        width: 150px;
-                                        height: 150px;
-                                        background: @white;
-                                        border: 4px solid #FAD8E7;
-                                        line-height: 150px;
-                                        border-radius: 50%;
-                                        margin-right: 140px;
-
-                                        &::before {
-                                            content: "";
-                                            .block;
-                                            width: 4px;
-                                            height: 70px;
-                                            .absolute;
-                                            top: -70px;
-                                            left: 50%;
-                                            margin-left: 0;
-                                            background: #E5E5E5;
-                                        }
-
-                                        &:nth-child(2) {
-
-                                            &::before {
-                                                content: "";
-                                                .block;
-                                                left: 72px;
-                                            }
-                                        }
-
-                                        &:nth-child(3) {
-                                            margin-right: 0;
-
-                                            &::before {
-                                                content: "";
-                                                .block;
-                                                left: 50%;
-                                                margin-left: 290px;
-                                            }
-                                        }
+                                        border-radius: 10px;
+                                        font-size: 18px;
 
                                         a {
                                             .block;
-                                            font-size: 18px;
                                             color: #555;
                                         }
+
+                                        &:nth-child(1) {
+                                            top: 0;
+                                            left: 50%;
+                                            margin-left: -123px;
+
+                                            a {
+                                                color: @white;
+                                            }
+                                        }
+
+                                        &:nth-child(2) {
+                                            top: 116px;
+                                            right: 0;
+                                        }
+
+                                        &:nth-child(3) {
+                                            bottom: 0;
+                                            left: 0;
+                                        }
+
+                                        &:nth-child(4) {
+                                            bottom: 0;
+                                            left: 50%;
+                                            margin-left: -123px;
+                                        }
+
+                                        &:nth-child(5) {
+                                            bottom: 0;
+                                            right: 0;
+                                        }
                                     }
+                                }
+
+                                // h6 {
+                                //     width: 246px;
+                                //     height: 70px;
+                                //     background: @main;
+                                //     .center;
+                                //     line-height: 70px;
+                                //     border-radius: 10px;
+                                //     margin: 0 auto;
+
+                                //     a {
+                                //         .block;
+                                //         color: @white;
+                                //         font-size: 18px;
+                                //     }
+
+                                //     &::after {
+                                //         content: "";
+                                //         .block;
+                                //         width: 4px;
+                                //         height: 200px;
+                                //         .absolute;
+                                //         left: 50%;
+                                //         margin-left: -2px;
+                                //         background: #E5E5E5;
+                                //     }
+                                // }
+
+                                // p {
+                                //     .absolute;
+                                //     top: 100px;
+                                //     right: 0;
+                                //     width: 246px;
+                                //     height: 70px;
+                                //     background: @white;
+                                //     border: 4px dotted #CACAC8;
+                                //     line-height: 70px;
+                                //     border-radius: 10px;
+                                //     .center;
+                                //     font-size: 18px;
+                                //     color: #555;
+
+                                //     &::before {
+                                //         content: "";
+                                //         .block;
+                                //         width: 245px;
+                                //         height: 4px;
+                                //         .absolute;
+                                //         top: 30px;
+                                //         right: 240px;
+                                //         background: #E5E5E5;
+                                //     }
+                                // }
+
+                                ul.team {
+                                    
+                                    // .absolute;
+                                    // top: 320px;
+                                    // left: 120px;
+
+                                    // &::before {
+                                    //     content: "";
+                                    //     .block;
+                                    //     width: 720px;
+                                    //     height: 4px;
+                                    //     .absolute;
+                                    //     top: -70px;
+                                    //     right: 120px;
+                                    //     background: #E5E5E5;
+                                    // }
+
+                                    // li {
+                                    //     .inline-block;
+                                    //     .center;
+                                    //     width: 246px;
+                                    //     height: 70px;
+                                    //     background: @white;
+                                    //     border: 3px solid @main;
+                                    //     line-height: 70px;
+                                    //     border-radius: 10px;
+                                    //     margin-right: 57px;
+
+                                    //     &::before {
+                                    //         content: "";
+                                    //         .block;
+                                    //         width: 4px;
+                                    //         height: 70px;
+                                    //         .absolute;
+                                    //         top: -70px;
+                                    //         left: 50px;
+                                    //         // margin-left: 0;
+                                    //         background: #E5E5E5;
+                                    //     }
+
+                                    //     &:nth-child(2) {
+
+                                    //         &::before {
+                                    //             content: "";
+                                    //             .block;
+                                    //             left: 72px;
+                                    //         }
+                                    //     }
+
+                                    //     &:nth-child(3) {
+                                    //         margin-right: 0;
+
+                                    //         &::before {
+                                    //             content: "";
+                                    //             .block;
+                                    //             left: 50%;
+                                    //             margin-left: 290px;
+                                    //         }
+                                    //     }
+
+                                    //     a {
+                                    //         .block;
+                                    //         font-size: 18px;
+                                    //         color: #555;
+                                    //     }
+                                    // }
                                 }
                             }
                         }
