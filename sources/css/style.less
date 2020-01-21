@@ -2458,52 +2458,168 @@ body {
                         }
 
                         div.con02 {
+                            .relative;
+                            width: 100%;
+                            height: 136px;
+                            background: #FCF1F5;
+                            border-radius: 10px;
+                            margin-top: 100px;
 
-                            dl {
-                                margin: 15px 5.2px 0 0;
-                                width: calc(~"(100% - 32px) / 4");
-                                height: 240px;
-                                .inline-block;
-                                padding: 36px;
-                                background: #F8F8F8;
+                            h6 {
+                                .mapazero;
+                                color: @main;
+                                font-size: 40px;
+                                .absolute;
+                                top: -20px;
+                                left: 50%;
+                                margin-left: -64.445px;
+                            }
 
-                                dt {
-                                    .zero;
-                                    height: 65px;
-                                    margin-top: 20px;
+                            p {
+                                color: #333;
+                                font-size: 20px;
+                                .bold;
+                                line-height: 136px;
+                                .center;
 
-                                    &.img01 {
-                                        width: 64px;
-                                        margin-left: 51px;
-                                        background: url("@{img-url}/vision01.svg") no-repeat center / cover;
-                                    }
-
-                                    &.img02 {
-                                        width: 82px;
-                                        margin-left: 41px;
-                                        background: url("@{img-url}/vision02.svg") no-repeat center / cover;
-                                    }
-
-                                    &.img03 {
-                                        width: 60px;
-                                        margin-left: 53px;
-                                        background: url("@{img-url}/vision03.svg") no-repeat center / cover;
-                                    }
-
-                                    &.img04 {
-                                        width: 64px;
-                                        margin-left: 50px;
-                                        background: url("@{img-url}/vision04.svg") no-repeat center / cover;
-                                    }
+                                span {
+                                    font-size: 28px;
+                                    
                                 }
+                            }
 
-                                dd {
-                                    margin: 26px 0 0;
+                            &.con05 {
+                                background: #FFFEF0;
+                                margin-top: 80px;
+
+                                h6 {
+                                    color: #F8B616;
+                                    margin-left: -54.605px;
+                                }
+                            }
+                        }
+
+                        div.con03 {
+                            width: 980px;
+                            margin: 0 auto;
+        
+                            ul {
+                                .no-list;
+                                .mapazero;
+                                margin-top: 14px;
+        
+                                li {
+                                    .flex;
+                                    .inline-block;
+                                    width: calc(~"(100% - 28px) / 3");
+                                    height: 114px;
+                                    margin-right: 10px;
+                                    border-radius: 10px;
                                     .center;
                                     font-size: 17px;
                                     line-height: 24px;
-                                    white-space: normal;
-                                    word-break: keep-all;
+                                    padding: 26px 0 0 0;
+                                    .bold;
+        
+                                    &:nth-child(1) {
+                                        border: 5px solid #FAD8E7;
+                                    }
+        
+                                    &:nth-child(2) {
+                                        border: 5px solid #BDDEEB;
+                                    }
+        
+                                    &:nth-child(3) {
+                                        margin-right: 0;
+                                        border: 5px solid #EBEDC5;
+                                    }
+        
+                                    span {
+                                        .block;
+                                        font-weight: 500;
+                                        color: #555;
+                                        margin-top: 5px;
+                                    }
+                                }
+                            }
+                        }
+
+                        div.con04 {
+
+                            ul {
+                                .relative;
+                                .mapazero;
+                                .no-list;
+                                margin-top: 14px;
+                                height: 230px;
+                                background: url("@{img-url}/goal.svg") no-repeat center / cover;
+
+                                li {
+                                    .absolute;
+                                    bottom: 60px;
+                                    font-size: 17px;
+                                    color: #555;
+
+                                    &:nth-child(1) {
+                                        left: 40px;
+                                    }
+
+                                    &:nth-child(2) {
+                                        left: 278px;
+                                    }
+
+                                    &:nth-child(3) {
+                                        left: 50%;
+                                        margin-left: 40px;
+                                    }
+
+                                    &:nth-child(4) {
+                                        right: 38px;
+                                    }
+                                }
+                            }
+                        }
+
+                        div.con06 {
+                            width: 980px;
+                            margin: 0 auto;
+        
+                            ul {
+                                .no-list;
+                                .mapazero;
+                                margin-top: 14px;
+        
+                                &::after {
+                                    content: "";
+                                    .block;
+                                    clear: both;
+                                }
+        
+                                li {
+                                    float: left;
+                                    width: calc(~"(100% - 28px) / 3");
+                                    height: 116px;
+                                    margin-right: 14px;
+                                    font-size: 17px;
+                                    padding: 16px;
+                                    background: @white;
+                                    border-radius: 10px;
+                                    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.15);
+        
+                                    &:nth-child(3) {
+                                        margin-right: 0;
+                                    }
+        
+                                    p {
+                                        .center;
+                                        margin: 0;
+                                        margin-top: 16px;
+                                        font-size: 17px;
+                                        white-space: normal;
+                                        word-break: keep-all;
+                                        color: #555;
+                                        line-height: 26px;
+                                    }
                                 }
                             }
                         }

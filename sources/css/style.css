@@ -1897,46 +1897,152 @@ body div#content .sub_container section.center_contents div.tab_contents#tab02 d
   font-size: 0;
   margin: 40px 0 0 150px;
 }
-body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 dl {
-  margin: 15px 5.2px 0 0;
-  width: calc((100% - 32px) / 4);
-  height: 240px;
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 {
+  position: relative;
+  width: 100%;
+  height: 136px;
+  background: #FCF1F5;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 h6 {
+  margin: 0;
+  padding: 0;
+  color: #EA609E;
+  font-size: 40px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -64.445px;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 p {
+  color: #333;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 136px;
+  text-align: center;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 p span {
+  font-size: 28px;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02.con05 {
+  background: #FFFEF0;
+  margin-top: 80px;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02.con05 h6 {
+  color: #F8B616;
+  margin-left: -54.605px;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con03 {
+  width: 980px;
+  margin: 0 auto;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con03 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con03 ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: -webkit-flex;
+  -webkit-align-item: center;
+  -webkit-justify-content: center;
   display: inline-block;
-  padding: 36px;
-  background: #F8F8F8;
-}
-body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 dl dt {
-  font-size: 0;
-  height: 65px;
-  margin-top: 20px;
-}
-body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 dl dt.img01 {
-  width: 64px;
-  margin-left: 51px;
-  background: url("../images/vision01.svg") no-repeat center / cover;
-}
-body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 dl dt.img02 {
-  width: 82px;
-  margin-left: 41px;
-  background: url("../images/vision02.svg") no-repeat center / cover;
-}
-body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 dl dt.img03 {
-  width: 60px;
-  margin-left: 53px;
-  background: url("../images/vision03.svg") no-repeat center / cover;
-}
-body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 dl dt.img04 {
-  width: 64px;
-  margin-left: 50px;
-  background: url("../images/vision04.svg") no-repeat center / cover;
-}
-body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con02 dl dd {
-  margin: 26px 0 0;
+  width: calc((100% - 28px) / 3);
+  height: 114px;
+  margin-right: 10px;
+  border-radius: 10px;
   text-align: center;
   font-size: 17px;
   line-height: 24px;
+  padding: 26px 0 0 0;
+  font-weight: 800;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con03 ul li:nth-child(1) {
+  border: 5px solid #FAD8E7;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con03 ul li:nth-child(2) {
+  border: 5px solid #BDDEEB;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con03 ul li:nth-child(3) {
+  margin-right: 0;
+  border: 5px solid #EBEDC5;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con03 ul li span {
+  display: block;
+  font-weight: 500;
+  color: #555;
+  margin-top: 5px;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con04 ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 14px;
+  height: 230px;
+  background: url("../images/goal.svg") no-repeat center / cover;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con04 ul li {
+  position: absolute;
+  bottom: 60px;
+  font-size: 17px;
+  color: #555;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con04 ul li:nth-child(1) {
+  left: 40px;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con04 ul li:nth-child(2) {
+  left: 278px;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con04 ul li:nth-child(3) {
+  left: 50%;
+  margin-left: 40px;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con04 ul li:nth-child(4) {
+  right: 38px;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con06 {
+  width: 980px;
+  margin: 0 auto;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con06 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con06 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con06 ul li {
+  float: left;
+  width: calc((100% - 28px) / 3);
+  height: 116px;
+  margin-right: 14px;
+  font-size: 17px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.15);
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con06 ul li:nth-child(3) {
+  margin-right: 0;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con06 ul li p {
+  text-align: center;
+  margin: 0;
+  margin-top: 16px;
+  font-size: 17px;
   white-space: normal;
   word-break: keep-all;
+  color: #555;
+  line-height: 26px;
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab03 div.con01 {
   position: relative;
