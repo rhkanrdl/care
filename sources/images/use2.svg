@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="918" height="108.5" viewBox="0 0 918 108.5">
+  <g id="그룹_401" data-name="그룹 401" transform="translate(-233 -1280)">
+    <rect id="사각형_177" data-name="사각형 177" width="150" height="79" rx="9" transform="translate(233 1280)" fill="#757575"/>
+    <rect id="사각형_219" data-name="사각형 219" width="150" height="79" rx="9" transform="translate(425 1280)" fill="#757575"/>
+    <rect id="사각형_220" data-name="사각형 220" width="150" height="79" rx="9" transform="translate(617 1280)" fill="#757575"/>
+    <rect id="사각형_221" data-name="사각형 221" width="150" height="79" rx="9" transform="translate(809 1280)" fill="#757575"/>
+    <rect id="사각형_222" data-name="사각형 222" width="150" height="79" rx="9" transform="translate(1001 1280)" fill="#757575"/>
+    <path id="패스_455" data-name="패스 455" d="M0,0H150V49.61c0,6.014-2.663,10.89-5.947,10.89H5.947C2.663,60.5,0,55.624,0,49.61Z" transform="translate(233 1328)" fill="#faf8f8"/>
+    <path id="패스_988" data-name="패스 988" d="M0,0H150V49.61c0,6.014-2.663,10.89-5.947,10.89H5.947C2.663,60.5,0,55.624,0,49.61Z" transform="translate(425 1328)" fill="#faf8f8"/>
+    <path id="패스_989" data-name="패스 989" d="M0,0H150V49.61c0,6.014-2.663,10.89-5.947,10.89H5.947C2.663,60.5,0,55.624,0,49.61Z" transform="translate(617 1328)" fill="#faf8f8"/>
+    <path id="패스_990" data-name="패스 990" d="M0,0H150V49.61c0,6.014-2.663,10.89-5.947,10.89H5.947C2.663,60.5,0,55.624,0,49.61Z" transform="translate(809 1328)" fill="#faf8f8"/>
+    <path id="패스_991" data-name="패스 991" d="M0,0H150V49.61c0,6.014-2.663,10.89-5.947,10.89H5.947C2.663,60.5,0,55.624,0,49.61Z" transform="translate(1001 1328)" fill="#faf8f8"/>
+    <g id="화살표" transform="translate(198.319 828.715)">
+      <path id="패스_454" data-name="패스 454" d="M197.2,521.654a1.648,1.648,0,0,0,1.2.507,1.678,1.678,0,0,0,1.155-.465l14.626-14.053a1.666,1.666,0,0,0,0-2.393l-14.676-14.1a1.663,1.663,0,1,0-2.3,2.4l13.43,12.906-13.38,12.856A1.656,1.656,0,0,0,197.2,521.654Z" fill="#bfbaba"/>
+    </g>
+    <g id="화살표-2" data-name="화살표" transform="translate(390.319 828.715)">
+      <path id="패스_454-2" data-name="패스 454" d="M197.2,521.654a1.648,1.648,0,0,0,1.2.507,1.678,1.678,0,0,0,1.155-.465l14.626-14.053a1.666,1.666,0,0,0,0-2.393l-14.676-14.1a1.663,1.663,0,1,0-2.3,2.4l13.43,12.906-13.38,12.856A1.656,1.656,0,0,0,197.2,521.654Z" fill="#bfbaba"/>
+    </g>
+    <g id="화살표-3" data-name="화살표" transform="translate(583.319 828.715)">
+      <path id="패스_454-3" data-name="패스 454" d="M197.2,521.654a1.648,1.648,0,0,0,1.2.507,1.678,1.678,0,0,0,1.155-.465l14.626-14.053a1.666,1.666,0,0,0,0-2.393l-14.676-14.1a1.663,1.663,0,1,0-2.3,2.4l13.43,12.906-13.38,12.856A1.656,1.656,0,0,0,197.2,521.654Z" fill="#bfbaba"/>
+    </g>
+    <g id="화살표-4" data-name="화살표" transform="translate(774.319 828.715)">
+      <path id="패스_454-4" data-name="패스 454" d="M197.2,521.654a1.648,1.648,0,0,0,1.2.507,1.678,1.678,0,0,0,1.155-.465l14.626-14.053a1.666,1.666,0,0,0,0-2.393l-14.676-14.1a1.663,1.663,0,1,0-2.3,2.4l13.43,12.906-13.38,12.856A1.656,1.656,0,0,0,197.2,521.654Z" fill="#bfbaba"/>
+    </g>
+    <text id="입주자_모집공고" data-name="입주자 모집공고" transform="translate(252 1309)" fill="#fff" font-size="17" font-family="NanumSquareR, NanumSquare"><tspan x="0" y="0">입주자 모집공고</tspan></text>
+    <text id="입주_신청" data-name="입주 신청" transform="translate(468 1309)" fill="#fff" font-size="17" font-family="NanumSquareR, NanumSquare"><tspan x="0" y="0">입주 신청</tspan></text>
+    <text id="초기_면접" data-name="초기 면접" transform="translate(659 1309)" fill="#fff" font-size="17" font-family="NanumSquareR, NanumSquare"><tspan x="0" y="0">초기 면접</tspan></text>
+    <text id="입주자_선정" data-name="입주자 선정" transform="translate(843 1309)" fill="#fff" font-size="17" font-family="NanumSquareR, NanumSquare"><tspan x="0" y="0">입주자 선정</tspan></text>
+    <text id="입주자_선정-2" data-name="입주자 선정" transform="translate(1035 1309)" fill="#fff" font-size="17" font-family="NanumSquareR, NanumSquare"><tspan x="0" y="0">입주자 선정</tspan></text>
+    <text id="읍면동주민센터_통합돌봄창구" data-name="읍면동주민센터
+통합돌봄창구" transform="translate(307 1354)" fill="#555" font-size="14" font-family="NanumSquareR, NanumSquare"><tspan x="-44.59" y="0">읍면동주민센터</tspan><tspan x="-38.22" y="19">통합돌봄창구</tspan></text>
+    <text id="읍면동주민센터_통합돌봄창구-2" data-name="읍면동주민센터
+통합돌봄창구" transform="translate(499 1354)" fill="#555" font-size="14" font-family="NanumSquareR, NanumSquare"><tspan x="-44.59" y="0">읍면동주민센터</tspan><tspan x="-38.22" y="19">통합돌봄창구</tspan></text>
+    <text id="통합돌봄지원센터" transform="translate(692 1362)" fill="#555" font-size="14" font-family="NanumSquareR, NanumSquare"><tspan x="-50.96" y="0">통합돌봄지원센터</tspan></text>
+    <text id="통합돌봄지원센터-2" data-name="통합돌봄지원센터" transform="translate(884 1362)" fill="#555" font-size="14" font-family="NanumSquareR, NanumSquare"><tspan x="-50.96" y="0">통합돌봄지원센터</tspan></text>
+    <text id="통합돌봄지원센터-3" data-name="통합돌봄지원센터" transform="translate(1076 1362)" fill="#555" font-size="14" font-family="NanumSquareR, NanumSquare"><tspan x="-50.96" y="0">통합돌봄지원센터</tspan></text>
+  </g>
+</svg>

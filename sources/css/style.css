@@ -1439,12 +1439,16 @@ body div#content .sub_container section.contents div.tab_contents div.con03 div.
   margin: 0;
 }
 body div#content .sub_container section.contents div.tab_contents div.con03 ul li ul.order {
-  padding: 10px 0;
+  margin: 0;
+  padding: 0;
   border: none;
 }
 body div#content .sub_container section.contents div.tab_contents div.con03 ul.care-list {
   margin-top: 0;
   border-top: none;
+}
+body div#content .sub_container section.contents div.tab_contents div.con03 ul.care-list li.eq {
+  margin: 40px 0 0 10px;
 }
 body div#content .sub_container section.contents div.tab_contents div.con03 p {
   color: #FF3E3E;
