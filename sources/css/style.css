@@ -1414,6 +1414,10 @@ body div#content .sub_container section.contents div.tab_contents div.con01 ul l
   font-weight: 400;
   color: #555;
 }
+body div#content .sub_container section.contents div.tab_contents div.con02 span {
+  display: block;
+  margin: 5px 0 0 164px;
+}
 body div#content .sub_container section.contents div.tab_contents div.con03 div.care {
   position: relative;
   margin-top: 10px;
@@ -2137,7 +2141,7 @@ body div#content .sub_container section.center_contents div.tab_contents#tab03 d
   position: relative;
   background: url("../images/organization.svg") no-repeat center / cover;
   width: 980px;
-  height: 409px;
+  height: 501px;
   margin-top: 30px;
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab03 div.con02 div ul.team {
@@ -2171,15 +2175,43 @@ body div#content .sub_container section.center_contents div.tab_contents#tab03 d
   right: 0;
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab03 div.con02 div ul.team li:nth-child(3) {
-  bottom: 0;
+  bottom: 94px;
   left: 0;
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab03 div.con02 div ul.team li:nth-child(4) {
-  bottom: 0;
+  bottom: 94px;
   left: 50%;
   margin-left: -123px;
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab03 div.con02 div ul.team li:nth-child(5) {
+  bottom: 94px;
+  right: 0;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab03 div.con02 div ul.work {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab03 div.con02 div ul.work li {
+  position: absolute;
+  width: 246px;
+  height: 70px;
+  line-height: 72px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #555;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab03 div.con02 div ul.work li:nth-child(1) {
+  bottom: 0;
+  left: 0;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab03 div.con02 div ul.work li:nth-child(2) {
+  bottom: 0;
+  left: 50%;
+  margin-left: -123px;
+}
+body div#content .sub_container section.center_contents div.tab_contents#tab03 div.con02 div ul.work li:nth-child(3) {
   bottom: 0;
   right: 0;
 }

@@ -28,16 +28,11 @@
     <text id="신청서_작성_및_제출" data-name="신청서 작성 및 제출" transform="translate(559 1177)" fill="#fff" font-size="17" font-family="NanumSquareR, NanumSquare"><tspan x="0" y="0">신청서 작성 및 제출</tspan></text>
     <text id="예약전화_시내-1일전_시외_및_읍면-2일전_" data-name="예약전화 (시내-1일전,
 시외 및 읍면-2일전)" transform="translate(910 1166)" fill="#fff" font-size="17" font-family="NanumSquareR, NanumSquare"><tspan x="-77.35" y="0">예약전화 (시내-1일전,</tspan><tspan x="-69.658" y="22">시외 및 읍면-2일전)</tspan></text>
-    <text id="제주시장애인지역사회통합_돌봄지원센터_및_읍면동주민센터_통합돌봄_창구" data-name="제주시장애인지역사회통합
-돌봄지원센터 및 읍면동주민센터
-통합돌봄 창구" transform="translate(344 1226)" fill="#555" font-size="14" font-family="NanumSquareR, NanumSquare"><tspan x="-76.44" y="0">제주시장애인지역사회통합</tspan><tspan x="-92.68" y="19">돌봄지원센터 및 읍면동주민센터</tspan><tspan x="-39.97" y="38">통합돌봄 창구</tspan></text>
-    <text id="제주시장애인지역사회통합_돌봄지원센터" data-name="제주시장애인지역사회통합
-돌봄지원센터" transform="translate(627 1236)" fill="#555" font-size="15" font-family="NanumSquareR, NanumSquare"><tspan x="-81.9" y="0">제주시장애인지역사회통합</tspan><tspan x="-40.95" y="19">돌봄지원센터</tspan></text>
-    <text id="제주시장애인지역사회통합_돌봄지원센터-2" data-name="제주시장애인지역사회통합
-돌봄지원센터" transform="translate(910 1236)" fill="#555" font-size="15" font-family="NanumSquareR, NanumSquare"><tspan x="-81.9" y="0">제주시장애인지역사회통합</tspan><tspan x="-40.95" y="19">돌봄지원센터</tspan></text>
-    <text id="제주시장애인지역사회통합_돌봄지원센터-3" data-name="제주시장애인지역사회통합
-돌봄지원센터" transform="translate(344 1401)" fill="#555" font-size="15" font-family="NanumSquareR, NanumSquare"><tspan x="-81.9" y="0">제주시장애인지역사회통합</tspan><tspan x="-40.95" y="19">돌봄지원센터</tspan></text>
-    <text id="제주시장애인지역사회통합_돌봄지원센터-4" data-name="제주시장애인지역사회통합
-돌봄지원센터" transform="translate(628 1401)" fill="#555" font-size="15" font-family="NanumSquareR, NanumSquare"><tspan x="-81.9" y="0">제주시장애인지역사회통합</tspan><tspan x="-40.95" y="19">돌봄지원센터</tspan></text>
+    <text id="통합돌봄지원센터_및_읍면동주민센터_통합돌봄_창구" data-name="통합돌봄지원센터 및 
+읍면동주민센터 통합돌봄 창구" transform="translate(344 1235)" fill="#555" font-size="14" font-family="NanumSquareR, NanumSquare"><tspan x="-60.83" y="0">통합돌봄지원센터 및 </tspan><tspan x="-86.31" y="19">읍면동주민센터 통합돌봄 창구</tspan></text>
+    <text id="통합돌봄지원센터" transform="translate(627 1245)" fill="#555" font-size="15" font-family="NanumSquareR, NanumSquare"><tspan x="-54.6" y="0">통합돌봄지원센터</tspan></text>
+    <text id="통합돌봄지원센터-2" data-name="통합돌봄지원센터" transform="translate(910 1245)" fill="#555" font-size="15" font-family="NanumSquareR, NanumSquare"><tspan x="-54.6" y="0">통합돌봄지원센터</tspan></text>
+    <text id="통합돌봄지원센터-3" data-name="통합돌봄지원센터" transform="translate(344 1410)" fill="#555" font-size="15" font-family="NanumSquareR, NanumSquare"><tspan x="-54.6" y="0">통합돌봄지원센터</tspan></text>
+    <text id="통합돌봄지원센터-4" data-name="통합돌봄지원센터" transform="translate(628 1410)" fill="#555" font-size="15" font-family="NanumSquareR, NanumSquare"><tspan x="-54.6" y="0">통합돌봄지원센터</tspan></text>
   </g>
 </svg>
