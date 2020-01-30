@@ -147,6 +147,8 @@ $(document).ready(function() {
 
     // bxslider(mainSlide)
 
+try {
+
     var slider = $('.slider').bxSlider({
         auto: true, 
         speed: 500, 
@@ -156,7 +158,7 @@ $(document).ready(function() {
         pager: true,
         controls: true,
     });
-    
+} catch(e) {}
 
 
      // map
