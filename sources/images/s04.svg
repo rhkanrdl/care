@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="20.92" viewBox="0 0 32 20.92">
+  <g id="XMLID_623_" transform="translate(-155.05 -293.1)">
+    <circle id="XMLID_632_" cx="1.782" cy="1.782" r="1.782" stroke-width="1.5" transform="translate(169.155 293.85)" stroke="#484748" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    <g id="XMLID_633_" transform="translate(155.8 295.632)">
+      <path id="XMLID_634_" d="M173.482,297.1H164.71v3.7" transform="translate(-159.825 -297.1)" fill="none" stroke="#484748" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="XMLID_635_" d="M157.84,315.634l3.816-11.744,3.811,11.744" transform="translate(-156.722 -300.167)" fill="none" stroke="#484748" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <rect id="XMLID_636_" width="9.869" height="2.193" stroke-width="1.5" transform="translate(0 15.445)" stroke="#484748" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    </g>
+    <g id="XMLID_637_" transform="translate(172.642 295.632)">
+      <path id="XMLID_640_" d="M187.63,297.1H196.4v3.7" transform="translate(-187.63 -297.1)" fill="none" stroke="#484748" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="XMLID_639_" d="M204.217,315.634l-3.811-11.744-3.816,11.744" transform="translate(-191.677 -300.167)" fill="none" stroke="#484748" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <rect id="XMLID_638_" width="9.869" height="2.193" stroke-width="1.5" transform="translate(13.658 17.636) rotate(180)" stroke="#484748" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -145,6 +145,19 @@ $(document).ready(function() {
         });
     }
 
+    // bxslider(mainSlide)
+
+    var slider = $('.slider').bxSlider({
+        auto: true, 
+        speed: 500, 
+        pause: 4000, 
+        mode:'fade', 
+        auto: true, 
+        pager: true,
+        controls: true,
+    });
+    
+
 
      // map
 
@@ -171,5 +184,4 @@ $(document).ready(function() {
      // 마커가 지도 위에 표시되도록 설정합니다
      marker.setMap(map);
 
-     
 });
