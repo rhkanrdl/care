@@ -1979,7 +1979,7 @@ body div#content .sub_container section.operation_contents div.con01 ul li:first
 body div#content .sub_container section.operation_contents div.con01 ul li.image {
   width: 618px;
   height: 471px;
-  background: url("/wp/assets/source/images/coophn.svg") no-repeat center / cover;
+  background: url("/wp/assets/source/images/coophn.png") no-repeat center / cover;
   font-size: 0;
   margin: 60px 0 0 180px;
 }
@@ -2344,7 +2344,7 @@ body div#content .sub_container section.center_contents div.tab_contents#tab02 d
 body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con01 ul li.image {
   width: 680px;
   height: 371px;
-  background: url("/wp/assets/source/images/mission.svg") no-repeat center / cover;
+  background: url("/wp/assets/source/images/mission.png") no-repeat center / cover;
   font-size: 0;
   margin: 40px 0 0 150px;
 }
@@ -2435,7 +2435,7 @@ body div#content .sub_container section.center_contents div.tab_contents#tab02 d
   list-style: none;
   margin-top: 14px;
   height: 230px;
-  background: url("/wp/assets/source/images/goal.svg") no-repeat center / cover;
+  background: url("/wp/assets/source/images/goal.png") no-repeat center / cover;
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con04 ul li {
   position: absolute;
@@ -2586,7 +2586,7 @@ body div#content .sub_container section.center_contents div.tab_contents#tab03 d
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab03 div.con02 div {
   position: relative;
-  background: url("/wp/assets/source/images/organization.svg") no-repeat center / 100% auto;
+  background: url("/wp/assets/source/images/organization.png") no-repeat center / 100% auto;
   width: 980px;
   height: 501px;
   margin-top: 30px;
