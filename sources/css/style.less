@@ -1849,7 +1849,7 @@ body {
                             font-size: 12px;
                             .absolute;
                             left: 0;
-                            top: 3px;
+                            top: 0;
                         }
                     }
 
@@ -3272,62 +3272,92 @@ body {
                                 }
                             }
 
-                            div.work_list {
-                                margin-top: 20px;
+                            div.team_work {
 
                                 ul {
                                     margin: 0 0 130px 0;
                                     padding: 0;
                                     border: none;
-                                    border-top: 2px solid @main;
 
                                     li {
                                         margin: 0;
-                                        padding: 24px 0;
-                                        border-bottom: 1px solid #C8C8C8;
                                         font-size: 18px;
                                         color: #555;
 
                                         &:nth-child(1) {
                                             font-size: 20px;
+                                            border-bottom: 2px solid @main;
                                             color: @main;
                                             .bold;
+                                            padding: 20px 0 10px 0;
                                         }
 
-                                        dl {
-                                            margin: 0;
-
-                                            &::after {
-                                                content: "";
-                                                .block;
-                                                clear: both;
-                                            }
-
-                                            dt {
-                                                .inline-block;
-                                                float: left;
-                                                width: 280px;
-                                                margin-right: 140px; 
-                                            }
-
-                                            dd {
-                                                float: left;
-                                                .block;
-                                                margin: 0;
-                                                width: 540px;
-                                                word-break: keep-all;
-                                                margin-left: 420px;
-                                                margin-top: 10px;
-                                                line-height: 26px;
-
-                                                &:nth-of-type(1) {
-                                                    margin: 0;
+                                        table {
+                                            border-bottom: 1px solid #c8c8c8;
+                                            width: 100%;
+                                            border-spacing: 0;
+                                            padding: 0;
+                                            border-collapse: collapse;
+                                            font-size: 18px;
+                                            margin: 0 0 30px;
+                    
+                                            tbody {
+                                                th {
+                                                    padding: 14px 4px;
+                                                    .middle;
+                                                    .center;
+                                                    color: #333;
+                                                    width: 160px;
+                                                    border-bottom: 1px solid #c8c8c8;
+                                                    border-right: 1px solid #c8c8c8;
+                    
+                                                    &:last-child {
+                                                        border-right: none;
+                                                        width: 600px;
+                                                    }
                                                 }
+                    
+                                                td {
+                                                    border-bottom: 1px solid #ccc;
+                                                    border-right: 1px solid #ccc;
+                                                    .middle;
+                                                    .center;
+                                                    padding: 20px 4px;
+            
+                                                    &:last-child {
+                                                        padding-left: 20px;
+                                                        .left;
+                                                        border-right: none;
+                                                    }
 
-                                                span {
-                                                    .block;
-                                                    margin-left: 9px;
+                                                    span {
+                                                        .block;
+                                                        margin-top: 6px;
+                                                    }
+            
+                                                    ul.work_list {
+                                                        margin: 0;
+            
+                                                        li {
+                                                            border: none;
+                                                            margin-top: 8px;
+
+                                                            span {
+                                                                .block;
+                                                                margin-left: 7px;
+                                                            }
+
+                                                            &:first-child {
+                                                                color: #555;
+                                                                font-size: 17px;
+                                                                .normal;
+                                                                padding: 0;
+                                                                margin-top: 0;
+                                                            }
+                                                        }
+                                                    }
                                                 }
+                    
                                             }
                                         }
                                     }
@@ -4652,6 +4682,24 @@ body {
                             @media all and (min-width: 1200px) {
                                 padding:20px;
                                 min-height:300px;
+                            }
+                        }
+
+                        input[type="text"] {
+                            width:100%;
+                            .rem(height, 46);
+                            .rem(line-height, 46);
+                            .rem(font-size, 16);
+                            border:none;
+                            border-bottom:1px solid #EBEBEB;
+                            .ellipse;
+
+                            @media all and (min-width: 1200px) {
+                                font-size:18px;
+                                .inline-block;
+                                .left;
+                                .top;
+                                padding:0 10px;
                             }
                         }
                     }
