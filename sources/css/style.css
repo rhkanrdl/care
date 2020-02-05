@@ -3120,10 +3120,8 @@ body div#content .sub_container article.board-search {
   text-align: center;
   margin: 2.14285714rem 0 0;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container article.board-search .bbs_container {
-    text-align: right;
-  }
+body div#content .sub_container article.board-search .bbs_container {
+  text-align: right;
 }
 body div#content .sub_container article.board-search .bbs_container fieldset {
   border: none;
@@ -3133,12 +3131,8 @@ body div#content .sub_container article.board-search .bbs_container fieldset {
   border: 1px solid #C5C5C5;
   padding: 0;
   border-radius: 1.28571429rem;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container article.board-search .bbs_container fieldset {
-    display: inline-block;
-    width: 320px;
-  }
+  display: inline-block;
+  width: 320px;
 }
 body div#content .sub_container article.board-search .bbs_container fieldset select,
 body div#content .sub_container article.board-search .bbs_container fieldset input,
@@ -3169,28 +3163,16 @@ body div#content .sub_container article.board-btn {
   min-height: 60px;
 }
 body div#content .sub_container article.board-btn .bbs_container {
-  padding: 0 0.71428571rem;
-  margin-bottom: 1.42857143rem;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container article.board-btn .bbs_container {
-    position: relative;
-    padding: 0;
-    margin-bottom: 60px;
-  }
+  position: relative;
+  padding: 0;
+  margin-bottom: 60px;
 }
 body div#content .sub_container article.board-btn .bbs_container div.left-btn,
 body div#content .sub_container article.board-btn .bbs_container div.right-btn,
 body div#content .sub_container article.board-btn .bbs_container div.center-btn {
   text-align: center;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container article.board-btn .bbs_container div.left-btn,
-  body div#content .sub_container article.board-btn .bbs_container div.right-btn,
-  body div#content .sub_container article.board-btn .bbs_container div.center-btn {
-    position: absolute;
-    top: 0;
-  }
+  position: absolute;
+  top: 0;
 }
 body div#content .sub_container article.board-btn .bbs_container div.left-btn a,
 body div#content .sub_container article.board-btn .bbs_container div.right-btn a,
@@ -3200,18 +3182,11 @@ body div#content .sub_container article.board-btn .bbs_container div.center-btn 
   border-radius: 0.28571429rem;
   border: 1px solid #ccc;
   background: none;
-  width: 15.71428571rem;
   text-align: center;
   cursor: pointer;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container article.board-btn .bbs_container div.left-btn a,
-  body div#content .sub_container article.board-btn .bbs_container div.right-btn a,
-  body div#content .sub_container article.board-btn .bbs_container div.center-btn a {
-    line-height: 42px;
-    width: auto;
-    padding: 0 20px;
-  }
+  line-height: 42px;
+  width: auto;
+  padding: 0 20px;
 }
 body div#content .sub_container article.board-btn .bbs_container div.left-btn a:hover,
 body div#content .sub_container article.board-btn .bbs_container div.right-btn a:hover,
@@ -3225,18 +3200,16 @@ body div#content .sub_container article.board-btn .bbs_container div.center-btn 
   border-color: transparent;
   color: #fff;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container article.board-btn .bbs_container div.left-btn {
-    left: 0;
-  }
-  body div#content .sub_container article.board-btn .bbs_container div.right-btn {
-    right: 0;
-    text-align: right;
-  }
-  body div#content .sub_container article.board-btn .bbs_container div.center-btn {
-    text-align: center;
-    width: 100%;
-  }
+body div#content .sub_container article.board-btn .bbs_container div.left-btn {
+  left: 0;
+}
+body div#content .sub_container article.board-btn .bbs_container div.right-btn {
+  right: 0;
+  text-align: right;
+}
+body div#content .sub_container article.board-btn .bbs_container div.center-btn {
+  text-align: center;
+  width: 100%;
 }
 body div#content .sub_container .board-list .bbs_container {
   padding-top: 2.14285714rem;
@@ -3246,89 +3219,64 @@ body div#content .sub_container .board-list .bbs_container ul {
   margin: 0;
   padding: 0;
 }
-body div#content .sub_container .board-list .bbs_container ul li a {
+body div#content .sub_container .board-list .bbs_container ul li {
   font-size: 0;
   width: 100%;
   display: inline-block;
-  height: 4.28571429rem;
   border-bottom: 1px solid #EBEBEB;
+  height: 52px;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .board-list .bbs_container ul li a {
-    height: 52px;
-  }
-}
-body div#content .sub_container .board-list .bbs_container ul li a h4 {
+body div#content .sub_container .board-list .bbs_container ul li h4 {
   font-size: 1.14285714rem;
   font-weight: 400;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin: 0.57142857rem 0 0.14285714rem;
+  display: inline-block;
+  margin: 14px 0 0;
+  width: 600px;
 }
-body div#content .sub_container .board-list .bbs_container ul li a h4.notice small {
+body div#content .sub_container .board-list .bbs_container ul li h4.notice small {
   font-weight: 800;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .board-list .bbs_container ul li a h4 {
-    display: inline-block;
-    margin: 14px 0 0;
-    width: 600px;
-  }
-}
-body div#content .sub_container .board-list .bbs_container ul li a h4 > u {
+body div#content .sub_container .board-list .bbs_container ul li h4 > u {
   font-size: 0;
 }
-body div#content .sub_container .board-list .bbs_container ul li a h4 small {
+body div#content .sub_container .board-list .bbs_container ul li h4 small {
   font-size: 1.14285714rem;
   display: inline-block;
   text-align: center;
-  width: 15%;
+  width: 70px;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .board-list .bbs_container ul li a h4 small {
-    width: 70px;
-  }
-}
-body div#content .sub_container .board-list .bbs_container ul li a h4 small u {
+body div#content .sub_container .board-list .bbs_container ul li h4 small u {
   font-size: 0;
 }
-body div#content .sub_container .board-list .bbs_container ul li a dl {
+body div#content .sub_container .board-list .bbs_container ul li dl {
   padding: 0;
   margin: 0 0 0 15%;
   color: #555;
   font-size: 0;
+  vertical-align: top;
+  margin: 14px 0 0;
+  display: inline-block;
+  float: right;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .board-list .bbs_container ul li a dl {
-    vertical-align: top;
-    margin: 14px 0 0;
-    display: inline-block;
-    float: right;
-  }
-}
-body div#content .sub_container .board-list .bbs_container ul li a dl dt {
+body div#content .sub_container .board-list .bbs_container ul li dl dt {
   display: none;
 }
-body div#content .sub_container .board-list .bbs_container ul li a dl dd {
+body div#content .sub_container .board-list .bbs_container ul li dl dd {
   position: relative;
   display: inline-block;
   margin: 0;
-  padding: 0 0.42857143rem;
-  font-size: 0.85714286rem;
+  padding: 0;
+  text-align: center;
+  width: 140px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .board-list .bbs_container ul li a dl dd {
-    padding: 0;
-    text-align: center;
-    width: 140px;
-    font-size: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-}
-body div#content .sub_container .board-list .bbs_container ul li a dl dd::after {
+body div#content .sub_container .board-list .bbs_container ul li dl dd::after {
   content: "";
   display: block;
   position: absolute;
@@ -3337,29 +3285,22 @@ body div#content .sub_container .board-list .bbs_container ul li a dl dd::after 
   width: 1px;
   height: 0.71428571rem;
   background: #ccc;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .board-list .bbs_container ul li a dl dd::after {
-    display: none;
-  }
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .board-list .bbs_container ul li a dl dd:nth-last-of-type(1) {
-    width: 120px;
-  }
-}
-body div#content .sub_container .board-list .bbs_container ul li a dl dd:nth-last-of-type(1)::after {
   display: none;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .board-list .bbs_container ul li a dl dd:nth-last-of-type(2) {
-    width: 140px;
-  }
+body div#content .sub_container .board-list .bbs_container ul li dl dd:nth-last-of-type(1) {
+  width: 120px;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .board-list .bbs_container ul li a dl dd:nth-last-of-type(3) {
-    width: 120px;
-  }
+body div#content .sub_container .board-list .bbs_container ul li dl dd:nth-last-of-type(1)::after {
+  display: none;
+}
+body div#content .sub_container .board-list .bbs_container ul li dl dd:nth-last-of-type(2) {
+  width: 140px;
+}
+body div#content .sub_container .board-list .bbs_container ul li dl dd:nth-last-of-type(3) {
+  width: 120px;
+}
+body div#content .sub_container .board-list .bbs_container ul li:first-child {
+  height: 104px;
 }
 body div#content .sub_container .board-list .bbs_container ul li:first-child:before {
   content: "";
@@ -3369,37 +3310,26 @@ body div#content .sub_container .board-list .bbs_container ul li:first-child:bef
   background: #F9F9F9;
   border-top: 2px solid #DADADA;
 }
-body div#content .sub_container .board-list .bbs_container ul li:first-child a h4 small u {
+body div#content .sub_container .board-list .bbs_container ul li:first-child h4 small u {
   display: block;
-  width: 15%;
   text-align: center;
   font-size: 1.14285714rem;
   text-decoration: none;
   position: absolute;
   top: 3.28571429rem;
+  width: 70px;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .board-list .bbs_container ul li:first-child a h4 small u {
-    width: 70px;
-  }
-}
-body div#content .sub_container .board-list .bbs_container ul li:first-child a h4 > u {
+body div#content .sub_container .board-list .bbs_container ul li:first-child h4 > u {
   display: block;
-  width: calc(85% - 20px);
   text-align: center;
   font-size: 1.14285714rem;
   text-decoration: none;
   position: absolute;
   top: 3.28571429rem;
-  left: 15%;
+  width: 750px;
+  left: 70px;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .board-list .bbs_container ul li:first-child a h4 > u {
-    width: 750px;
-    left: 70px;
-  }
-}
-body div#content .sub_container .board-list .bbs_container ul li:first-child a dl dt {
+body div#content .sub_container .board-list .bbs_container ul li:first-child dl dt {
   display: block;
   position: absolute;
   top: 46px;
@@ -3407,23 +3337,17 @@ body div#content .sub_container .board-list .bbs_container ul li:first-child a d
   text-align: center;
   font-size: 16px;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .board-list .bbs_container ul li:first-child a dl dt:nth-last-of-type(1) {
-    width: 120px;
-    right: 0;
-  }
+body div#content .sub_container .board-list .bbs_container ul li:first-child dl dt:nth-last-of-type(1) {
+  width: 120px;
+  right: 0;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .board-list .bbs_container ul li:first-child a dl dt:nth-last-of-type(2) {
-    width: 140px;
-    right: 120px;
-  }
+body div#content .sub_container .board-list .bbs_container ul li:first-child dl dt:nth-last-of-type(2) {
+  width: 140px;
+  right: 120px;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .board-list .bbs_container ul li:first-child a dl dt:nth-last-of-type(3) {
-    width: 120px;
-    right: 260px;
-  }
+body div#content .sub_container .board-list .bbs_container ul li:first-child dl dt:nth-last-of-type(3) {
+  width: 120px;
+  right: 260px;
 }
 body div#content .sub_container.board-view {
   text-align: center;
@@ -3438,20 +3362,15 @@ body div#content .sub_container.board-view .bbs_container div.board-head {
 }
 body div#content .sub_container.board-view .bbs_container div.board-head h4 {
   margin: 1rem 0 0.28571429rem;
-  font-size: 1.14285714rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container.board-view .bbs_container div.board-head h4 {
-    font-size: 18px;
-    display: inline-block;
-    vertical-align: top;
-    width: 780px;
-    padding: 0 0 11px;
-    border-bottom: 1px solid #EBEBEB;
-  }
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: top;
+  width: 780px;
+  padding: 0 0 11px;
+  border-bottom: 1px solid #EBEBEB;
 }
 body div#content .sub_container.board-view .bbs_container div.board-head h4 small.category {
   margin: 0 0.71428571rem 0 0;
@@ -3461,15 +3380,10 @@ body div#content .sub_container.board-view .bbs_container div.board-head h4 smal
   display: inline-block;
   font-style: normal;
   padding: 0 0.71428571rem;
-  margin: 0 0.14285714rem 0;
   line-height: 2rem;
   font-size: 1rem;
   border-radius: 0.28571429rem;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container.board-view .bbs_container div.board-head h4 small.category i {
-    margin: 0 2px 0;
-  }
+  margin: 0 2px 0;
 }
 body div#content .sub_container.board-view .bbs_container div.board-head h4 small.category i:first-of-type {
   margin-left: 0;
@@ -3493,16 +3407,12 @@ body div#content .sub_container.board-view .bbs_container div.board-head dl {
   border-bottom: 1px solid #EBEBEB;
   color: #555;
   font-size: 0;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container.board-view .bbs_container div.board-head dl {
-    vertical-align: top;
-    text-align: right;
-    margin: 14px 0 0;
-    width: 200px;
-    font-size: 16px;
-    display: inline-block;
-  }
+  vertical-align: top;
+  text-align: right;
+  margin: 14px 0 0;
+  width: 200px;
+  font-size: 16px;
+  display: inline-block;
 }
 body div#content .sub_container.board-view .bbs_container div.board-head dl dt {
   display: none;
@@ -3526,25 +3436,16 @@ body div#content .sub_container.board-view .bbs_container div.board-head dl dd::
   width: 1px;
   height: 0.71428571rem;
   background: #ccc;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container.board-view .bbs_container div.board-head dl dd::after {
-    display: none;
-  }
+  display: none;
 }
 body div#content .sub_container.board-view .bbs_container div.board-head dl dd:last-of-type::after {
   display: none;
 }
 body div#content .sub_container.board-view .bbs_container div.text {
   font-size: 1rem;
-  padding: 0.71428571rem 0;
   line-height: 1.6;
   border-bottom: 1px solid #EBEBEB;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container.board-view .bbs_container div.text {
-    padding: 20px;
-  }
+  padding: 20px;
 }
 body div#content .sub_container.board-view .bbs_container div.text p {
   margin: 0 0 0.28571429rem;
@@ -3578,14 +3479,8 @@ body div#content .sub_container.board-view .bbs_container ul.links li p.img img 
 }
 body div#content .sub_container.board-view .bbs_container ul.file li a,
 body div#content .sub_container.board-view .bbs_container ul.links li a {
-  font-size: 0.85714286rem;
   color: #00645A;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container.board-view .bbs_container ul.file li a,
-  body div#content .sub_container.board-view .bbs_container ul.links li a {
-    font-size: 14px;
-  }
+  font-size: 14px;
 }
 body div#content .sub_container.board-view .bbs_container ul.file li a:hover,
 body div#content .sub_container.board-view .bbs_container ul.links li a:hover {
@@ -3610,29 +3505,19 @@ body div#content .sub_container.board-write .bbs_container div.board-head {
 }
 body div#content .sub_container.board-write .bbs_container div.board-head div.category {
   margin: 0;
-  padding: 0.42857143rem 0 0;
   font-size: 0;
   border-bottom: 1px solid #EBEBEB;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container.board-write .bbs_container div.board-head div.category {
-    padding: 10px 0 0;
-    text-align: left;
-  }
+  padding: 10px 0 0;
+  text-align: left;
 }
 body div#content .sub_container.board-write .bbs_container div.board-head div.category label {
   display: inline-block;
   font-style: normal;
   padding: 0 0.71428571rem;
-  margin: 0 0.14285714rem 0.42857143rem;
   line-height: 2rem;
   font-size: 1.14285714rem;
   border-radius: 0.28571429rem;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container.board-write .bbs_container div.board-head div.category label {
-    margin: 0 2px 10px;
-  }
+  margin: 0 2px 10px;
 }
 body div#content .sub_container.board-write .bbs_container div.board-head div.category label:last-of-type {
   margin-right: 0;
@@ -3662,63 +3547,42 @@ body div#content .sub_container.board-write .bbs_container div.board-head input#
   width: 100%;
   height: 3.28571429rem;
   line-height: 3.28571429rem;
-  font-size: 1.14285714rem;
   border: none;
   border-bottom: 1px solid #EBEBEB;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container.board-write .bbs_container div.board-head input#title {
-    font-size: 18px;
-    display: inline-block;
-    text-align: left;
-    vertical-align: top;
-    padding: 0 10px;
-  }
+  font-size: 18px;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  padding: 0 10px;
 }
 body div#content .sub_container.board-write .bbs_container div.text {
-  font-size: 1rem;
   line-height: 1.6;
   border-bottom: 1px solid #EBEBEB;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container.board-write .bbs_container div.text {
-    font-size: 16px;
-  }
+  font-size: 16px;
 }
 body div#content .sub_container.board-write .bbs_container div.text textarea {
-  padding: 0.71428571rem;
   width: 100%;
-  min-height: 14.28571429rem;
   border: none;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container.board-write .bbs_container div.text textarea {
-    padding: 20px;
-    min-height: 300px;
-  }
+  padding: 20px;
+  min-height: 300px;
 }
 body div#content .sub_container.board-write .bbs_container div.text input[type="text"] {
   width: 100%;
   height: 3.28571429rem;
   line-height: 3.28571429rem;
-  font-size: 1.14285714rem;
   border: none;
   border-bottom: 1px solid #EBEBEB;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container.board-write .bbs_container div.text input[type="text"] {
-    font-size: 18px;
-    display: inline-block;
-    text-align: left;
-    vertical-align: top;
-    padding: 0 10px;
-  }
+  font-size: 18px;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  padding: 0 10px;
 }
 body div#content .sub_container.board-write .bbs_container ul.file,
 body div#content .sub_container.board-write .bbs_container ul.links {
@@ -3770,16 +3634,14 @@ body div#content .sub_container.gallery-list .bbs_container ul.list {
   list-style: none;
   font-size: 0;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container.gallery-list .bbs_container ul.list li {
-    display: inline-block;
-    vertical-align: top;
-    width: calc((100% - 80px) / 4);
-    margin-right: 20px;
-  }
-  body div#content .sub_container.gallery-list .bbs_container ul.list li:nth-child(4n) {
-    margin-right: 0;
-  }
+body div#content .sub_container.gallery-list .bbs_container ul.list li {
+  display: inline-block;
+  vertical-align: top;
+  width: calc((100% - 80px) / 4);
+  margin-right: 20px;
+}
+body div#content .sub_container.gallery-list .bbs_container ul.list li:nth-child(4n) {
+  margin-right: 0;
 }
 body div#content .sub_container.gallery-list .bbs_container ul.list li a {
   display: block;
@@ -3788,20 +3650,12 @@ body div#content .sub_container.gallery-list .bbs_container ul.list li a {
 body div#content .sub_container.gallery-list .bbs_container ul.list li a p.img {
   margin: 0;
   padding: 0;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container.gallery-list .bbs_container ul.list li a p.img {
-    height: 180px;
-    overflow: hidden;
-  }
+  height: 180px;
+  overflow: hidden;
 }
 body div#content .sub_container.gallery-list .bbs_container ul.list li a p.img img {
   width: 100%;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container.gallery-list .bbs_container ul.list li a p.img img {
-    min-height: 100%;
-  }
+  min-height: 100%;
 }
 body div#content .sub_container.gallery-list .bbs_container ul.list li a h4 {
   font-size: 1.28571429rem;
@@ -3820,64 +3674,45 @@ body div#content .sub_container .mov-list {
   text-align: center;
 }
 body div#content .sub_container .mov-list .bbs_container {
-  padding-top: 2.14285714rem;
+  padding: 2.14285714rem 0 1.42857143rem;
 }
 body div#content .sub_container .mov-list .bbs_container ul.list {
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0;
+  border-top: 2px solid #dadada;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .mov-list .bbs_container ul.list {
-    border-top: 2px solid #dadada;
-  }
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .mov-list .bbs_container ul.list li {
-    position: relative;
-    border-bottom: 1px solid #c5b1b1;
-    min-height: 200px;
-  }
+body div#content .sub_container .mov-list .bbs_container ul.list li {
+  position: relative;
+  border-bottom: 1px solid #c5b1b1;
+  min-height: 200px;
 }
 body div#content .sub_container .mov-list .bbs_container ul.list li a {
   display: block;
   text-align: center;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .mov-list .bbs_container ul.list li a {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    text-align: left;
-    padding-left: 240px;
-    line-height: 200px;
-  }
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: left;
+  padding-left: 240px;
+  line-height: 200px;
 }
 body div#content .sub_container .mov-list .bbs_container ul.list li a p.img {
   margin: 0;
   padding: 0;
-  position: relative;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .mov-list .bbs_container ul.list li a p.img {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    width: 210px;
-    height: 160px;
-    overflow: hidden;
-  }
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 210px;
+  height: 160px;
+  overflow: hidden;
 }
 body div#content .sub_container .mov-list .bbs_container ul.list li a p.img img {
   width: 100%;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .mov-list .bbs_container ul.list li a p.img img {
-    min-height: 100%;
-  }
+  min-height: 100%;
 }
 body div#content .sub_container .mov-list .bbs_container ul.list li a p.img i.icon-play {
   position: absolute;
@@ -3902,36 +3737,22 @@ body div#content .sub_container .mov-list .bbs_container ul.list li a p.img i.ic
 }
 body div#content .sub_container .mov-list .bbs_container ul.list li a h4 {
   font-size: 1.28571429rem;
-  margin: 0.71428571rem 0 0.14285714rem;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .mov-list .bbs_container ul.list li a h4 {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
 }
 body div#content .sub_container .mov-list .bbs_container ul.list li a i {
   display: block;
   font-size: 1.14285714rem;
   margin: 0 0 2.14285714rem;
   font-style: normal;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .mov-list .bbs_container ul.list li a i {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 0;
-    padding: 0;
-  }
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
 }
 body div#content .sub_container .mov-list .bbs_container ul.list li a i strong {
-  margin: 0 0.28571429rem 0 0;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .mov-list .bbs_container ul.list li a i strong {
-    margin: 0 10px 0 0;
-  }
+  margin: 0 10px 0 0;
 }
 body div#content .sub_container .mov-list .bbs_container ul.list li a:hover {
   background: #f4f4f4;
@@ -3958,15 +3779,13 @@ body div#content .sub_container .letter-list .bbs_container ul.list {
   list-style: none;
   font-size: 0;
 }
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .letter-list .bbs_container ul.list li {
-    display: inline-block;
-    width: calc((100% - 41px) / 3);
-    margin-right: 20px;
-  }
-  body div#content .sub_container .letter-list .bbs_container ul.list li:nth-child(3n) {
-    margin-right: 0;
-  }
+body div#content .sub_container .letter-list .bbs_container ul.list li {
+  display: inline-block;
+  width: calc((100% - 41px) / 3);
+  margin-right: 20px;
+}
+body div#content .sub_container .letter-list .bbs_container ul.list li:nth-child(3n) {
+  margin-right: 0;
 }
 body div#content .sub_container .letter-list .bbs_container ul.list li a {
   display: block;
@@ -3976,20 +3795,12 @@ body div#content .sub_container .letter-list .bbs_container ul.list li a p.img {
   margin: 0;
   padding: 0;
   border: 1px solid #000;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .letter-list .bbs_container ul.list li a p.img {
-    height: 240px;
-    overflow: hidden;
-  }
+  height: 240px;
+  overflow: hidden;
 }
 body div#content .sub_container .letter-list .bbs_container ul.list li a p.img img {
   width: 100%;
-}
-@media all and (min-width: 1200px) {
-  body div#content .sub_container .letter-list .bbs_container ul.list li a p.img img {
-    min-height: 100%;
-  }
+  min-height: 100%;
 }
 body div#content .sub_container .letter-list .bbs_container ul.list li a h4 {
   font-size: 1.28571429rem;
