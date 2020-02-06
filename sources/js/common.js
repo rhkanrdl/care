@@ -157,6 +157,7 @@ try {
         auto: true, 
         pager: true,
         controls: true,
+        touchEnabled : false
     });
 } catch(e) {}
 
