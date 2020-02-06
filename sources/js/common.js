@@ -154,7 +154,6 @@ try {
         speed: 500, 
         pause: 4000, 
         mode:'fade', 
-        auto: true, 
         pager: true,
         controls: true,
         touchEnabled : false
