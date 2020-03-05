@@ -5,18 +5,25 @@ $(document).ready(function() {
 
 
     $( ".util-menu a").on("click", function(){
-        $( "#main-menu>ul").toggleClass("menu");
-        $( "#main-menu>ul").toggleClass("all-menu");
-        $( ".menuClose").toggleClass("show");
+        $( "#main-menu>ul").removeClass("menu");
+        $( "#main-menu>ul").addClass("all-menu");
+        $( ".menuClose").addClass("show");
         $( ".menuClose").css("height", $(document).height() - 100);
+        $( "#main-menu>ul>li:first-child>h2>a" ).focus();
+
+
+
     });
 
 
 
     $( ".menuClose").on("click", function(){
-        $( "#main-menu>ul").toggleClass("menu");
-        $( "#main-menu>ul").toggleClass("all-menu");
-        $( ".menuClose").toggleClass("show");
+        $( "#main-menu>ul").addClass("menu");
+        $( "#main-menu>ul").removeClass("all-menu");
+        $( ".menuClose").removeClass("show");
+
+        
+        $( ".util-menu a" ).focus();
     });
 
 
@@ -122,10 +129,11 @@ $(document).ready(function() {
 
         $('li.notice0' + i + ' div.border').slick({
             autoplay: false,
+            accessibility: false,
             speed: 1000,
             slidesToShow: 2,
             dots: false,
-            infinite: true,
+            infinite: false,
             vertical: true,
             draggable: false,
             nextArrow: $('li.notice0' + i + ' .right'),
@@ -143,6 +151,7 @@ try {
         pause: 4000, 
         mode:'fade', 
         pager: true,
+        accessibility: false,
         controls: true,
         touchEnabled : false,
         

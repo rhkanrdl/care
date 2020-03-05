@@ -638,7 +638,8 @@ body div#content .container .main_wrap section.main_content ul.main_banners li.c
   margin-bottom: 12px;
 }
 body div#content .container .main_wrap section.main_content ul.main_banners li.c1 h5 {
-  margin-top: 55px;
+  margin-top: 25px;
+  color: #51200a;
 }
 body div#content .container .main_wrap section.main_content ul.main_banners li.c1 span {
   width: 250px;
@@ -656,6 +657,7 @@ body div#content .container .main_wrap section.main_content ul.main_banners li.c
   width: 100px;
   line-height: 28px;
   margin: 0;
+  color: #51200a;
 }
 body div#content .container .main_wrap section.main_content ul.main_banners li.c2 h5 span {
   line-height: 22px;
@@ -669,6 +671,7 @@ body div#content .container .main_wrap section.main_content ul.main_banners li.c
 }
 body div#content .container .main_wrap section.main_content ul.main_banners li.c3 h5 {
   margin: 0;
+  color: #0d4d41;
 }
 body div#content .container .main_wrap section.main_content ul.main_banners li.c3 h5 span {
   margin-bottom: 5px;
