@@ -501,6 +501,11 @@ body {
                                 }
                             }
 
+                            
+                            &:focus {
+                                border:1px dotted #000;
+                            }
+
                         }
                     }
                     &:nth-child(1) {
@@ -631,7 +636,7 @@ body {
                 .mapazero;
                 .no-list;
                 .center;
-                background: @white;         
+                background: #efefef;         
 
                 &>li {
                     .inline-block;
@@ -769,6 +774,10 @@ body {
                         }
                     }
                 }
+
+                &.hide {
+                    .none;  
+                }
             }
         }
 
@@ -843,13 +852,18 @@ body {
             .inline-block;
             .absolute;
             .zero;
-            left:0;
-            right:0;
-            top:100px;
-            width:100%;
+            color:#fff;
+            left:50%;
+            top:40px;
+            margin-left:445px;
+            padding:5px 5px;
             z-index:999;
             border:none;
-            background:rgba(0,0,0,0.6);
+            background:#000;
+            
+            i {
+                font-size:24px;
+            }
         }
     }
 
@@ -946,6 +960,7 @@ body {
                                     width: 250px;
                                     margin-top: 20px;
                                     line-height: 22px;
+                                    color:#51200a;
                                 }
                             }
 
@@ -960,11 +975,12 @@ body {
                                     width: 100px;
                                     line-height: 28px;
                                     margin: 0;
-                                    color:#51200a;
+                                    color:#3B261D;
 
                                     span {
                                         line-height: 22px;
                                         margin-bottom: 10px;
+                                        color:#3B261D;
                                     }
                                 }
                             }
@@ -981,6 +997,7 @@ body {
 
                                     span {
                                         margin-bottom: 5px;
+                                        color:#0d4d41;
                                     }
                                 }
                             }
@@ -1045,7 +1062,12 @@ body {
 
                                 a {
                                     .inline-block;
+                                    .zero;
                                     color: #555;
+
+                                    i {
+                                        font-size:16px;
+                                    }
                                 }
                             }
 
@@ -1205,6 +1227,7 @@ body {
                             .block;
                             .absolute;
                             top:60px;
+                            .zero;
                             right: 2px;
                             width: 52px;
                             height: 52px;
@@ -1232,10 +1255,12 @@ body {
 
                         ul {
                             .absolute;
-                            right:0;
+                            left:132px;
                             top:0;
                             .no-list;
                             .mapazero;
+                            min-width:848px;
+                            background:#E5E5E5;
         
                             li {
                                 float: left;
@@ -1445,7 +1470,7 @@ body {
                     white-space: nowrap;
 
                     span {
-                        color: #FF3E3E;
+                        color: #EE0701;
                     }
 
                     &.small {
@@ -1515,6 +1540,12 @@ body {
 
                     &.active {
                         .block;
+                    }
+
+                    h4 {
+                        font-size:24px;
+                        color:#333;
+                        margin:25px 0 0;
                     }
 
                     h5 {
@@ -1596,6 +1627,10 @@ body {
                                 border-collapse: collapse;
                                 font-size: 17px;
                                 margin: 0 0 30px;
+
+                                caption {
+                                    .zero;
+                                }
         
                                 tbody {
                                     th {
@@ -2644,6 +2679,12 @@ body {
                         .block;
                     }
 
+
+                    h4 {
+                        font-size:24px;
+                        color:#333;
+                        margin:25px 0 0;
+                    }
                     h5 {
                         .relative;
                         font-size: 18px;
@@ -3090,91 +3131,106 @@ body {
                                     .mapazero;
                                     .no-list;
 
-                                    li {
-                                        .absolute;
-                                        width: 246px;
-                                        height: 70px;
-                                        line-height: 72px;
-                                        .center;
-                                        border-radius: 10px;
-                                        font-size: 18px;
+                                    &>li {
+                                        width: 980px;
+                                        height: 501px;
+                                        
 
                                         a {
+                                            .absolute;
+                                            width: 246px;
+                                            height: 70px;
+                                            line-height: 72px;
+                                            .center;
+                                            border-radius: 10px;
+                                            font-size: 18px;
                                             .block;
                                             color: #555;
                                         }
 
                                         &:nth-child(1) {
-                                            top: 0;
-                                            left: 50%;
-                                            margin-left: -123px;
 
-                                            a {
+                                            &>a {
+                                                top: 0;
+                                                left: 50%;
+                                                margin-left: -123px;
                                                 color: @white;
                                             }
                                         }
 
-                                        &:nth-child(2) {
-                                            top: 116px;
-                                            right: 0;
+                                        ul {
+                                            .mapazero;
+                                            .no-list;
+                                            width: 980px;
+                                            height: 501px;
+
+                                            li {
+                                                .block;
+                                                .absolute;
+                                                width: 246px;
+                                                height: 70px;
+                                                line-height: 72px;
+                                                .center;
+                                                border-radius: 10px;
+                                                font-size: 18px;
+
+                                                a {
+                                                    color:#333;
+                                                }
+
+
+                                                span {
+                                                    display:block;
+                                                    width: 246px;
+                                                    height: 70px;
+                                                    line-height: 72px;
+                                                    .center;
+                                                    border-radius: 10px;
+                                                    font-size: 18px;
+                                                    color: #555;
+                                                    margin-top:92px;
+                                                }
+
+                                                &:nth-child(1) {
+                                                        top: 116px;
+                                                        right: 0;
+
+                                                }
+        
+                                                &:nth-child(2) {
+                                                    bottom: 94px;
+                                                    left: 0;
+
+                                                    span {
+                                                        left: 0;
+                                                        bottom: 24px; 
+                                                    }
+                                                }
+        
+                                                &:nth-child(3) {
+                                                    bottom: 94px;
+                                                    left: 50%;
+                                                    margin-left: -123px;
+                                                }
+        
+                                                &:nth-child(4) {
+                                                    bottom: 94px;
+                                                    right: 0;
+                                                }
+
+                                            }
                                         }
 
-                                        &:nth-child(3) {
-                                            bottom: 94px;
-                                            left: 0;
-                                        }
 
-                                        &:nth-child(4) {
-                                            bottom: 94px;
-                                            left: 50%;
-                                            margin-left: -123px;
-                                        }
-
-                                        &:nth-child(5) {
-                                            bottom: 94px;
-                                            right: 0;
-                                        }
                                     }
                                 }
 
-                                ul.work {
-                                    .mapazero;
-                                    .no-list;
-
-                                    li {
-                                        .absolute;
-                                        width: 246px;
-                                        height: 70px;
-                                        line-height: 72px;
-                                        .center;
-                                        border-radius: 10px;
-                                        font-size: 18px;
-                                        color: #555;
-
-                                        &:nth-child(1) {
-                                            bottom: 0;
-                                            left: 0;
-                                        }
-
-                                        &:nth-child(2) {
-                                            bottom: 0;
-                                            left: 50%;
-                                            margin-left: -123px;
-                                        }
-
-                                        &:nth-child(3) {
-                                            bottom: 0;
-                                            right: 0;
-                                        }
-                                    }
-                                }
                             }
                         }
                     }
 
                     &#tab04 {
                         .relative;
-                        margin-top: 60px;
 
                         &::after {
                             content: "";
@@ -3187,7 +3243,7 @@ body {
                             font-size: 50px;
                             color: @main;
                             .bold;
-                            .mapazero;
+                            margin:60px 0 0;
 
                             &::after {
                                 content: "";
@@ -3198,7 +3254,8 @@ body {
                                 border-radius: 50%;
                                 .absolute;
                                 top: 22px;
-                                left: 180px;
+                                left: 179px;
+                                z-index:100;
                             }
                         }
 
@@ -3215,7 +3272,7 @@ body {
                                 height: 650px;
                                 background: #D5D4D4;
                                 .absolute;
-                                top: 50px;
+                                top: 110px;
                                 left: 184px;
                             }
 
@@ -3752,16 +3809,16 @@ body {
                         }
 
                         input {
-                            width:50%;
+                            width:45%;
                         }
 
                         button {
-                            width:15%;
-                            .zero;
-                            .right;
+                            width:20%;
+                            border-left:1px solid #c5c5c5;
+
 
                             i {
-                                .rem(font-size, 20);
+                                .none
                             }
                         }
                     }

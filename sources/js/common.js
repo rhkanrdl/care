@@ -8,8 +8,8 @@ $(document).ready(function() {
         $( "#main-menu>ul").removeClass("menu");
         $( "#main-menu>ul").addClass("all-menu");
         $( ".menuClose").addClass("show");
-        $( ".menuClose").css("height", $(document).height() - 100);
         $( "#main-menu>ul>li:first-child>h2>a" ).focus();
+        $(this).addClass("hide");
 
 
 
@@ -21,6 +21,7 @@ $(document).ready(function() {
         $( "#main-menu>ul").addClass("menu");
         $( "#main-menu>ul").removeClass("all-menu");
         $( ".menuClose").removeClass("show");
+        $( ".util-menu a").removeClass("hide");
 
         
         $( ".util-menu a" ).focus();
