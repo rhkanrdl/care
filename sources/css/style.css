@@ -3230,6 +3230,9 @@ body div#content .sub_container.board-view .bbs_container div.text {
   border-bottom: 1px solid #EBEBEB;
   padding: 20px;
 }
+body div#content .sub_container.board-view .bbs_container div.text img {
+  max-width: 100%;
+}
 body div#content .sub_container.board-view .bbs_container div.text p {
   margin: 0 0 0.28571429rem;
 }
