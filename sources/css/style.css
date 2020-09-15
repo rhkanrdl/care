@@ -3660,3 +3660,32 @@ body footer#footer .container p {
   font-style: normal;
   color: #555;
 }
+body div.sidebar {
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  margin-left: 620px;
+  top: 200px;
+  background: #fff;
+  width: 90px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+body div.sidebar a {
+  display: block;
+  padding: 20px 0;
+}
+body div.sidebar a i {
+  display: block;
+  font-size: 38px;
+  margin: 0 0 10px;
+}
+body div.sidebar button {
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  background: #222;
+  color: #fff;
+  padding: 4px 0;
+}

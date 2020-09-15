@@ -1100,6 +1100,7 @@ body {
 
 
 
+
         /* sub */
         .sub_container {
             .relative;
@@ -1271,7 +1272,7 @@ body {
 
                         &:last-child {
                             font-weight:600;
-                            
+
                             &::after {
                                 .none;
                                 font-weight:800;
@@ -4688,4 +4689,42 @@ body {
             }
         }
     }
+
+
+
+    div.sidebar {
+        .fixed;
+        z-index:100;
+        left:50%;
+        margin-left:620px;
+        top:200px;
+        background:#fff;
+        width:90px;
+        border:1px solid #ccc;
+        .center;
+
+        a {
+            .block;
+            padding:20px 0;
+
+            i {
+                .block;
+                font-size:38px;
+                margin:0 0 10px;
+            }
+        }
+
+        button {
+            .block;
+            width:100%;
+            border-radius:0;
+            border:none;
+            background:#222;
+            color:#fff;
+            padding:4px 0;
+        }
+    }
+
+
+
 }
