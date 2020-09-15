@@ -1,5 +1,4 @@
-@import "/wp/assets/source/css/normalize.css";
-@import "/wp/assets/source/css/fontello.css";
+@import "normalize.css";
 /* fonts */
 /* nanum square - regular */
 @font-face {
@@ -194,7 +193,7 @@ a {
 html {
   margin: 0;
   padding: 0;
-  min-width: 320px;
+  min-width: 1200px;
   width: 100%;
   font-size: 14px;
   min-height: 100%;
@@ -237,57 +236,36 @@ body {
   /* footer */
 }
 body .container {
-  text-align: left;
-  vertical-align: top;
-  padding: 0;
-  min-width: 980px;
-}
-body header#header {
   position: relative;
-  min-width: 980px;
+  padding: 0;
+  margin: 0 auto;
+  width: 1200px;
 }
 body header#header .container {
-  position: relative;
-  width: 980px;
-  height: 100px;
-  margin: 0 auto;
-  padding-top: 3px;
+  height: 132px;
 }
 body header#header .container h1 {
   position: absolute;
   left: -19px;
-  background: url("/wp/assets/source/images/logo.svg") no-repeat center / auto 100%;
+  background: url("../images/logo.svg") no-repeat center / auto 100%;
   margin: 0;
   padding: 0;
   font-size: 0;
-  width: 244.9px;
-  height: 91.7px;
+  width: 250px;
+  height: 94px;
 }
 body header#header .container h1 a {
   display: block;
   height: 100%;
 }
-body header#header nav#main-menu.on {
-  width: 100%;
-}
-body header#header nav#main-menu.on::before {
-  z-index: 400;
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  background: #f6f6f6;
-  border-top: 1px solid #d9d9d9;
-  height: 70px;
-}
-body header#header nav#main-menu ul.menu {
-  font-size: 0;
+body header#header nav#main-menu {
   position: absolute;
   z-index: 600;
-  left: 0;
-  right: 0;
-  top: 100px;
+  left: 50%;
+  top: 40px;
+  margin-left: -300px;
+}
+body header#header nav#main-menu ul.menu {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -295,706 +273,674 @@ body header#header nav#main-menu ul.menu {
 body header#header nav#main-menu ul.menu > li {
   display: inline-block;
   vertical-align: top;
-}
-body header#header nav#main-menu ul.menu > li h2 {
-  font-weight: 400;
-  font-size: 16px;
-  position: absolute;
-  top: -65px;
-  left: 50%;
-}
-body header#header nav#main-menu ul.menu > li h2 a {
-  display: block;
-}
-body header#header nav#main-menu ul.menu > li h2 a.on::after,
-body header#header nav#main-menu ul.menu > li h2 a:hover::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -34px;
-  width: 62px;
-  height: 6px;
-  background: #EA609E;
-}
-body header#header nav#main-menu ul.menu > li h2 a.on a,
-body header#header nav#main-menu ul.menu > li h2 a:hover a {
-  font-weight: 600;
-  color: #EA609E;
-}
-body header#header nav#main-menu ul.menu > li h2 a:focus {
-  border: 1px dotted #000;
-}
-body header#header nav#main-menu ul.menu > li:nth-child(1) h2 {
-  margin-left: 0;
-}
-body header#header nav#main-menu ul.menu > li:nth-child(2) h2 {
-  margin-left: 110px;
-}
-body header#header nav#main-menu ul.menu > li:nth-child(3) h2 {
-  margin-left: 220px;
-}
-body header#header nav#main-menu ul.menu > li:nth-child(4) h2 {
-  margin-left: 330px;
-}
-body header#header nav#main-menu ul.menu > li div {
-  display: none;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  margin-left: -490px;
-}
-body header#header nav#main-menu ul.menu > li div.on {
-  display: block;
-  z-index: 500;
-}
-body header#header nav#main-menu ul.menu > li div a.home_btn {
-  display: inline-block;
-  font-size: 0;
-  vertical-align: top;
-  line-height: 60px;
-  border-left: 1px solid #D9D9D9;
-  border-right: 1px solid #D9D9D9;
-  padding: 10px 20px 0 20px;
   margin-right: 30px;
 }
-body header#header nav#main-menu ul.menu > li div a.home_btn i::before {
-  color: #ababab;
-  font-size: 24px;
+body header#header nav#main-menu ul.menu > li h2 {
+  margin: 0;
+  padding: 0;
+}
+body header#header nav#main-menu ul.menu > li h2 a {
+  font-size: 20px;
+  font-weight: 600;
+}
+body header#header nav#main-menu ul.menu > li div {
+  margin: 0;
+  padding: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  height: 0;
+  position: absolute;
+  top: 60px;
+  left: -300px;
+  width: 1200px;
+  background: #fff;
+  border-top: 5px solid transparent;
+  overflow: hidden;
+  line-height: 75px;
+}
+body header#header nav#main-menu ul.menu > li div.on {
+  height: 80px;
+  border-top-color: #EA609E;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+body header#header nav#main-menu ul.menu > li div a.home_btn {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: top;
+  padding: 12px 15px 0;
+  background: #222;
+}
+body header#header nav#main-menu ul.menu > li div a.home_btn i {
+  font-size: 32px;
+  color: #F8B616;
 }
 body header#header nav#main-menu ul.menu > li div h3 {
-  display: none;
+  vertical-align: top;
+  margin: 0;
+  padding: 0 30px;
+  font-size: 26px;
+  background: #efefef;
+  display: inline-block;
 }
 body header#header nav#main-menu ul.menu > li div ul {
   display: inline-block;
   list-style: none;
   margin: 0;
-  padding: 0;
-  text-align: left;
-  line-height: 62px;
-  overflow: hidden;
-  background: #f6f6f6;
-  min-width: 700px;
-  margin-top: 2px;
+  padding: 0 20px;
 }
 body header#header nav#main-menu ul.menu > li div ul li {
   display: inline-block;
-  margin: 2px 24px 0 0;
-  background: #f6f6f6;
 }
 body header#header nav#main-menu ul.menu > li div ul li a {
-  position: relative;
-  display: inline-block;
-  font-size: 16px;
-  color: #555;
-}
-body header#header nav#main-menu ul.menu > li div ul li a::before {
-  content: "·";
-  padding: 0 6px 0 0;
-}
-body header#header nav#main-menu ul.menu > li div ul li a.active,
-body header#header nav#main-menu ul.menu > li div ul li a:hover {
-  color: #333;
-  font-weight: 500;
-}
-body header#header nav#main-menu ul.menu > li div ul li a.active::after,
-body header#header nav#main-menu ul.menu > li div ul li a:hover::after {
-  content: "";
   display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 16px;
-  height: 1px;
-  background: #333;
-}
-body header#header nav#main-menu ul.all-menu {
-  position: absolute;
-  z-index: 99999;
-  left: 0;
-  right: 0;
-  top: 100px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  background: #efefef;
-}
-body header#header nav#main-menu ul.all-menu > li {
-  display: inline-block;
-  vertical-align: top;
-  width: 192px;
-  margin-right: 60px;
-}
-body header#header nav#main-menu ul.all-menu > li:last-child {
-  margin-right: 0;
-}
-body header#header nav#main-menu ul.all-menu > li h2 {
-  font-size: 16px;
-  font-weight: 400;
+  padding: 0 10px;
+  font-size: 18px;
   color: #555;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: -52px;
-  left: 50%;
-}
-body header#header nav#main-menu ul.all-menu > li h2 a {
-  display: inline-block;
-}
-body header#header nav#main-menu ul.all-menu > li:nth-child(1) h2 {
-  margin-left: 0;
-}
-body header#header nav#main-menu ul.all-menu > li:nth-child(2) h2 {
-  margin-left: 110px;
-}
-body header#header nav#main-menu ul.all-menu > li:nth-child(3) h2 {
-  margin-left: 220px;
-}
-body header#header nav#main-menu ul.all-menu > li:nth-child(4) h2 {
-  margin-left: 330px;
-}
-body header#header nav#main-menu ul.all-menu > li div > a.home_btn {
-  display: none;
-}
-body header#header nav#main-menu ul.all-menu > li div h3 {
-  border-bottom: 1px solid #EA609E;
-  padding-bottom: 12px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #EA609E;
-}
-body header#header nav#main-menu ul.all-menu > li div ul {
-  list-style: none;
-  height: 250px;
-  overflow: hidden;
-  margin: 0;
-  padding: 10px 0 30px 0;
-}
-body header#header nav#main-menu ul.all-menu > li div ul li {
-  margin-bottom: 16px;
-  padding-left: 10px;
-  text-align: left;
-}
-body header#header nav#main-menu ul.all-menu > li div ul li ul {
-  display: inline-block;
-}
-body header#header nav#main-menu ul.all-menu > li div ul li a {
-  display: inline-block;
-  font-size: 16px;
-  margin-left: 5px;
-}
-body header#header nav#main-menu ul.all-menu > li div ul li a:active,
-body header#header nav#main-menu ul.all-menu > li div ul li a:hover {
-  color: #333;
-  font-weight: 600;
-}
-body header#header div.util-menu {
-  font-size: 0;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  margin-left: 490px;
-}
-body header#header div.util-menu a {
-  display: block;
-  position: absolute;
-  top: 42px;
-  right: 0;
-  background: none;
-}
-body header#header div.util-menu a i::before {
-  margin: 0;
-  font-size: 30px;
-  color: #686868;
-}
-body header#header div.util-menu a:hover i::before,
-body header#header div.util-menu a.on i::before {
-  color: #EA609E;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-body header#header div.util-menu a.hide {
-  display: none;
+body header#header nav#main-menu ul.menu > li div ul li a.active,
+body header#header nav#main-menu ul.menu > li div ul li a:hover {
+  font-weight: 800;
+  color: #222;
 }
-body.gnb_sub header#header nav#main-menu::before {
-  z-index: 400;
+body header#header nav#main-menu ul.all-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body header#header nav#main-menu ul.all-menu::after {
   content: "";
   display: block;
+  position: absolute;
+  left: -300px;
+  top: 60px;
+  background: #222;
+  width: 1200px;
+  height: 470px;
+  border-top: 4px solid #F8B616;
+}
+body header#header nav#main-menu ul.all-menu > li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+}
+body header#header nav#main-menu ul.all-menu > li h2 {
+  margin: 0;
+  padding: 0;
+}
+body header#header nav#main-menu ul.all-menu > li h2 a {
+  font-size: 20px;
+  font-weight: 600;
+}
+body header#header nav#main-menu ul.all-menu > li div {
+  position: absolute;
+  top: 120px;
+  z-index: 10;
+  width: 230px;
+}
+body header#header nav#main-menu ul.all-menu > li div a.home_btn {
+  display: none;
+}
+body header#header nav#main-menu ul.all-menu > li div h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  color: #F8B616;
+  font-weight: 20;
+}
+body header#header nav#main-menu ul.all-menu > li div ul {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  margin: 40px 0 0;
+}
+body header#header nav#main-menu ul.all-menu > li div ul::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -20px;
+  width: 50px;
+  height: 2px;
+  background: #F8B616;
+}
+body header#header nav#main-menu ul.all-menu > li div ul li a {
+  display: block;
+  padding: 5px 0;
+  color: #ccc;
+  font-size: 16px;
+}
+body header#header nav#main-menu ul.all-menu > li:nth-child(1) div {
+  left: -140px;
+}
+body header#header nav#main-menu ul.all-menu > li:nth-child(2) div {
+  left: 80px;
+}
+body header#header nav#main-menu ul.all-menu > li:nth-child(3) div {
+  left: 320px;
+}
+body header#header nav#main-menu ul.all-menu > li:nth-child(4) div {
+  left: 560px;
+}
+body header#header div.util-menu {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: 590px;
+}
+body header#header div.util-menu a {
+  display: block;
+  position: absolute;
+  top: 42px;
+  right: 0;
+  width: 32px;
+  height: 27px;
+  font-size: 0;
+  color: transparent;
+}
+body header#header div.util-menu a span,
+body header#header div.util-menu a::before,
+body header#header div.util-menu a::after {
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: #222;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+body header#header div.util-menu a::before,
+body header#header div.util-menu a::after {
+  content: "";
+}
+body header#header div.util-menu a::before {
+  left: 0;
+  top: 0;
+}
+body header#header div.util-menu a span {
+  left: 0;
+  top: 12px;
+}
+body header#header div.util-menu a::after {
+  left: 0;
+  top: 24px;
+}
+body header#header div.util-menu a.hide span {
+  opacity: 0;
+}
+body header#header div.util-menu a.hide::before {
+  transform: rotate(45deg);
+  top: 12px;
+}
+body header#header div.util-menu a.hide::after {
+  transform: rotate(-45deg);
+  top: 12px;
+}
+body div#content {
+  /* sub */
+}
+body div#content section.main_issue {
+  position: relative;
+  height: 440px;
+  background: #EEEEEE;
+}
+body div#content section.main_issue::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -615px;
+  top: 0;
+  height: 439px;
+  width: 30px;
+  background: rgba(0, 0, 0, 0.1);
+  transform: skew(4deg);
+}
+body div#content section.main_issue::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: 585px;
+  top: 0;
+  height: 439px;
+  width: 30px;
+  background: rgba(0, 0, 0, 0.1);
+  transform: skew(-4deg);
+}
+body div#content section.main_issue .bx-wrapper {
+  width: 1200px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: -32px;
+  margin-left: -600px;
+}
+body div#content section.main_issue .bx-wrapper ul.main_img {
+  margin: 0;
+  padding: 0;
+}
+body div#content section.main_issue .bx-wrapper .bx-controls {
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  position: absolute;
+  bottom: 0;
+}
+body div#content section.main_issue .bx-wrapper .bx-controls .bx-prev,
+body div#content section.main_issue .bx-wrapper .bx-controls .bx-next {
+  position: absolute;
+  bottom: 10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  font-size: 0;
+}
+body div#content section.main_issue .bx-wrapper .bx-controls .bx-prev {
+  left: -20px;
+  background: url('../images/prev.png') no-repeat center / cover;
+}
+body div#content section.main_issue .bx-wrapper .bx-controls .bx-next {
+  right: -20px;
+  background: url('../images/next.png') no-repeat center / cover;
+}
+body div#content section.main_issue .bx-wrapper .bx-controls .bx-pager {
+  text-align: center;
+}
+body div#content section.main_issue .bx-wrapper .bx-controls .bx-pager .bx-pager-item {
+  display: inline-block;
+}
+body div#content section.main_issue .bx-wrapper .bx-controls .bx-pager .bx-pager-item a {
+  display: block;
+  width: 16px;
+  height: 16px;
+  font-size: 0;
+  margin: 0 1px 10px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+body div#content section.main_issue .bx-wrapper .bx-controls .bx-pager .bx-pager-item a.active {
+  background: #EA609E;
+}
+body div#content section.main_slogan h2 {
+  margin: 30px auto;
+  font-size: 0;
+  width: 635px;
+  height: 110px;
+  background: url('../images/slogan.svg') no-repeat center / 100% auto;
+}
+body div#content section.main_news div.container {
+  font-size: 0;
+  padding-bottom: 60px;
+}
+body div#content section.main_news div.container > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #ccc;
+  width: 380px;
+  height: 320px;
+}
+body div#content section.main_news div.container > div h3 {
+  font-size: 20px;
+  margin: 30px;
+}
+body div#content section.main_news div.container > div h3 a {
+  font-size: 0;
+  float: right;
+}
+body div#content section.main_news div.container > div h3 a i {
+  font-size: 20px;
+}
+body div#content section.main_news div.container > div div.btn_set {
   position: absolute;
   left: 0;
   right: 0;
-  background: #f6f6f6;
-  border-top: 1px solid #d9d9d9;
-  height: 70px;
+  bottom: 30px;
+  text-align: center;
 }
-body.gnb_sub header#header nav#main-menu ul.menu > li h2 a.active {
-  display: block;
-}
-body.gnb_sub header#header nav#main-menu ul.menu > li h2 a.active::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -34px;
-  width: 62px;
-  height: 6px;
-  background: #999;
-}
-body.gnb_sub header#header nav#main-menu ul.menu > li h2 a.active.on::after {
-  background: #EA609E;
-}
-body.gnb_sub header#header nav#main-menu ul.menu > li div.active {
-  display: block;
-}
-body button.menuClose {
-  display: none;
-}
-body button.menuClose.show {
-  display: inline-block;
-  position: absolute;
-  font-size: 0;
-  color: #fff;
-  left: 50%;
-  top: 40px;
-  margin-left: 445px;
-  padding: 5px 5px;
-  z-index: 999;
+body div#content section.main_news div.container > div div.btn_set button {
+  text-align: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
   border: none;
-  background: #000;
+  background: #999;
+  margin: 0 4px;
+  border-radius: 5px;
 }
-body button.menuClose.show i {
-  font-size: 24px;
-}
-body div#content {
-  /* material */
-  /* sub */
-}
-body div#content .container {
-  width: 100%;
-  background: url("/wp/assets/source/images/bg.jpg") no-repeat center / cover;
-}
-body div#content .container .main_wrap {
-  width: 980px;
-  margin: 0 auto;
-  padding: 12px 0;
-  /* main_content */
-  /* notice */
-}
-body div#content .container .main_wrap section.main_content {
-  position: relative;
-}
-body div#content .container .main_wrap section.main_content::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-body div#content .container .main_wrap section.main_content ul.main_img {
-  position: relative;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 594px;
-}
-body div#content .container .main_wrap section.main_content ul.main_img li {
-  font-size: 0;
-}
-body div#content .container .main_wrap section.main_content ul.main_img li a {
-  display: block;
-  padding: 0;
-}
-body div#content .container .main_wrap section.main_content ul.main_banners {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 374px;
-  height: 540px;
-  float: left;
-  margin-left: 12px;
-}
-body div#content .container .main_wrap section.main_content ul.main_banners::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-body div#content .container .main_wrap section.main_content ul.main_banners li {
-  display: inline-block;
-}
-body div#content .container .main_wrap section.main_content ul.main_banners li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 20px 0 0 20px;
-}
-body div#content .container .main_wrap section.main_content ul.main_banners li a h5 {
+body div#content section.main_news div.container > div div.btn_set button i {
+  font-size: 16px;
   color: #fff;
-  font-size: 24px;
-  font-weight: 600;
 }
-body div#content .container .main_wrap section.main_content ul.main_banners li a span {
-  color: #fff;
-  display: block;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  word-break: keep-all;
+body div#content section.main_news div.container > div.notice {
+  margin-right: 30px;
 }
-body div#content .container .main_wrap section.main_content ul.main_banners li.c1 {
-  background: url("/wp/assets/source/images/content1.jpg") no-repeat center / cover;
-  width: 374px;
-  height: 264px;
-  margin-bottom: 12px;
-}
-body div#content .container .main_wrap section.main_content ul.main_banners li.c1 h5 {
-  margin-top: 25px;
-  color: #51200a;
-}
-body div#content .container .main_wrap section.main_content ul.main_banners li.c1 span {
-  width: 250px;
-  margin-top: 20px;
-  line-height: 22px;
-  color: #51200a;
-}
-body div#content .container .main_wrap section.main_content ul.main_banners li.c2 {
-  background: url("/wp/assets/source/images/content2.jpg") no-repeat center / cover;
-  width: 180px;
-  height: 264px;
-  margin-right: 12px;
-  float: left;
-}
-body div#content .container .main_wrap section.main_content ul.main_banners li.c2 h5 {
-  width: 100px;
-  line-height: 28px;
-  margin: 0;
-  color: #3B261D;
-}
-body div#content .container .main_wrap section.main_content ul.main_banners li.c2 h5 span {
-  line-height: 22px;
-  margin-bottom: 10px;
-  color: #3B261D;
-}
-body div#content .container .main_wrap section.main_content ul.main_banners li.c3 {
-  background: url("/wp/assets/source/images/content3.jpg") no-repeat center / cover;
-  width: 180px;
-  height: 264px;
-  float: left;
-}
-body div#content .container .main_wrap section.main_content ul.main_banners li.c3 h5 {
-  margin: 0;
-  color: #0d4d41;
-}
-body div#content .container .main_wrap section.main_content ul.main_banners li.c3 h5 span {
-  margin-bottom: 5px;
-  color: #0d4d41;
-}
-body div#content .container .main_wrap section.notice_wrap {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: -webkit-flex;
-  -webkit-align-item: center;
-  -webkit-justify-content: center;
-}
-body div#content .container .main_wrap section.notice_wrap a.info {
-  display: block;
-  background: url("/wp/assets/source/images/info.jpg") no-repeat center / cover;
-  width: 227px;
-  height: 212px;
-  padding: 40px 0 0 26px;
-  margin-right: 11px;
-}
-body div#content .container .main_wrap section.notice_wrap a.info span {
-  font-weight: 600;
-  font-size: 24px;
-  color: #4D4D4D;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice {
-  display: inline-block;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 738px;
-  height: 212px;
-  background: #fff;
+body div#content section.main_news div.container > div.notice div.outline {
   overflow: hidden;
+  margin: 0 22px;
 }
-body div#content .container .main_wrap section.notice_wrap ul.notice:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw {
-  position: relative;
-  width: 246px;
-  float: left;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw::before {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 212px;
-  background: #cecece;
-  position: absolute;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw h3 {
-  font-size: 16px;
-  font-weight: 600;
-  color: #555;
-  margin: 20px 0 20px 15px;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw h3 a {
-  display: inline-block;
-  font-size: 0;
-  color: #555;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw h3 a i {
-  font-size: 16px;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw button.btn {
-  border: 1px solid #ccc;
-  background: #fff;
-  width: 14px;
-  height: 14px;
-  padding: 0;
-  cursor: pointer;
-  font-size: 0;
-  position: absolute;
-  top: 20px;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw button.btn.left {
-  right: 32px;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw button.btn.left i::before {
-  margin: 0 10px 0 0;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw button.btn.right {
-  right: 15px;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw button.btn i::before {
-  font-size: 10px;
-  color: #ccc;
-  font-weight: 400;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw div.border {
-  overflow: hidden;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw div.border div.item {
-  width: 216px;
-  margin: 0 15px 10px;
-  padding: 0 0 10px;
-  position: relative;
-  height: 70px;
-  border-bottom: 1px solid #ccc;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw div.border div.item a {
-  display: block;
-  font-size: 14px;
-  line-height: 18px;
-  color: #555;
-  height: 36px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw div.border div.item a p.new-icon {
+body div#content section.main_news div.container > div.notice div.outline div.item {
   display: inline-block;
   vertical-align: top;
-  font-size: 0;
-  margin: 2px 0 0 2px;
-  background: url("/wp/assets/source/images/new.png") no-repeat center / cover;
-  width: 13px;
-  height: 12px;
+  font-size: 14px;
 }
-body div#content .container .main_wrap section.notice_wrap ul.notice li.veiw div.border div.item a small.date {
+body div#content section.main_news div.container > div.notice div.outline div.item a {
   display: block;
-  position: absolute;
-  bottom: 10px;
-  font-size: 12px;
-  color: #888;
+  padding: 0 8px;
 }
-body div#content div.material {
-  background: #E5E5E5;
-  height: 225px;
-  padding: 20px 0;
+body div#content section.main_news div.container > div.notice div.outline div.item a p.image {
+  height: 90px;
+  margin: 0 0 6px;
 }
-body div#content div.material .material_wrap {
+body div#content section.main_news div.container > div.notice div.outline div.item a p.image img {
+  display: none;
+}
+body div#content section.main_news div.container > div.notice div.outline div.item a span {
+  display: block;
+  max-height: 48px;
+  overflow: hidden;
+  word-break: keep-all;
+}
+body div#content section.main_news div.container > div.out_news div.outline {
+  padding: 0 10px;
+  overflow: hidden;
+}
+body div#content section.main_news div.container > div.out_news div.outline div.item {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+body div#content section.main_news div.container > div.out_news div.outline div.item span {
+  display: block;
+  color: #222;
+  margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+}
+body div#content section.main_news div.container > div.out_news div.outline div.item p.name {
+  margin: 0;
+  display: inline-block;
+  color: #2276B6;
+}
+body div#content section.main_news div.container > div.out_news div.outline div.item p.date {
+  margin: 0;
+  display: inline-block;
+  color: #555;
+}
+body div#content section.photo_zone {
+  background: #eee;
+  padding: 50px 0;
+}
+body div#content section.photo_zone div.container div.tabs {
+  font-size: 0;
+}
+body div#content section.photo_zone div.container div.tabs a {
   position: relative;
-  width: 980px;
-  margin: 0 auto;
+  overflow: hidden;
+  display: inline-block;
+  width: calc(100% / 3);
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  background: #222;
+  color: #fff;
+  line-height: 54px;
+  cursor: pointer;
 }
-body div#content div.material .material_wrap div.tab-list div.tab-content {
-  position: absolute;
-  width: 100%;
-  height: 180px;
-  padding-left: 130px;
+body div#content section.photo_zone div.container div.tabs a.on {
+  background: #F8B616;
+  color: #222;
 }
-body div#content div.material .material_wrap div.tab-list div.tab-content::after {
+body div#content section.photo_zone div.container div.tabs a.on::before {
   content: "";
   display: block;
-  clear: both;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content a.tablink {
-  display: block;
   position: absolute;
-  left: 0;
-  z-index: 400;
-  width: 116px;
-  line-height: 60px;
-  font-weight: 400;
-  font-size: 16px;
-  padding: 0 14px;
-  color: #555;
-  background: #efefef;
-  border-top: 1px solid #cecece;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content a.tablink:hover,
-body div#content div.material .material_wrap div.tab-list div.tab-content a.tablink.active,
-body div#content div.material .material_wrap div.tab-list div.tab-content a.tablink:focus {
-  background: #4e7abb;
-  color: #fff;
-  font-weight: 600;
-  border-color: transparent;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content a.tablink:hover i::before,
-body div#content div.material .material_wrap div.tab-list div.tab-content a.tablink.active i::before,
-body div#content div.material .material_wrap div.tab-list div.tab-content a.tablink:focus i::before {
-  color: #fff;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content a.tablink i {
-  position: absolute;
-  top: -2px;
-  right: 15px;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content a.tablink i::before {
-  font-size: 5px;
-  color: transparent;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content a.more {
-  display: block;
-  position: absolute;
-  top: 60px;
-  font-size: 0;
-  right: 2px;
-  width: 52px;
-  height: 52px;
-  border-radius: 50px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  background: rgba(0, 0, 0, 0.4);
-  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content a.more i {
-  position: relative;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content a.more i::before {
-  position: absolute;
-  top: 7px;
-  left: 1px;
-  color: #fff;
-  font-size: 34px;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content ul {
-  position: absolute;
-  left: 132px;
+  left: -22px;
   top: 0;
+  height: 54px;
+  width: 30px;
+  background: rgba(0, 0, 0, 0.1);
+  transform: skew(-15deg);
+}
+body div#content section.photo_zone div.container div.photo_list {
+  position: relative;
+  font-size: 0;
+}
+body div#content section.photo_zone div.container div.photo_list button.btn {
+  display: none !important;
+  position: absolute;
+  top: 140px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  background: #999;
+  margin: 0 4px;
+  border-radius: 5px;
+  text-align: center;
+}
+body div#content section.photo_zone div.container div.photo_list button.btn.left {
+  left: -70px;
+}
+body div#content section.photo_zone div.container div.photo_list button.btn.right {
+  right: -70px;
+}
+body div#content section.photo_zone div.container div.photo_list button.btn i {
+  font-size: 28px;
+  color: #fff;
+}
+body div#content section.photo_zone div.container div.photo_list div.outline {
+  overflow: hidden;
+  height: 0px;
+}
+body div#content section.photo_zone div.container div.photo_list div.outline div.slick-list {
+  margin: 0 -15px;
+}
+body div#content section.photo_zone div.container div.photo_list div.outline div.item {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  width: 280px;
+  margin: 0 15px;
+}
+body div#content section.photo_zone div.container div.photo_list div.outline div.item a p.image {
+  height: 180px;
+}
+body div#content section.photo_zone div.container div.photo_list div.outline div.item a p.image img {
+  display: none;
+}
+body div#content section.photo_zone div.container div.photo_list div.outline div.item a span {
+  display: block;
+  max-height: 32px;
+  color: #222;
+}
+body div#content section.photo_zone div.container div.photo_list div.outline div.item a p.date {
+  color: #555;
+}
+body div#content section.photo_zone div.container div.photo_list.on button.btn {
+  display: block !important;
+}
+body div#content section.photo_zone div.container div.photo_list.on div.outline {
+  height: auto;
+}
+body div#content .sub_container {
+  position: relative;
+  font-size: 0;
+}
+body div#content .sub_container h2.sub_title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  height: 164px;
+}
+body div#content .sub_container h2.sub_title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -610px;
+  top: 0;
+  height: 164px;
+  width: 30px;
+  background: rgba(0, 0, 0, 0.1);
+  transform: skew(6deg);
+}
+body div#content .sub_container h2.sub_title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: 580px;
+  top: 0;
+  height: 164px;
+  width: 30px;
+  background: rgba(0, 0, 0, 0.1);
+  transform: skew(-6deg);
+}
+body div#content .sub_container h2.sub_title p {
+  position: absolute;
+  z-index: 10;
+  width: 1200px;
+  height: 196px;
+  margin: 0 0 0 -600px;
+  top: -32px;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 34px;
+  line-height: 196px;
+  background: url("../images/sub01.jpg") no-repeat center / cover;
+}
+body div#content .sub_container h2.sub_title p:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  background: #fff;
+  left: 540px;
+  right: 540px;
+  bottom: 64px;
+}
+body div#content .sub_container h2.sub_title p.sub02 {
+  background: url("../images/sub02.jpg") no-repeat center / cover;
+}
+body div#content .sub_container h2.sub_title p.sub03 {
+  background: url("../images/sub03.jpg") no-repeat center / cover;
+}
+body div#content .sub_container h2.sub_title p.sub04 {
+  background: url("../images/sub04.jpg") no-repeat center / cover;
+}
+body div#content .sub_container h2.sub_title p.sub05 {
+  background: url("../images/sub05.jpg") no-repeat center / cover;
+}
+body div#content .sub_container aside {
+  vertical-align: top;
+  width: 200px;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 18px;
+}
+body div#content .sub_container aside h2 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 92px;
+}
+body div#content .sub_container aside ul.side-menu {
   list-style: none;
   margin: 0;
   padding: 0;
-  min-width: 848px;
-  background: #E5E5E5;
 }
-body div#content div.material .material_wrap div.tab-list div.tab-content ul li {
-  float: left;
-  width: 200px;
-  height: 184px;
-  margin-right: 16px;
-  padding: 10px;
-  background: #fff;
-  border: 1px solid #eee;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content ul li:last-child {
-  margin-right: 0;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content ul li a {
+body div#content .sub_container aside ul.side-menu li a {
+  position: relative;
   display: block;
-  text-align: center;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content ul li a p.news-img {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100px;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content ul li a p.news-img img {
-  display: none;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content ul li a div.news-title {
-  width: 100%;
-  height: 50px;
-  margin-top: 20px;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content ul li a div.news-title h5 {
-  font-size: 14px;
-  font-weight: 500;
-  color: #555;
-  width: 180px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 0;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content ul li a div.news-title p {
-  font-size: 12px;
-  color: #888;
-  margin: 5px 0 0 0;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content.active {
-  z-index: 300;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content#tab01 a.tablink {
-  top: 0;
-  border-top-color: transparent;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content#tab02 a.tablink {
-  top: 61px;
-}
-body div#content div.material .material_wrap div.tab-list div.tab-content#tab03 a.tablink {
-  top: 122px;
-}
-body div#content .sub_container h2.sub_title {
-  margin: 0;
-  padding: 0;
-  font-size: 34px;
-  color: #fff;
+  font-size: 18px;
+  line-height: 54px;
+  padding: 0 20px;
   font-weight: 600;
-  text-align: center;
-  width: 100%;
-  margin: 70px auto 0 auto;
-  background: #000;
-  height: 160px;
-  line-height: 160px;
+  overflow: hidden;
 }
-body div#content .sub_container h2.sub_title.other {
-  margin: 0 auto;
+body div#content .sub_container aside ul.side-menu li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  right: -30px;
+  margin-left: 580px;
+  top: 0;
+  height: 54px;
+  width: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  transform: skew(10deg);
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-body div#content .sub_container h2.sub_title p {
+body div#content .sub_container aside ul.side-menu li a.on {
+  background: #F8B616;
+}
+body div#content .sub_container aside ul.side-menu li a.on::after {
+  right: -15px;
+}
+body div#content .sub_container aside ul.side-menu li a:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+body div#content .sub_container aside ul.side-menu li a:hover::after {
+  right: -15px;
+}
+body div#content .sub_container div.content-box {
+  vertical-align: top;
+  display: inline-block;
   width: 980px;
-  margin: 0 auto;
-  background: url("/wp/assets/source/images/sub01.jpg") no-repeat center / cover;
+  font-size: 14px;
 }
-body div#content .sub_container h2.sub_title p.sub02 {
-  background: url("/wp/assets/source/images/sub02.jpg") no-repeat center / cover;
+body div#content .sub_container div.content-box ul.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
 }
-body div#content .sub_container h2.sub_title p.sub03 {
-  background: url("/wp/assets/source/images/sub03.jpg") no-repeat center / cover;
+body div#content .sub_container div.content-box ul.navigation li {
+  display: inline-block;
+  color: #555;
+  line-height: 92px;
 }
-body div#content .sub_container h2.sub_title p.sub04 {
-  background: url("/wp/assets/source/images/sub04.jpg") no-repeat center / cover;
+body div#content .sub_container div.content-box ul.navigation li::after {
+  content: "/";
+  padding: 0 4px;
 }
-body div#content .sub_container h2.sub_title p.sub05 {
-  background: url("/wp/assets/source/images/sub05.jpg") no-repeat center / cover;
+body div#content .sub_container div.content-box ul.navigation li:last-child {
+  font-weight: 600;
+}
+body div#content .sub_container div.content-box ul.navigation li:last-child::after {
+  display: none;
+  font-weight: 800;
+  color: #222;
 }
 body div#content .sub_container div.hello {
   position: relative;
@@ -1023,7 +969,7 @@ body div#content .sub_container div.hello ul {
   width: 980px;
   height: 840px;
   margin: 0 auto 60px auto;
-  background: url("/wp/assets/source/images/hello.jpg") no-repeat center / cover;
+  background: url("../images/hello.jpg") no-repeat center / cover;
   padding: 50px;
 }
 body div#content .sub_container div.hello ul li {
@@ -1307,7 +1253,7 @@ body div#content .sub_container section.contents div.tab_contents div.con03 ul.c
   display: block;
   width: 18px;
   height: 31.48px;
-  background: url("/wp/assets/source/images/arrow3.svg") no-repeat center / cover;
+  background: url("../images/arrow3.svg") no-repeat center / cover;
   position: absolute;
   top: 38px;
 }
@@ -1480,7 +1426,7 @@ body div#content .sub_container section.contents div.tab_contents#tab01 div.con0
   display: block;
   width: 24px;
   height: 41.97px;
-  background: url("/wp/assets/source/images/arrow2.svg") no-repeat center / cover;
+  background: url("../images/arrow2.svg") no-repeat center / cover;
   position: absolute;
   top: 130px;
   left: -46px;
@@ -1528,7 +1474,7 @@ body div#content .sub_container section.contents div.tab_contents#tab02 div.con0
   display: block;
   width: 18px;
   height: 31.48px;
-  background: url("/wp/assets/source/images/arrow3.svg") no-repeat center / cover;
+  background: url("../images/arrow3.svg") no-repeat center / cover;
   position: absolute;
   top: 48px;
 }
@@ -1603,7 +1549,7 @@ body div#content .sub_container section.contents div.tab_contents#tab03 div.con0
   display: block;
   width: 18px;
   height: 31.48px;
-  background: url("/wp/assets/source/images/arrow3.svg") no-repeat center / cover;
+  background: url("../images/arrow3.svg") no-repeat center / cover;
   position: absolute;
   top: 48px;
 }
@@ -1722,7 +1668,7 @@ body div#content .sub_container section.operation_contents div.con01 ul li:first
   display: block;
   width: 24px;
   height: 25px;
-  background: url("/wp/assets/source/images/left.png") no-repeat center / cover;
+  background: url("../images/left.png") no-repeat center / cover;
 }
 body div#content .sub_container section.operation_contents div.con01 ul li:first-child::after {
   position: absolute;
@@ -1732,12 +1678,12 @@ body div#content .sub_container section.operation_contents div.con01 ul li:first
   display: block;
   width: 24px;
   height: 25px;
-  background: url("/wp/assets/source/images/right.png") no-repeat center / cover;
+  background: url("../images/right.png") no-repeat center / cover;
 }
 body div#content .sub_container section.operation_contents div.con01 ul li.image {
   width: 618px;
   height: 471px;
-  background: url("/wp/assets/source/images/coophn.png") no-repeat center / cover;
+  background: url("../images/coophn.png") no-repeat center / cover;
   font-size: 0;
   margin: 60px 0 0 180px;
 }
@@ -1811,17 +1757,17 @@ body div#content .sub_container section.operation_contents div.con03 dl dt.img01
   width: 71px;
   height: 66px;
   margin-left: 113px;
-  background: url("/wp/assets/source/images/value01.svg") no-repeat center top / 100% auto;
+  background: url("../images/value01.svg") no-repeat center top / 100% auto;
 }
 body div#content .sub_container section.operation_contents div.con03 dl dt.img02 {
   width: 84px;
   margin-left: 108px;
-  background: url("/wp/assets/source/images/value02.svg") no-repeat center top / 100% auto;
+  background: url("../images/value02.svg") no-repeat center top / 100% auto;
 }
 body div#content .sub_container section.operation_contents div.con03 dl dt.img03 {
   width: 71px;
   margin-left: 113px;
-  background: url("/wp/assets/source/images/value03.svg") no-repeat center top / 100% auto;
+  background: url("../images/value03.svg") no-repeat center top / 100% auto;
 }
 body div#content .sub_container section.operation_contents div.con03 dl dt span {
   display: block;
@@ -1943,14 +1889,14 @@ body div#content .sub_container section.operation_contents div.con05 div ul li:n
   display: block;
   width: 220px;
   height: 128px;
-  background: url("/wp/assets/source/images/img1.jpg") no-repeat center / cover;
+  background: url("../images/img1.jpg") no-repeat center / cover;
 }
 body div#content .sub_container section.operation_contents div.con05 div ul li:nth-child(2)::before {
   content: "";
   display: block;
   width: 220px;
   height: 128px;
-  background: url("/wp/assets/source/images/img2.jpg") no-repeat center / cover;
+  background: url("../images/img2.jpg") no-repeat center / cover;
 }
 body div#content .sub_container section.operation_contents div.con05 div ul li:nth-child(3) {
   margin-right: 0;
@@ -1960,7 +1906,7 @@ body div#content .sub_container section.operation_contents div.con05 div ul li:n
   display: block;
   width: 220px;
   height: 128px;
-  background: url("/wp/assets/source/images/img3.jpg") no-repeat center / cover;
+  background: url("../images/img3.jpg") no-repeat center / cover;
 }
 body div#content .sub_container section.center_contents ul.tabs {
   margin: 0;
@@ -2100,7 +2046,7 @@ body div#content .sub_container section.center_contents div.tab_contents#tab02 d
   display: block;
   width: 24px;
   height: 25px;
-  background: url("/wp/assets/source/images/left.png") no-repeat center / cover;
+  background: url("../images/left.png") no-repeat center / cover;
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con01 ul li:first-child::after {
   position: absolute;
@@ -2110,12 +2056,12 @@ body div#content .sub_container section.center_contents div.tab_contents#tab02 d
   display: block;
   width: 24px;
   height: 25px;
-  background: url("/wp/assets/source/images/right.png") no-repeat center / cover;
+  background: url("../images/right.png") no-repeat center / cover;
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con01 ul li.image {
   width: 680px;
   height: 371px;
-  background: url("/wp/assets/source/images/mission.png") no-repeat center / cover;
+  background: url("../images/mission.png") no-repeat center / cover;
   font-size: 0;
   margin: 40px 0 0 150px;
 }
@@ -2206,7 +2152,7 @@ body div#content .sub_container section.center_contents div.tab_contents#tab02 d
   list-style: none;
   margin-top: 14px;
   height: 230px;
-  background: url("/wp/assets/source/images/goal.png") no-repeat center / cover;
+  background: url("../images/goal.png") no-repeat center / cover;
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab02 div.con04 ul li {
   position: absolute;
@@ -2378,7 +2324,7 @@ body div#content .sub_container section.center_contents div.tab_contents#tab03 d
 }
 body div#content .sub_container section.center_contents div.tab_contents#tab03 div.con02 div {
   position: relative;
-  background: url("/wp/assets/source/images/organization.png") no-repeat center / 100% auto;
+  background: url("../images/organization.png") no-repeat center / 100% auto;
   width: 980px;
   height: 501px;
   margin-top: 30px;
@@ -2730,7 +2676,7 @@ body div#content .sub_container section.support_contents div.con01 ul li:nth-chi
   width: 56px;
   height: 72px;
   margin: 46px 0 0 55px;
-  background: url("/wp/assets/source/images/support01.svg") no-repeat center / cover;
+  background: url("../images/support01.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.support_contents div.con01 ul li:nth-child(2)::before {
   content: "";
@@ -2738,7 +2684,7 @@ body div#content .sub_container section.support_contents div.con01 ul li:nth-chi
   width: 69px;
   height: 62px;
   margin: 54px 0 0 50px;
-  background: url("/wp/assets/source/images/support02.svg") no-repeat center / cover;
+  background: url("../images/support02.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.support_contents div.con01 ul li:nth-child(3)::before {
   content: "";
@@ -2746,7 +2692,7 @@ body div#content .sub_container section.support_contents div.con01 ul li:nth-chi
   width: 71px;
   height: 70px;
   margin: 44px 0 0 48px;
-  background: url("/wp/assets/source/images/support03.svg") no-repeat center / cover;
+  background: url("../images/support03.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.support_contents div.con01 ul li:nth-child(4)::before {
   content: "";
@@ -2754,7 +2700,7 @@ body div#content .sub_container section.support_contents div.con01 ul li:nth-chi
   width: 58px;
   height: 62px;
   margin: 51px 0 0 53px;
-  background: url("/wp/assets/source/images/support04.svg") no-repeat center / cover;
+  background: url("../images/support04.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.support_contents div.con01 ul li:nth-child(5) {
   border-right: none;
@@ -2765,12 +2711,12 @@ body div#content .sub_container section.support_contents div.con01 ul li:nth-chi
   width: 62px;
   height: 59px;
   margin: 54px 0 0 53px;
-  background: url("/wp/assets/source/images/support05.svg") no-repeat center / cover;
+  background: url("../images/support05.svg") no-repeat center / cover;
 }
 body div#content .sub_container section.support_contents div.con01 h5 {
   width: 980px;
   height: 51px;
-  background: url("/wp/assets/source/images/account.svg") no-repeat center / cover;
+  background: url("../images/account.svg") no-repeat center / cover;
   color: #fff;
   font-weight: 500;
   font-size: 17px;
@@ -3599,11 +3545,10 @@ body div#content .sub_container .letter-list .bbs_container ul.list li a i {
   font-style: normal;
 }
 body footer#footer {
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid #eee;
 }
 body footer#footer .container {
   position: relative;
-  width: 980px;
   margin: 0 auto;
   padding: 30px 0;
 }
@@ -3618,24 +3563,12 @@ body footer#footer .container ul li {
   display: inline-block;
   margin-right: 20px;
 }
-body footer#footer .container ul li::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 1px;
-  height: 10px;
-  background: #c2c2c2;
-  top: 3px;
-  right: -14px;
-}
-body footer#footer .container ul li:last-child::before {
-  display: none;
-}
 body footer#footer .container ul li a {
   display: block;
   font-weight: 400;
-  font-size: 16px;
-  color: #555;
+  font-size: 17px;
+  font-weight: 600;
+  color: #222;
 }
 body footer#footer .container div.agency {
   position: absolute;
@@ -3643,7 +3576,7 @@ body footer#footer .container div.agency {
   top: 30px;
   right: 0;
   width: auto;
-  height: 32px;
+  height: 46px;
   font-size: 12px;
   color: #555;
   min-width: 230px;
@@ -3656,7 +3589,7 @@ body footer#footer .container div.agency div.agency-link {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 30px;
+  bottom: 44px;
   border: 1px solid #999;
   background: #fff;
 }
@@ -3664,16 +3597,18 @@ body footer#footer .container div.agency button.agency-open {
   display: block;
   border: none;
   background: #fff;
-  border: 1px solid #dedede;
+  border: 1px solid #222;
   width: 100%;
-  height: 32px;
+  height: 46px;
   text-align: left;
 }
 body footer#footer .container div.agency button.agency-open i {
   position: absolute;
+  font-size: 18px;
   right: 10px;
+  top: 14px;
   transform: rotate(90deg);
-  color: #bbb;
+  color: #222;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
@@ -3716,7 +3651,7 @@ body footer#footer .container address p {
 body footer#footer .container p.copyright {
   font-size: 12px;
   color: #555;
-  margin: 5px 0 0 0;
+  margin: 16px 0 0 0;
 }
 body footer#footer .container p {
   font-size: 0;

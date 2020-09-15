@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>제주시장애인지역사회통합돌봄지원센터</title>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link href="sources/css/style.css" rel="stylesheet">
-    <link href="sources/css/jquery.bxslider.min.css" rel="stylesheet">
 
     <!-- javaScript -->
     <script src="sources/js/jquery-1.11.3.min.js"></script>
@@ -17,7 +17,7 @@
 
 </head>
 
-<body class="gnb_sub">
+<body class="gnb_main all-menu">
     <!-- S:skip_navi -->
     <div class="skip_navi">
         <a class="sr-only sr-only-focusable" href="#first">메뉴 바로가기</a>
@@ -37,10 +37,10 @@
             <ul class="menu">
                 <li>
                     <h2>
-                        <a class="active" id="first" href="">사업안내</a>
+                        <a id="first" href="">사업안내</a>
                     </h2>
-                    <div class="active">
-                        <a href="#" class="home_btn" title="메인 이동">home<i class="icon-home-1"></i></a>
+                    <div>
+                        <a href="#" class="home_btn" title="메인 이동">home<i class='bx bxs-home' ></i></a>
                         <h3>사업안내</h3>
                         <ul>
                             <li>
@@ -55,7 +55,7 @@
                     </h2>
 
                     <div>
-                        <a href="#" class="home_btn" title="메인 이동">home<i class="icon-home-1"></i></a>
+                        <a href="#" class="home_btn" title="메인 이동">home<i class='bx bxs-home' ></i></a>
                         <h3>소식마당</h3>
                         <ul>
                             <li>
@@ -79,7 +79,7 @@
                     </h2>
 
                     <div>
-                        <a href="#" class="home_btn" title="메인 이동">home<i class="icon-home-1"></i></a>
+                        <a href="#" class="home_btn" title="메인 이동">home<i class='bx bxs-home' ></i></a>
                         <h3>정보마당</h3>
                         <ul>
                             <li>
@@ -106,7 +106,7 @@
                     </h2>
 
                     <div>
-                        <a href="#" class="home_btn" title="메인 이동">home<i class="icon-home-1"></i></a>
+                        <a href="#" class="home_btn" title="메인 이동">home<i class='bx bxs-home' ></i></a>
                         <h3>센터안내</h3>
                         <ul>
                             <li>
@@ -131,16 +131,15 @@
                     </div>
                 </li>
             </ul>
-
         </nav>
 
 
         <div class="util-menu">
-            <a href="#"><i class="icon-menu"></i>전체메뉴</a>
+            <a href="#"><span>전체메뉴</span></a>
         </div>
+
     </header>
 
-    <button class="menuClose">메뉴닫기</button>
     <!-- E:header -->
     <!-- S:mainContent -->
     <div id="content">
@@ -149,612 +148,635 @@
                 <p>사업안내</p>
             </h2>
 
-            <div class="guide">
+            <div class="container">
 
-                <div class="g02">
-                    <h3>운영안내</h3>
-                    <p>운영시간 : 주중(월~금) 09:00 ~ 18:00 / 공휴일 제외 <span>(이용문의 : 064-751-5150)</span></p>
+                <aside>
+                    <h2>사업안내</h2>
+
+                    <ul class="side-menu">
+                        <li><a class="on" href="">문서자료</a></li>
+                        <li><a href="">복지뉴스</a></li>
+                        <li><a href="">사진자료</a></li>
+                        <li><a href="">영상자료</a></li>
+                        <li><a href="">웹진</a></li>
+                    </ul>
+                </aside>
+
+                <div class="content-box">
+
+                    <ul class="navigation">
+                        <li>HOME</li>
+                        <li>사업안내</li>
+                        <li>사업안내</li>
+                    </ul>
+
+                    <div class="guide">
+
+                        <div class="g02">
+                            <h3>운영안내</h3>
+                            <p>운영시간 : 주중(월~금) 09:00 ~ 18:00 / 공휴일 제외 <span>(이용문의 : 064-751-5150)</span></p>
+                        </div>
+                    </div>
+
+                    <section class="contents">
+
+                        <ul class="tabs">
+                            <li>
+                                <a href="#" class="active" data="tab01">지원주택 <br>사업</a>
+                            </li>
+                            <li>
+                                <a href="#" data="tab02">이동지원 <br>사업</a>
+                            </li>
+                            <li>
+                                <a href="#" data="tab03">행복플래너 사업</a>
+                            </li>
+                            <li>
+                                <a href="#" data="tab04">안심생활 <br>지원사업</a>
+                            </li>
+                            <li>
+                                <a href="#" data="tab05">가족기능 <br>강화사업</a>
+                            </li>
+                            <li>
+                                <a href="#" data="tab06">상담 및 정서지원사업</a>
+                            </li>
+                            <li>
+                                <a href="#" data="tab07">지역사회 <br>연계사업</a>
+                            </li>
+                        </ul>
+
+                        <div id="tab01" class="tab_contents active">
+                            <h4>지원주택 사업</h4>
+                            <div class="con01">
+                                <h5><small>■</small>사업 대상자</h5>
+                                <ul>
+                                    <li>희망하는 입주 신청일 기준 만 19세 이상, 만 55세 이하인 자에 해당하는 제주시에 주소를 둔 발달(지적·자폐성)장애인, 뇌병변 장애인</li>
+                                </ul>
+                            </div>
+
+                            <div class="con03">
+                                <h5><small>■</small>지원주택</h5>
+                                <div class="care">
+                                    <h6><img src="/wp/assets/source/images/logo3.svg" alt="">지원주택이란?</h6>
+                                    <p>지원주택은 지역사회 주거생활이 취약한 사람들에게 안정적인 주거생활이 가능하도록 주택을 제공하면서 여기에 필요한 서비스를 연결하는 것을 의미</p>
+                                </div>
+                                <ul class="care-list">
+                                    <li>▶ 입주조건</li>
+                                    <li>- 생활비 부담이 가능하고 지원주택에서 제공하는 자립생활지원서비스를 통해 자립생활이 가능한 자</li>
+                                    <li>- 일상생활능력이 있거나 서비스 지원을 받으면 일상생활에 큰 지장이 없는 자</li>
+                                    <li>- 공동생활(2인)에 있어 결격사유가 없는 자</li>
+                                    <li>▶ 이용절차</li>
+                                    <li>
+                                        <ul class="use">
+                                            <li>
+                                                <h6>입주자 모집공고</h6>
+                                                <p>읍면동주민센터<span>통합돌봄창구</span></p>
+                                            </li>
+                                            <li>
+                                                <h6>입주 신청</h6>
+                                                <p>읍면동주민센터<span>통합돌봄창구</span></p>
+                                            </li>
+                                            <li>
+                                                <h6>초기 면접</h6>
+                                                <p class="pt">통합돌봄지원센터</p>
+                                            </li>
+                                            <li>
+                                                <h6>입주자 선정</h6>
+                                                <p class="pt">통합돌봄지원센터</p>
+                                            </li>
+                                            <li>
+                                                <h6>지원주택 입주</h6>
+                                                <p class="pt">통합돌봄지원센터</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="con04">
+                                <h5><small>■</small>서비스 지원체계</h5>
+                                
+                                <div class="happy">
+                                    <h6>행복플래너</h6>
+                                    <img src="/wp/assets/source/images/h01.png" alt="행복플래너">
+                                    <p>제주시장애인지역사회통합돌봄지원센터</p>
+                                </div>
+
+                                <div class="happy icon">
+                                    <h6>행복코치</h6>
+                                    <img src="/wp/assets/source/images/h02.png" alt="행복플래너">
+                                    <div class="sr-only">금전관리,건강관리,주택관리,쇼핑,가사관리,사회활동,주택알선</div>
+                                    <p>장애인지원주택</p>
+                                </div>
+                            </div>
+                            <div class="con05">
+                                <h5><small>■</small>서비스 영역</h5>
+                                <ul class="service">
+                                    <li>
+                                        <div>
+                                            <small>STEP 01</small>
+                                            <h5><img src="/wp/assets/source/images/s01.svg" alt="">주거</h5>
+                                            <p>주거공간 마련 및 유지관련 지원</p>
+                                            <ul>
+                                                <li>· 주택알선 및 계약</li>
+                                                <li>· 임대주택 신청</li>
+                                                <li>· 주거관리 및 유지</li>
+                                                <li>· 이사 지원</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <small>STEP 02</small>
+                                            <h5><img src="/wp/assets/source/images/s02.svg" alt="">일상생활</h5>
+                                            <p>주거생활유지에 필요한 일상생활 지원</p>
+                                            <ul>
+                                                <li>· 자기관리</li>
+                                                <li>· 가사관리</li>
+                                                <li>· 건강관리</li>
+                                                <li>· 금전관리</li>
+                                                <li>· 개인안전</li>
+                                                <li>· 비상대응 계획</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <small>STEP 03</small>
+                                            <h5><img src="/wp/assets/source/images/s03.svg" alt="">사회참여</h5>
+                                            <p>지역사회 이용 및 사회활동 참여 지원</p>
+                                            <ul>
+                                                <li>· 쇼핑</li>
+                                                <li>· 교통수단</li>
+                                                <li>· 여가활동</li>
+                                                <li>· 지역사회활동</li>
+                                                <li>· 관계</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <small>STEP 04</small>
+                                            <h5><img src="/wp/assets/source/images/s04.svg" alt="">옹호</h5>
+                                            <p>권리보호 및 자기결정권 보장 지원</p>
+                                            <ul>
+                                                <li>· 법률지원 연계</li>
+                                                <li>· 공공후견인 신청</li>
+                                                <li>· 발달장애인 신탁 연계</li>
+                                                <li>· 권리 보호</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+
+                        <div id="tab02" class="tab_contents">
+                            <h4>이동지원 사업</h4>
+                            <div class="con01">
+                                <h5><small>■</small>사업 대상자</h5>
+                                <ul>
+                                    <li>제주시에 주소를 둔 발달(지적·자폐성)장애인, 뇌병변장애인 중 이동지원 서비스가 필요한 자</li>
+                                </ul>
+                            </div>
+
+                            <div class="con02">
+                                <h5><small>■</small>사업 내용</h5>
+                                <ul>
+                                    <li>- 민원업무, 병원 이용 등 이동이 필요한 장애인에게 이동지원 서비스 제공</li>
+                                    <li>- 필요시 보호자 탑승가능하며, 예약제로 운행</li>
+                                </ul>
+                            </div>
+                            <div class="con03">
+                                <h5><small>■</small>사업 안내</h5>
+                                <ul>
+                                    <li>▶ 신청접수 : 제주시장애인지역사회통합돌봄지원센터</li>
+                                    <li>▶ 이용절차</li>
+                                    <li>
+                                        <ul class="use">
+                                            <li>
+                                                <h6>신청문의</h6>
+                                                <p>통합돌봄지원센터 및<span>읍면동주민센터</span>통합돌봄창구</p>
+                                            </li>
+                                            <li>
+                                                <h6>신청서작성 및 제출</h6>
+                                                <p class="pt">통합돌봄지원센터</p>
+                                            </li>
+                                            <li>
+                                                <h6>예약전화</h6>
+                                                <p class="pt">통합돌봄지원센터</p>
+                                            </li>
+                                            <li>
+                                                <h6>예약확인 및 승인</h6>
+                                                <p class="pt">통합돌봄지원센터</p>
+                                            </li>
+                                            <li>
+                                                <h6>차량배치 및 이용</h6>
+                                                <p class="pt">통합돌봄지원센터</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>▶ 이용요금 : 무료</li>
+                                    <li>▶ 운행시간 : 09:00 ~ 18:00 (월~금요일, 공휴일 제외)</li>
+                                    <li>▶ 운행지역 : 제주특별자치도 전지역 (섬지역 제외)</li>
+                                    <li>▶ 운행차량 : 총 3대 (휠체어 슬로프 차량 2대, 12인승 승합차량 1대)</li>
+                                    <li>▶ 준수사항</li>
+                                    <li>- 예약전화를 통해 이용 신청해 주세요. (시내 1일 전 / 시외 및 읍면 2일 전)</li>
+                                    <li>- 특정 차량 또는 운전원을 지정할 수 없습니다.</li>
+                                    <li>- 출발지·목적지 변경 및 예약을 취소할 경우에는 최소 1시간 전까지 연락 바랍니다.</li>
+                                    <li>- 운전원에게 안전운행에 방해되는 신체적 접촉이나 폭언은 삼가해 주세요.</li>
+                                    <li>- 안전운행에 필요한 경우 보호자가 동승할 수 있습니다.</li>
+                                    <li>- 준수사항을 이행하지 않을 시 이용이 제한될 수 있습니다.</li>
+                                </ul>
+                                <p>※ 기타 문의사항 또는 민원 발생 시 <span>제주시장애인지역사회통합돌봄지원센터 (T.064-751-5150)</span>로 연락 바랍니다.</p>
+                            </div>
+                        </div>
+
+                        <div id="tab03" class="tab_contents">
+                            <h4>행복플래너 사업</h4>
+                            <div class="con01">
+                                <h5><small>■</small>사업 대상자</h5>
+                                <ul>
+                                    <li>본인 또는 가족이 마련한 주택에서 독립생활을 유지하고 있으나 주거지원 서비스가 필요한 제주시에 주소를 둔 발달(지적·자폐성)장애인, 뇌병변장애인</li>
+                                </ul>
+                            </div>
+
+                            <div class="con02">
+                                <h5><small>■</small>운영인력</h5>
+                                <ul>
+                                    <li>▶ 행복플래너</li>
+                                    <li>- 정책대상자에 대한 사례관리 및 서비스 연계 지원</li>
+                                    <li>- 입주자가 지역사회에서 일상생활에 필요한 다양한 프로그램 지원</li>
+                                    <li>- 지원당사자의 '주거'와 '옹호'를 중점적으로 지원</li>
+                                    <li>- 임대주택신청 및 주택 마련 알선, 사회서비스 신청</li>
+                                    <li>- 자원개발 및 서비스 연계</li>
+                                    <li>- 당사자 및 보호자 상담 및 교육</li>
+                                    <li>- 행복코치 업무조정 및 연계</li>
+                                </ul>
+                            </div>
+
+                            <div class="con03">
+                                <h5><small>■</small>서비스 내용</h5>
+                                <ul>
+                                    <li>- 주거 : 주택마련 및 이사 지원, 주거환경 개선 지원 등</li>
+                                    <li>- 사회참여 : 쇼핑, 교통수단, 지역사회활동, 여가활동지원, 관계(대인관계 상담 및 교육) 등</li>
+                                    <li>- 일상생활 : 자기관리, 영양, 가사관리, 시간관리, 개인안전/비상대응계획, 건강관리, 금전관리 등</li>
+                                    <li>- 옹호 : 선택(종교활동/낮활동, 직업 및 직장 선택 지원 등), 자기옹호(권리침해구제, 옹호관련 교육 진행 등), 기타(의사소통지원, <span>신탁/공공후견인 연결, 활동지원사 연결 등)</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="con04">
+                                <h5><small>■</small>이용 절차</h5>
+                                <ul>
+                                    <li>
+                                        <ul class="use">
+                                            <li>
+                                                <h6>신청문의</h6>
+                                                <p>통합돌봄지원센터 및 <span>읍면동주민센터</span>통합돌봄창구</p>
+                                            </li>
+                                            <li>
+                                                <h6>신청서작성 및 제출</h6>
+                                                <p>통합돌봄지원센터 및 <span>읍면동주민센터</span>통합돌봄창구</p>
+                                            </li>
+                                            <li>
+                                                <h6>대상자 선정 및 승인</h6>
+                                                <p class="pt">통합돌봄지원센터</p>
+                                            </li>
+                                            <li>
+                                                <h6>서비스 지원</h6>
+                                                <p class="pt">통합돌봄지원센터</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="tab04" class="tab_contents">
+                            <h4>안심생활 지원사업</h4>
+                            <div class="con01">
+                                <h5><small>■</small>사업 대상자</h5>
+                                <ul>
+                                    <li>제주시에 주소를 둔 발달(지적·자폐성)장애인, 뇌병변장애인 200가구</li>
+                                </ul>
+                            </div>
+
+                            <div class="con02">
+                                <h5><small>■</small>사업 내용</h5>
+                                <ul>
+                                    <li>- 스마트홈케어서비스 : 스마트허브, 응급호출기, 화재감지센서, 자동가스차단기, 도어센서, 스마트IoT(사물인터넷) LED거실등, <span>스마트플러그, 활동량감지센서</span></li>
+                                    <li>- 모니터링 및 안전확인 : 모니터링 요원이 응급상황 실시간 모니터링을 통한 안전 확인 서비스</li>
+                                </ul>
+                            </div>
+                            <div class="con03">
+                                <h5><small>■</small>응급안전시스템(스마트홈케어서비스)</h5>
+                                <div class="care">
+                                    <h6><img src="/wp/assets/source/images/logo3.svg" alt="">스마트홈케어 서비스란?</h6>
+                                    <p>장애인 가정에 활동량감지기, 응급호출기, 스마트 전등, 가스차단기 등을 설치하여 응급상황 발생시 보호자 및 응급안전요원에게 연락해 후속 조치를 제공하는 서비스입니다.</p>
+                                </div>
+                                <ul class="care-list">
+                                    <li>▶ 신청 및 접수 방법 : 주민등록상 주소지 주민센터 통합돌봄 창구 방문 신청</li>
+                                    <li>- 신청서류 : 제주시 장애인 지역사회 통합돌봄 신청서 1부 / 개인정보 수집·이용 제공동의서 1부</li>
+                                    <li>- 문의처 : 읍·면·동 주민센터 통합돌봄 창구(064-728-3041 ~ 3043) / 제주시장애인지역사회통합돌봄지원센터 (064-751-5150)</li>
+                                    <li>▶ 주요서비스</li>
+                                    <li>
+                                        <img src="/wp/assets/source/images/service.png" alt="">
+                                        <div class="sr-only">
+                                            24시간 항시돌봄, 119 응급호출, 365 활동량 분석, 24시간 비상호출
+                                        </div>
+                                    </li>
+                                    <li>▶ 지원장비</li>
+                                    <li class="eq"><img src="/wp/assets/source/images/equipment.png" alt="">
+                                        <div class="sr-only">
+                                            <h6>게이트웨이</h6>
+                                            원터치 응급 호출 버튼,
+                                            특허받은 자동 활동량 모니터링 시스템,
+                                            단축키를 이용한 무료통화 서비스,
+                                            <h6>스마트 전등</h6>
+                                            리모컨을 이용한 전등 오픈
+                                            <h6>활동량 감지기</h6>
+                                            침실, 화장실 및 주방에서의 활동량을 감지하여 응급상황 인지
+                                            <h6>가스차단기</h6>
+                                            화재위험시 자동으로 가스차단
+                                            <h6>도어 센서</h6>
+                                            <h6>IOT 전등스위치</h6>
+                                            <h6>IOT 스마트플러그</h6>
+                                            
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="tab05" class="tab_contents">
+                            <h4>가족기능 강화사업</h4>
+                            <div class="con01">
+                                <h5><small>■</small>사업 대상자</h5>
+                                <ul>
+                                    <li>제주시에 주소를 둔 발달(지적·자폐성)장애인, 뇌병변장애인과 그 가족</li>
+                                </ul>
+                            </div>
+
+                            <div class="con02">
+                                <h5><small>■</small>프로그램 목적</h5>
+                                <ul>
+                                    <li>- 장애인 가족의 갈등 해소 도움 및 정서적 안정과 바람직한 가족 기능을 강화시켜 건전하고 적극적인 사회활동 참여 및 <span>가족의 삶의 질 향상 지원</span></li>
+                                    <li>▶ 신청기간 : 별도공지</li>
+                                    <li>▶ 신청 및 접수 : 제주시장애인지역사회통합돌봄지원센터(T.064-751-5150)</li>
+                                    <li>▶ 프로그램 내용</li>
+                                    <li>
+                                        <table class="program">
+                                            <tbody>
+                                                <tr>
+                                                    <th>프로그램명</th>
+                                                    <th>내용</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>부모 자조모임 및 교육</td>
+                                                    <td>
+                                                        <ul class="table_contents">
+                                                            <li>- 부모 자조 모임을 통한 정보 공유와 지지, 교육을 통한 자녀양육 기술 습득</li>
+                                                            <li>- 취미개발, 여가문화지원, 생애주기별 양육방법, 문제해결방법 등 멘토형, 강의형, 체험형 프로그램 제공</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>가족스튜디오</td>
+                                                    <td>
+                                                        <ul class="table_contents">
+                                                            <li>- 다양한 사연으로 문화 활동에 어려움을 겪는 장애인 가족의 행복한 추억을 사진으로 남겨 가정의 <span>행복감 및 유대관계 강화</span></li>
+                                                            <li>- 2020 행복한 추억 가족사진, 가족사진 액자 무료제공</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>가족테마여행</td>
+                                                    <td>
+                                                        <ul class="table_contents">
+                                                            <li>- 가족 간의 결속력을 강화하고, 일상에서 벗어나 야외 활동을 즐김으로써 장애인 부양에 대한 <span>스트레스를 경감</span></li>
+                                                            <li>- 슬로프차량 지원을 통한 가족나들이(아름다운 하루), 가족테마여행</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>가족한마당</td>
+                                                    <td>
+                                                        <ul class="table_contents">
+                                                            <li>- 가족관계 증진을 위한 가족한마당 축제 진행</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>가족 정서지원</td>
+                                                    <td>
+                                                        <ul class="table_contents">
+                                                            <li>- 정서적 지지를 통한 가족기능 강화</li>
+                                                            <li>- 부부상담, 가족 집단상담, 가족놀이 치료 등</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div id="tab06" class="tab_contents">
+                            <h4>상담 및 정서 지원사업</h4>
+                            <div class="con01">
+                                <h5><small>■</small>사업 대상자</h5>
+                                <ul>
+                                    <li>제주시에 거주하는 발달(지적,자폐성)장애인 및 뇌병변장애인</li>
+                                </ul>
+                            </div>
+
+                            <div class="con02">
+                                <h5><small>■</small>프로그램 목적</h5>
+                                <ul>
+                                    <li>- 정책대상 장애인들에게 지속적인 정서지원을 통해 지역사회적응 및 자립생활에 필요한 서비스 지원</li>
+                                    <li>▶ 신청기간 : 별도공지</li>
+                                    <li>▶ 신청 및 접수 : 제주시장애인지역사회통합돌봄지원센터(T.064-751-5150)</li>
+                                    <li>▶ 프로그램 내용</li>
+                                    <li>
+                                        <table class="program">
+                                            <tbody>
+                                                <tr>
+                                                    <th>프로그램명</th>
+                                                    <th>내용</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>개인상담</td>
+                                                    <td>
+                                                        <ul class="table_contents">
+                                                            <li>- 주호소 문제 등 심리정서적 어려움을 겪고 있는 장애인에게 1:1 상담 실시</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>집단 심리치료 <br>프로그램</td>
+                                                    <td>
+                                                        <ul class="table_contents">
+                                                            <li>- 다양한 활동을 통해 관계를 형성하고 심리적 안정 유도</li>
+                                                            <li>- 인형치료, 원예치료, 미술치료, 음악치료, 소통향상 집단상담 등</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>개인별 지원 및 <br>자립생활 프로그램</td>
+                                                    <td>
+                                                        <ul class="table_contents">
+                                                            <li>- 참가자들의 자립생활 욕구를 토대로 개별 목표 설정</li>
+                                                            <li>- 정서지원, 자치활동, 여가활동, 직업지원 등 일상생활 기술훈련의 기회 제공</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>주말여가활동 지원</td>
+                                                    <td>
+                                                        <ul class="table_contents">
+                                                            <li>- 토요일 문화·여가활동 지원</li>
+                                                            <li>- 또래와 소통할 수 있는 체험 중심의 활동 제공</li>
+                                                            <li>- 청년클럽과 1:1 매칭으로 안전하고 다양한 체험활동 진행</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>겨울·여름 계절학교</td>
+                                                    <td>
+                                                        <ul class="table_contents">
+                                                            <li>- 방학 기간 동안 다양한 활동 (체험 및 야외활동)을 통해 지역사회 적응 지원</li>
+                                                            <li>- 방학 통합돌봄교실 운영</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>방과후 돌봄교실</td>
+                                                    <td>
+                                                        <ul class="table_contents">
+                                                            <li>- 돌봄 사각지대 해소 및 돌봄 공백 해결</li>
+                                                            <li>- 체험, 놀이, 미술 활동 등의 프로그램으로 방과 후 시간 동안 다채로운 경험 지원</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="tab07" class="tab_contents">
+                            <h4>지역사회 연계사업</h4>
+                            <div class="con01">
+                                <h5><small>■</small>목적</h5>
+                                <ul>
+                                    <li>지역사회의 다양한 기관의 연계와 협력을 통해 지역사회 안에서 생활하면서 필요한 지원을 받으며 안정적인 삶을 누릴 수 있도록 지속가능한 지원체계 구축 및 서비스 통합 관리</li>
+                                </ul>
+                            </div>
+
+                            <div class="con02">
+                                <h5><small>■</small>사업 내용</h5>
+                                <ul>
+                                    <li>- 체계적인 센터 운영을 위하여 각계 전문가들과 협약하는 업무협약 진행</li>
+                                    <li>- 지역사회 내 유관단체와의 연대·협력을 통한 자원연계 및 인프라 구축</li>
+                                    <li><img src="/wp/assets/source/images/table.png" alt="">
+
+                                        <div class="sr-only">
+                                            운영기관인 제주시의 지도 감독하에
+                                            운영비를 교부하고,
+                                            주민센터에서 대상자를 연계, 서비스 신청을 접수합니다.
+
+                                            지역사회통합돌봄지원센터는 아래의 다양한 기관과 함께,
+                                            지역사회 내 독립거주 정책대상자에게 다양한 서비스를 제공합니다.
+
+                                            제공 서비스
+                                            - 지원주택사업
+                                            - 이동지원사업
+                                            - 행복플래너사업
+                                            - 안심생활지원사업
+                                            - 가족기능강화사업
+                                            - 상담 및 정서지원사업
+
+                                            함께하는 기관
+                                            - 공공서비스기관 (발달장애인지원센터 및 국민연금관리공단),
+                                            - 주택공급기관 (LH토지주택공사 및 제주특별자치도 개발공사),
+                                            - 지역사회 서비스기관 (주거복지센터,장애인복지관,장애인자립생활센터,장애인직업재활센터,정신건강복지센터,보건소,푸드뱅크마켓,비영리복지재단)
+                                            - 권익옹호기관 (한국자폐인사랑협회(발달장애인 신탁서비스)),공공후견지원사업 기관,장애인권익옹호기관,장애인부모회)
+
+                                        </div>
+                                    
+                                    
+                                    
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="con05">
+                                <h5><small>■</small>영역별 연계기관</h5>
+                                <ul class="service agency">
+                                    <li>
+                                        <div>
+                                            <small>STEP 01</small>
+                                            <h5><img src="/wp/assets/source/images/s01.svg" alt="">주거</h5>
+                                            <p>주거공간 마련 및 유지관련 지원</p>
+                                            <ul>
+                                                <li>· LH공사</li>
+                                                <li>· 제주개발공사</li>
+                                                <li>· 주민센터 및 지역</li>
+                                                <li>· 사회기관</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <small>STEP 02</small>
+                                            <h5><img src="/wp/assets/source/images/s02.svg" alt="">일상생활</h5>
+                                            <p>주거생활유지에 필요한 일상생활 지원</p>
+                                            <ul>
+                                                <li>· 사회적경제지원센터<span>적십자회</span></li>
+                                                <li>· 보건소 및 병원</li>
+                                                <li>· 활동지원서비스 제공기관</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <small>STEP 03</small>
+                                            <h5><img src="/wp/assets/source/images/s03.svg" alt="">사회참여</h5>
+                                            <p>지역사회 이용 및 사회활동 참여 지원</p>
+                                            <ul>
+                                                <li>· 장애인복지관</li>
+                                                <li>· 장애인자립생활센터</li>
+                                                <li>· 정신건강복지센터</li>
+                                                <li>· 장애인 취업알선기관</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <small>STEP 04</small>
+                                            <h5><img src="/wp/assets/source/images/s04.svg" alt="">옹호</h5>
+                                            <p>권리보호 및 자기결정권 보장 지원</p>
+                                            <ul>
+                                                <li>· 발달장애인지원센터</li>
+                                                <li>· 장애인권익옹호기관</li>
+                                                <li>· 한국자폐인사랑협회</li>
+                                                <li>· 장애인부모회</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </section>
                 </div>
             </div>
-
-            <section class="contents">
-
-                <ul class="tabs">
-                    <li>
-                        <a href="#" class="active" data="tab01">지원주택 <br>사업</a>
-                    </li>
-                    <li>
-                        <a href="#" data="tab02">이동지원 <br>사업</a>
-                    </li>
-                    <li>
-                        <a href="#" data="tab03">행복플래너 사업</a>
-                    </li>
-                    <li>
-                        <a href="#" data="tab04">안심생활 <br>지원사업</a>
-                    </li>
-                    <li>
-                        <a href="#" data="tab05">가족기능 <br>강화사업</a>
-                    </li>
-                    <li>
-                        <a href="#" data="tab06">상담 및 정서지원사업</a>
-                    </li>
-                    <li>
-                        <a href="#" data="tab07">지역사회 <br>연계사업</a>
-                    </li>
-                </ul>
-
-                <div id="tab01" class="tab_contents active">
-                    <h4>지원주택 사업</h4>
-                    <div class="con01">
-                        <h5><small>■</small>사업 대상자</h5>
-                        <ul>
-                            <li>희망하는 입주 신청일 기준 만 19세 이상, 만 55세 이하인 자에 해당하는 제주시에 주소를 둔 발달(지적·자폐성)장애인, 뇌병변 장애인</li>
-                        </ul>
-                    </div>
-
-                    <div class="con03">
-                        <h5><small>■</small>지원주택</h5>
-                        <div class="care">
-                            <h6><img src="/wp/assets/source/images/logo3.svg" alt="">지원주택이란?</h6>
-                            <p>지원주택은 지역사회 주거생활이 취약한 사람들에게 안정적인 주거생활이 가능하도록 주택을 제공하면서 여기에 필요한 서비스를 연결하는 것을 의미</p>
-                        </div>
-                        <ul class="care-list">
-                            <li>▶ 입주조건</li>
-                            <li>- 생활비 부담이 가능하고 지원주택에서 제공하는 자립생활지원서비스를 통해 자립생활이 가능한 자</li>
-                            <li>- 일상생활능력이 있거나 서비스 지원을 받으면 일상생활에 큰 지장이 없는 자</li>
-                            <li>- 공동생활(2인)에 있어 결격사유가 없는 자</li>
-                            <li>▶ 이용절차</li>
-                            <li>
-                                <ul class="use">
-                                    <li>
-                                        <h6>입주자 모집공고</h6>
-                                        <p>읍면동주민센터<span>통합돌봄창구</span></p>
-                                    </li>
-                                    <li>
-                                        <h6>입주 신청</h6>
-                                        <p>읍면동주민센터<span>통합돌봄창구</span></p>
-                                    </li>
-                                    <li>
-                                        <h6>초기 면접</h6>
-                                        <p class="pt">통합돌봄지원센터</p>
-                                    </li>
-                                    <li>
-                                        <h6>입주자 선정</h6>
-                                        <p class="pt">통합돌봄지원센터</p>
-                                    </li>
-                                    <li>
-                                        <h6>지원주택 입주</h6>
-                                        <p class="pt">통합돌봄지원센터</p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="con04">
-                        <h5><small>■</small>서비스 지원체계</h5>
-                        
-                        <div class="happy">
-                            <h6>행복플래너</h6>
-                            <img src="/wp/assets/source/images/h01.png" alt="행복플래너">
-                            <p>제주시장애인지역사회통합돌봄지원센터</p>
-                        </div>
-
-                        <div class="happy icon">
-                            <h6>행복코치</h6>
-                            <img src="/wp/assets/source/images/h02.png" alt="행복플래너">
-                            <div class="sr-only">금전관리,건강관리,주택관리,쇼핑,가사관리,사회활동,주택알선</div>
-                            <p>장애인지원주택</p>
-                        </div>
-                    </div>
-                    <div class="con05">
-                        <h5><small>■</small>서비스 영역</h5>
-                        <ul class="service">
-                            <li>
-                                <div>
-                                    <small>STEP 01</small>
-                                    <h5><img src="/wp/assets/source/images/s01.svg" alt="">주거</h5>
-                                    <p>주거공간 마련 및 유지관련 지원</p>
-                                    <ul>
-                                        <li>· 주택알선 및 계약</li>
-                                        <li>· 임대주택 신청</li>
-                                        <li>· 주거관리 및 유지</li>
-                                        <li>· 이사 지원</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <small>STEP 02</small>
-                                    <h5><img src="/wp/assets/source/images/s02.svg" alt="">일상생활</h5>
-                                    <p>주거생활유지에 필요한 일상생활 지원</p>
-                                    <ul>
-                                        <li>· 자기관리</li>
-                                        <li>· 가사관리</li>
-                                        <li>· 건강관리</li>
-                                        <li>· 금전관리</li>
-                                        <li>· 개인안전</li>
-                                        <li>· 비상대응 계획</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <small>STEP 03</small>
-                                    <h5><img src="/wp/assets/source/images/s03.svg" alt="">사회참여</h5>
-                                    <p>지역사회 이용 및 사회활동 참여 지원</p>
-                                    <ul>
-                                        <li>· 쇼핑</li>
-                                        <li>· 교통수단</li>
-                                        <li>· 여가활동</li>
-                                        <li>· 지역사회활동</li>
-                                        <li>· 관계</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <small>STEP 04</small>
-                                    <h5><img src="/wp/assets/source/images/s04.svg" alt="">옹호</h5>
-                                    <p>권리보호 및 자기결정권 보장 지원</p>
-                                    <ul>
-                                        <li>· 법률지원 연계</li>
-                                        <li>· 공공후견인 신청</li>
-                                        <li>· 발달장애인 신탁 연계</li>
-                                        <li>· 권리 보호</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </div>
-
-                <div id="tab02" class="tab_contents">
-                    <h4>이동지원 사업</h4>
-                    <div class="con01">
-                        <h5><small>■</small>사업 대상자</h5>
-                        <ul>
-                            <li>제주시에 주소를 둔 발달(지적·자폐성)장애인, 뇌병변장애인 중 이동지원 서비스가 필요한 자</li>
-                        </ul>
-                    </div>
-
-                    <div class="con02">
-                        <h5><small>■</small>사업 내용</h5>
-                        <ul>
-                            <li>- 민원업무, 병원 이용 등 이동이 필요한 장애인에게 이동지원 서비스 제공</li>
-                            <li>- 필요시 보호자 탑승가능하며, 예약제로 운행</li>
-                        </ul>
-                    </div>
-                    <div class="con03">
-                        <h5><small>■</small>사업 안내</h5>
-                        <ul>
-                            <li>▶ 신청접수 : 제주시장애인지역사회통합돌봄지원센터</li>
-                            <li>▶ 이용절차</li>
-                            <li>
-                                <ul class="use">
-                                    <li>
-                                        <h6>신청문의</h6>
-                                        <p>통합돌봄지원센터 및<span>읍면동주민센터</span>통합돌봄창구</p>
-                                    </li>
-                                    <li>
-                                        <h6>신청서작성 및 제출</h6>
-                                        <p class="pt">통합돌봄지원센터</p>
-                                    </li>
-                                    <li>
-                                        <h6>예약전화</h6>
-                                        <p class="pt">통합돌봄지원센터</p>
-                                    </li>
-                                    <li>
-                                        <h6>예약확인 및 승인</h6>
-                                        <p class="pt">통합돌봄지원센터</p>
-                                    </li>
-                                    <li>
-                                        <h6>차량배치 및 이용</h6>
-                                        <p class="pt">통합돌봄지원센터</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>▶ 이용요금 : 무료</li>
-                            <li>▶ 운행시간 : 09:00 ~ 18:00 (월~금요일, 공휴일 제외)</li>
-                            <li>▶ 운행지역 : 제주특별자치도 전지역 (섬지역 제외)</li>
-                            <li>▶ 운행차량 : 총 3대 (휠체어 슬로프 차량 2대, 12인승 승합차량 1대)</li>
-                            <li>▶ 준수사항</li>
-                            <li>- 예약전화를 통해 이용 신청해 주세요. (시내 1일 전 / 시외 및 읍면 2일 전)</li>
-                            <li>- 특정 차량 또는 운전원을 지정할 수 없습니다.</li>
-                            <li>- 출발지·목적지 변경 및 예약을 취소할 경우에는 최소 1시간 전까지 연락 바랍니다.</li>
-                            <li>- 운전원에게 안전운행에 방해되는 신체적 접촉이나 폭언은 삼가해 주세요.</li>
-                            <li>- 안전운행에 필요한 경우 보호자가 동승할 수 있습니다.</li>
-                            <li>- 준수사항을 이행하지 않을 시 이용이 제한될 수 있습니다.</li>
-                        </ul>
-                        <p>※ 기타 문의사항 또는 민원 발생 시 <span>제주시장애인지역사회통합돌봄지원센터 (T.064-751-5150)</span>로 연락 바랍니다.</p>
-                    </div>
-                </div>
-
-                <div id="tab03" class="tab_contents">
-                    <h4>행복플래너 사업</h4>
-                    <div class="con01">
-                        <h5><small>■</small>사업 대상자</h5>
-                        <ul>
-                            <li>본인 또는 가족이 마련한 주택에서 독립생활을 유지하고 있으나 주거지원 서비스가 필요한 제주시에 주소를 둔 발달(지적·자폐성)장애인, 뇌병변장애인</li>
-                        </ul>
-                    </div>
-
-                    <div class="con02">
-                        <h5><small>■</small>운영인력</h5>
-                        <ul>
-                            <li>▶ 행복플래너</li>
-                            <li>- 정책대상자에 대한 사례관리 및 서비스 연계 지원</li>
-                            <li>- 입주자가 지역사회에서 일상생활에 필요한 다양한 프로그램 지원</li>
-                            <li>- 지원당사자의 '주거'와 '옹호'를 중점적으로 지원</li>
-                            <li>- 임대주택신청 및 주택 마련 알선, 사회서비스 신청</li>
-                            <li>- 자원개발 및 서비스 연계</li>
-                            <li>- 당사자 및 보호자 상담 및 교육</li>
-                            <li>- 행복코치 업무조정 및 연계</li>
-                        </ul>
-                    </div>
-
-                    <div class="con03">
-                        <h5><small>■</small>서비스 내용</h5>
-                        <ul>
-                            <li>- 주거 : 주택마련 및 이사 지원, 주거환경 개선 지원 등</li>
-                            <li>- 사회참여 : 쇼핑, 교통수단, 지역사회활동, 여가활동지원, 관계(대인관계 상담 및 교육) 등</li>
-                            <li>- 일상생활 : 자기관리, 영양, 가사관리, 시간관리, 개인안전/비상대응계획, 건강관리, 금전관리 등</li>
-                            <li>- 옹호 : 선택(종교활동/낮활동, 직업 및 직장 선택 지원 등), 자기옹호(권리침해구제, 옹호관련 교육 진행 등), 기타(의사소통지원, <span>신탁/공공후견인 연결, 활동지원사 연결 등)</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="con04">
-                        <h5><small>■</small>이용 절차</h5>
-                        <ul>
-                            <li>
-                                <ul class="use">
-                                    <li>
-                                        <h6>신청문의</h6>
-                                        <p>통합돌봄지원센터 및 <span>읍면동주민센터</span>통합돌봄창구</p>
-                                    </li>
-                                    <li>
-                                        <h6>신청서작성 및 제출</h6>
-                                        <p>통합돌봄지원센터 및 <span>읍면동주민센터</span>통합돌봄창구</p>
-                                    </li>
-                                    <li>
-                                        <h6>대상자 선정 및 승인</h6>
-                                        <p class="pt">통합돌봄지원센터</p>
-                                    </li>
-                                    <li>
-                                        <h6>서비스 지원</h6>
-                                        <p class="pt">통합돌봄지원센터</p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div id="tab04" class="tab_contents">
-                    <h4>안심생활 지원사업</h4>
-                    <div class="con01">
-                        <h5><small>■</small>사업 대상자</h5>
-                        <ul>
-                            <li>제주시에 주소를 둔 발달(지적·자폐성)장애인, 뇌병변장애인 200가구</li>
-                        </ul>
-                    </div>
-
-                    <div class="con02">
-                        <h5><small>■</small>사업 내용</h5>
-                        <ul>
-                            <li>- 스마트홈케어서비스 : 스마트허브, 응급호출기, 화재감지센서, 자동가스차단기, 도어센서, 스마트IoT(사물인터넷) LED거실등, <span>스마트플러그, 활동량감지센서</span></li>
-                            <li>- 모니터링 및 안전확인 : 모니터링 요원이 응급상황 실시간 모니터링을 통한 안전 확인 서비스</li>
-                        </ul>
-                    </div>
-                    <div class="con03">
-                        <h5><small>■</small>응급안전시스템(스마트홈케어서비스)</h5>
-                        <div class="care">
-                            <h6><img src="/wp/assets/source/images/logo3.svg" alt="">스마트홈케어 서비스란?</h6>
-                            <p>장애인 가정에 활동량감지기, 응급호출기, 스마트 전등, 가스차단기 등을 설치하여 응급상황 발생시 보호자 및 응급안전요원에게 연락해 후속 조치를 제공하는 서비스입니다.</p>
-                        </div>
-                        <ul class="care-list">
-                            <li>▶ 신청 및 접수 방법 : 주민등록상 주소지 주민센터 통합돌봄 창구 방문 신청</li>
-                            <li>- 신청서류 : 제주시 장애인 지역사회 통합돌봄 신청서 1부 / 개인정보 수집·이용 제공동의서 1부</li>
-                            <li>- 문의처 : 읍·면·동 주민센터 통합돌봄 창구(064-728-3041 ~ 3043) / 제주시장애인지역사회통합돌봄지원센터 (064-751-5150)</li>
-                            <li>▶ 주요서비스</li>
-                            <li>
-                                <img src="/wp/assets/source/images/service.png" alt="">
-                                <div class="sr-only">
-                                    24시간 항시돌봄, 119 응급호출, 365 활동량 분석, 24시간 비상호출
-                                </div>
-                            </li>
-                            <li>▶ 지원장비</li>
-                            <li class="eq"><img src="/wp/assets/source/images/equipment.png" alt="">
-                                <div class="sr-only">
-                                    <h6>게이트웨이</h6>
-                                    원터치 응급 호출 버튼,
-                                    특허받은 자동 활동량 모니터링 시스템,
-                                    단축키를 이용한 무료통화 서비스,
-                                    <h6>스마트 전등</h6>
-                                    리모컨을 이용한 전등 오픈
-                                    <h6>활동량 감지기</h6>
-                                    침실, 화장실 및 주방에서의 활동량을 감지하여 응급상황 인지
-                                    <h6>가스차단기</h6>
-                                    화재위험시 자동으로 가스차단
-                                    <h6>도어 센서</h6>
-                                    <h6>IOT 전등스위치</h6>
-                                    <h6>IOT 스마트플러그</h6>
-                                    
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div id="tab05" class="tab_contents">
-                    <h4>가족기능 강화사업</h4>
-                    <div class="con01">
-                        <h5><small>■</small>사업 대상자</h5>
-                        <ul>
-                            <li>제주시에 주소를 둔 발달(지적·자폐성)장애인, 뇌병변장애인과 그 가족</li>
-                        </ul>
-                    </div>
-
-                    <div class="con02">
-                        <h5><small>■</small>프로그램 목적</h5>
-                        <ul>
-                            <li>- 장애인 가족의 갈등 해소 도움 및 정서적 안정과 바람직한 가족 기능을 강화시켜 건전하고 적극적인 사회활동 참여 및 <span>가족의 삶의 질 향상 지원</span></li>
-                            <li>▶ 신청기간 : 별도공지</li>
-                            <li>▶ 신청 및 접수 : 제주시장애인지역사회통합돌봄지원센터(T.064-751-5150)</li>
-                            <li>▶ 프로그램 내용</li>
-                            <li>
-                                <table class="program">
-                                    <tbody>
-                                        <tr>
-                                            <th>프로그램명</th>
-                                            <th>내용</th>
-                                        </tr>
-                                        <tr>
-                                            <td>부모 자조모임 및 교육</td>
-                                            <td>
-                                                <ul class="table_contents">
-                                                    <li>- 부모 자조 모임을 통한 정보 공유와 지지, 교육을 통한 자녀양육 기술 습득</li>
-                                                    <li>- 취미개발, 여가문화지원, 생애주기별 양육방법, 문제해결방법 등 멘토형, 강의형, 체험형 프로그램 제공</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>가족스튜디오</td>
-                                            <td>
-                                                <ul class="table_contents">
-                                                    <li>- 다양한 사연으로 문화 활동에 어려움을 겪는 장애인 가족의 행복한 추억을 사진으로 남겨 가정의 <span>행복감 및 유대관계 강화</span></li>
-                                                    <li>- 2020 행복한 추억 가족사진, 가족사진 액자 무료제공</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>가족테마여행</td>
-                                            <td>
-                                                <ul class="table_contents">
-                                                    <li>- 가족 간의 결속력을 강화하고, 일상에서 벗어나 야외 활동을 즐김으로써 장애인 부양에 대한 <span>스트레스를 경감</span></li>
-                                                    <li>- 슬로프차량 지원을 통한 가족나들이(아름다운 하루), 가족테마여행</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>가족한마당</td>
-                                            <td>
-                                                <ul class="table_contents">
-                                                    <li>- 가족관계 증진을 위한 가족한마당 축제 진행</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>가족 정서지원</td>
-                                            <td>
-                                                <ul class="table_contents">
-                                                    <li>- 정서적 지지를 통한 가족기능 강화</li>
-                                                    <li>- 부부상담, 가족 집단상담, 가족놀이 치료 등</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div id="tab06" class="tab_contents">
-                    <h4>상담 및 정서 지원사업</h4>
-                    <div class="con01">
-                        <h5><small>■</small>사업 대상자</h5>
-                        <ul>
-                            <li>제주시에 거주하는 발달(지적,자폐성)장애인 및 뇌병변장애인</li>
-                        </ul>
-                    </div>
-
-                    <div class="con02">
-                        <h5><small>■</small>프로그램 목적</h5>
-                        <ul>
-                            <li>- 정책대상 장애인들에게 지속적인 정서지원을 통해 지역사회적응 및 자립생활에 필요한 서비스 지원</li>
-                            <li>▶ 신청기간 : 별도공지</li>
-                            <li>▶ 신청 및 접수 : 제주시장애인지역사회통합돌봄지원센터(T.064-751-5150)</li>
-                            <li>▶ 프로그램 내용</li>
-                            <li>
-                                <table class="program">
-                                    <tbody>
-                                        <tr>
-                                            <th>프로그램명</th>
-                                            <th>내용</th>
-                                        </tr>
-                                        <tr>
-                                            <td>개인상담</td>
-                                            <td>
-                                                <ul class="table_contents">
-                                                    <li>- 주호소 문제 등 심리정서적 어려움을 겪고 있는 장애인에게 1:1 상담 실시</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>집단 심리치료 <br>프로그램</td>
-                                            <td>
-                                                <ul class="table_contents">
-                                                    <li>- 다양한 활동을 통해 관계를 형성하고 심리적 안정 유도</li>
-                                                    <li>- 인형치료, 원예치료, 미술치료, 음악치료, 소통향상 집단상담 등</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>개인별 지원 및 <br>자립생활 프로그램</td>
-                                            <td>
-                                                <ul class="table_contents">
-                                                    <li>- 참가자들의 자립생활 욕구를 토대로 개별 목표 설정</li>
-                                                    <li>- 정서지원, 자치활동, 여가활동, 직업지원 등 일상생활 기술훈련의 기회 제공</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>주말여가활동 지원</td>
-                                            <td>
-                                                <ul class="table_contents">
-                                                    <li>- 토요일 문화·여가활동 지원</li>
-                                                    <li>- 또래와 소통할 수 있는 체험 중심의 활동 제공</li>
-                                                    <li>- 청년클럽과 1:1 매칭으로 안전하고 다양한 체험활동 진행</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>겨울·여름 계절학교</td>
-                                            <td>
-                                                <ul class="table_contents">
-                                                    <li>- 방학 기간 동안 다양한 활동 (체험 및 야외활동)을 통해 지역사회 적응 지원</li>
-                                                    <li>- 방학 통합돌봄교실 운영</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>방과후 돌봄교실</td>
-                                            <td>
-                                                <ul class="table_contents">
-                                                    <li>- 돌봄 사각지대 해소 및 돌봄 공백 해결</li>
-                                                    <li>- 체험, 놀이, 미술 활동 등의 프로그램으로 방과 후 시간 동안 다채로운 경험 지원</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div id="tab07" class="tab_contents">
-                    <h4>지역사회 연계사업</h4>
-                    <div class="con01">
-                        <h5><small>■</small>목적</h5>
-                        <ul>
-                            <li>지역사회의 다양한 기관의 연계와 협력을 통해 지역사회 안에서 생활하면서 필요한 지원을 받으며 안정적인 삶을 누릴 수 있도록 지속가능한 지원체계 구축 및 서비스 통합 관리</li>
-                        </ul>
-                    </div>
-
-                    <div class="con02">
-                        <h5><small>■</small>사업 내용</h5>
-                        <ul>
-                            <li>- 체계적인 센터 운영을 위하여 각계 전문가들과 협약하는 업무협약 진행</li>
-                            <li>- 지역사회 내 유관단체와의 연대·협력을 통한 자원연계 및 인프라 구축</li>
-                            <li><img src="/wp/assets/source/images/table.png" alt="">
-
-                                <div class="sr-only">
-                                    운영기관인 제주시의 지도 감독하에
-                                    운영비를 교부하고,
-                                    주민센터에서 대상자를 연계, 서비스 신청을 접수합니다.
-
-                                    지역사회통합돌봄지원센터는 아래의 다양한 기관과 함께,
-                                    지역사회 내 독립거주 정책대상자에게 다양한 서비스를 제공합니다.
-
-                                    제공 서비스
-                                    - 지원주택사업
-                                    - 이동지원사업
-                                    - 행복플래너사업
-                                    - 안심생활지원사업
-                                    - 가족기능강화사업
-                                    - 상담 및 정서지원사업
-
-                                    함께하는 기관
-                                    - 공공서비스기관 (발달장애인지원센터 및 국민연금관리공단),
-                                    - 주택공급기관 (LH토지주택공사 및 제주특별자치도 개발공사),
-                                    - 지역사회 서비스기관 (주거복지센터,장애인복지관,장애인자립생활센터,장애인직업재활센터,정신건강복지센터,보건소,푸드뱅크마켓,비영리복지재단)
-                                    - 권익옹호기관 (한국자폐인사랑협회(발달장애인 신탁서비스)),공공후견지원사업 기관,장애인권익옹호기관,장애인부모회)
-
-                                </div>
-                            
-                            
-                            
-                            
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="con05">
-                        <h5><small>■</small>영역별 연계기관</h5>
-                        <ul class="service agency">
-                            <li>
-                                <div>
-                                    <small>STEP 01</small>
-                                    <h5><img src="/wp/assets/source/images/s01.svg" alt="">주거</h5>
-                                    <p>주거공간 마련 및 유지관련 지원</p>
-                                    <ul>
-                                        <li>· LH공사</li>
-                                        <li>· 제주개발공사</li>
-                                        <li>· 주민센터 및 지역</li>
-                                        <li>· 사회기관</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <small>STEP 02</small>
-                                    <h5><img src="/wp/assets/source/images/s02.svg" alt="">일상생활</h5>
-                                    <p>주거생활유지에 필요한 일상생활 지원</p>
-                                    <ul>
-                                        <li>· 사회적경제지원센터<span>적십자회</span></li>
-                                        <li>· 보건소 및 병원</li>
-                                        <li>· 활동지원서비스 제공기관</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <small>STEP 03</small>
-                                    <h5><img src="/wp/assets/source/images/s03.svg" alt="">사회참여</h5>
-                                    <p>지역사회 이용 및 사회활동 참여 지원</p>
-                                    <ul>
-                                        <li>· 장애인복지관</li>
-                                        <li>· 장애인자립생활센터</li>
-                                        <li>· 정신건강복지센터</li>
-                                        <li>· 장애인 취업알선기관</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <small>STEP 04</small>
-                                    <h5><img src="/wp/assets/source/images/s04.svg" alt="">옹호</h5>
-                                    <p>권리보호 및 자기결정권 보장 지원</p>
-                                    <ul>
-                                        <li>· 발달장애인지원센터</li>
-                                        <li>· 장애인권익옹호기관</li>
-                                        <li>· 한국자폐인사랑협회</li>
-                                        <li>· 장애인부모회</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </section>
         </div>
     </div>
     <!-- E:mainContent -->
-
     <!-- S:footer -->
     <footer id="footer">
         <div class="container">
@@ -768,11 +790,13 @@
                 <li>
                     <a href="#">개인정보보호정책</a>
                 </li>
+                <li>
+                    <a href="http://www.jejucc.or.kr/mng">사이트관리</a>
+                </li>
             </ul>
 
-
             <div class="agency">
-                <button class="agency-open">유관기관 <i class="icon-right-open"></i></button>
+                <button class="agency-open">유관기관 <i class="bx bxs-chevron-right"></i></button>
                 <div class="agency-link">
                     <a href="http://www.mohw.go.kr" target="blank" title="새창">보건복지부</a>
                     <a href="http://jejubokji.net" target="blank" title="새창">제주특별자치도사회복지협의회</a>
@@ -786,16 +810,23 @@
                     <a href="http://www.jejuaidd.or.kr" target="blank" title="새창">(사)제주특별자치도지적발달장애인복지협회</a>
                 </div>
 
-            </div>      
+            </div>
             <address>
-                    <p>제주특별자치도 제주시 중앙로 273, 나라키움 제주복합관사 101호(이도이동)  TEL: 064-751-5150  FAX: 064-756-5150</p>
-                    <p>개소일: 2019년 11월 28일  센터장: 최영열</p>
+                <p><strong>제주시장애인지역사회통합돌봄지원센터</strong> 센터장: 최영열</p>
+                    <p>제주특별자치도 제주시 중앙로 273, 나라키움 제주복합관사 101호(이도이동)</p>
+                    <p>TEL: 064-751-5150  FAX: 064-756-5150</p>
+                    <p>개소일: 2019년 11월 28일</p>
                 </address>
 
             <p class="copyright">ⓒ제주시장애인지역사회통합돌봄지원센터 All Rights Reserved.</p>
+
         </div>
     </footer>
     <!-- E:footer -->
+
+
+
+    <div class="sidebar">
 </body>
 
 </html>
