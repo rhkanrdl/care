@@ -1,11 +1,11 @@
 // out: ./style.css, compress: false, sourceMap: false
 
-// @import "rem.less";
-// @import "/wp/assets/source/css/normalize.css";
-// @import "/wp/assets/source/css/fontello.css";
-
-@import "normalize.css";
 @import "rem.less";
+@import "/wp/assets/source/css/normalize.css";
+@import "/wp/assets/source/css/fontello.css";
+
+// @import "normalize.css";
+// @import "rem.less";
 // @import "fontello.css";
 
 /* fonts */
@@ -36,8 +36,8 @@
 /* basic */
 @min-width: 1200px;
 @myfont: "NanumSquare";
-@img-url: "../images";
-// @img-url: "/wp/assets/source/images";
+// @img-url: "../images";
+@img-url: "/wp/assets/source/images";
 @header-height: 100px;
 
 /* color */
@@ -766,6 +766,15 @@ body {
 
                     ul.main_img {
                         .mapazero;
+
+                        li {
+                            a {
+                                img {
+                                    width:1200px;
+                                    height:470px;
+                                }
+                            }
+                        }
                     }
 
 
@@ -830,7 +839,7 @@ body {
                     .zero;
                     width:635px;
                     height:110px;
-                    background:url('../images/slogan.svg') no-repeat center / 100% auto;
+                    background:url('@{img-url}/slogan.svg') no-repeat center / 100% auto;
                 }
             }
 
