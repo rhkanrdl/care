@@ -3426,8 +3426,11 @@ body div#content .sub_container .mov-list .bbs_container ul.list li {
   min-height: 200px;
 }
 body div#content .sub_container .mov-list .bbs_container ul.list li a {
-  display: block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-right: 184px;
+  word-break: keep-all;
+  line-height: 1.6;
   position: absolute;
   left: 0;
   right: 0;
@@ -3435,7 +3438,6 @@ body div#content .sub_container .mov-list .bbs_container ul.list li a {
   bottom: 0;
   text-align: left;
   padding-left: 240px;
-  line-height: 200px;
 }
 body div#content .sub_container .mov-list .bbs_container ul.list li a p.img {
   margin: 0;
@@ -3484,7 +3486,6 @@ body div#content .sub_container .mov-list .bbs_container ul.list li a i {
   font-style: normal;
   position: absolute;
   right: 0;
-  top: 0;
   margin: 0;
   padding: 0;
 }
