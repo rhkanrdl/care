@@ -142,7 +142,7 @@ $(document).ready(function() {
 
     $('div.out_news div.outline').slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
         vertical:true,
         nextArrow: $('div.out_news .right'),
@@ -194,21 +194,34 @@ try {
 
     var mainSlider = $('.slider').bxSlider({
         auto: true, 
+        minSlides: 2,
+        maxSlides: 3,
+        moveSlides: 1,
         speed: 500, 
         pause: 4000, 
-        pager: true,
+        pager: false,
         accessibility: false,
-        controls: true,
+        controls: false,
+        slideWidth:376,
+        
+        autoControlsCombine: true,
+        autoControlsSelector: '.main_issue .stop',
+        
         
         onSliderLoad: function(){
 
             $(".bx-clone").find("a").prop("tabIndex","-1");
             $(".bx-pager-item").find("a").prop("tabIndex","-1");
+
+            $('.slider>li').eq(1).addClass('active-slide');
     
         },
     
-        onSlideAfter: function(){
+        onSlideAfter: function(currentSlideNumber, totalSlideQty, currentSlideHtmlObject){
     
+            $('.active-slide').removeClass('active-slide');
+            $('.slider>li').eq(currentSlideHtmlObject + 1).addClass('active-slide');
+
             $(".slider").children("li").each(function(){
                 if($(this).attr("aria-hidden") == "false"){
                     $(this).find("a").attr("tabIndex","0");
@@ -221,6 +234,16 @@ try {
         }
     
     });
+
+
+    $(".main_issue .prev").click(function(){
+        mainSlider.goToPrevSlide();
+        mainSlider.startAuto();
+      });
+      $(".main_issue .next").click(function(){
+        mainSlider.goToNextSlide();
+        mainSlider.startAuto();
+      });
     
     
     // 웹 접근성
@@ -231,6 +254,9 @@ try {
     
     });
             
+
+
+    
     
     
 } catch(e) {}
