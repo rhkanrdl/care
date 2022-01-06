@@ -1,53 +1,98 @@
 // out: ./style.css, compress: false, sourceMap: false
 
-// @import "rem.less";
-// @import "/wp/assets/source/css/normalize.css";
-// @import "/wp/assets/source/css/fontello.css";
-
-@import "normalize.css";
 @import "rem.less";
-@import "fontello.css";
+@import "/wp/assets/source/css/normalize.css";
+@import "/wp/assets/source/css/fontello.css";
+
+// @import "normalize.css";
+// @import "rem.less";
+// @import "fontello.css";
 
 /* fonts */
 
-
 @font-face {
     font-family: 'S-CoreDream';
-    // font-family: 'S-CoreDream-4Regular';
-    src: url('../font/S-CoreDream-4Regular.woff') format('woff');
+    src: url('/wp/assets/source/font/S-CoreDream-4Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
-}
-@font-face {
+  }
+  @font-face {
     font-family: 'S-CoreDream';
-    // font-family: 'S-CoreDream-5Medium';
-    src: url('../font/S-CoreDream-5Medium.woff') format('woff');
+    src: url('/wp/assets/source/font/S-CoreDream-5Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
-}
-
-@font-face {
+  }
+  @font-face {
     font-family: 'S-CoreDream';
-    // font-family: 'S-CoreDream-6Bold';
-    src: url('../font/S-CoreDream-6Bold.woff') format('woff');
+    src: url('/wp/assets/source/font/S-CoreDream-6Bold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
-}
-@font-face {
+  }
+  @font-face {
     font-family: 'S-CoreDream';
-    // font-family: 'S-CoreDream-8Heavy';
-    src: url('../font/S-CoreDream-8Heavy.woff') format('woff');
+    src: url('/wp/assets/source/font/S-CoreDream-8Heavy.woff') format('woff');
     font-weight: 800;
     font-style: normal;
-}
-
-@font-face {
+  }
+  @font-face {
     font-family: 'S-CoreDream';
-    // font-family: 'S-CoreDream-9Black';
-    src: url('../font/S-CoreDream-9Black.woff') format('woff');
+    src: url('/wp/assets/source/font/S-CoreDream-9Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 100;
+    src: url(/wp/assets/source/font/NotoSansKR-Thin.woff2) format('woff2'),
+    url(/wp/assets/source/font/NotoSansKR-Thin.woff) format('woff'),
+    url(/wp/assets/source/font/NotoSansKR-Thin.otf) format('opentype');
+} 
+    
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/wp/assets/source/font/NotoSansKR-Light.woff2) format('woff2'),
+    url(/wp/assets/source/font/NotoSansKR-Light.woff) format('woff'),
+    url(/wp/assets/source/font/NotoSansKR-Light.otf) format('opentype');
+} 
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/wp/assets/source/font/NotoSansKR-Regular.woff2) format('woff2'),
+    url(/wp/assets/source/font/NotoSansKR-Regular.woff) format('woff'),
+    url(/wp/assets/source/font/NotoSansKR-Regular.otf) format('opentype');
+} 
+
+@font-face {font-family: 'Noto Sans KR';
+    font-style: normal;font-weight: 500;
+    src: url(/wp/assets/source/font/NotoSansKR-Medium.woff2) format('woff2'),
+    url(/wp/assets/source/font/NotoSansKR-Medium.woff) format('woff'),
+    url(/wp/assets/source/font/NotoSansKR-Medium.otf) format('opentype');
+} 
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/wp/assets/source/font/NotoSansKR-Bold.woff2) format('woff2'),
+    url(/wp/assets/source/font/NotoSansKR-Bold.woff) format('woff'),
+    url(/wp/assets/source/font/NotoSansKR-Bold.otf) format('opentype');
+} 
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    src: url(/wp/assets/source/font/NotoSansKR-Black.woff2) format('woff2'),
+    url(/wp/assets/source/font/NotoSansKR-Black.woff) format('woff'),
+    url(/wp/assets/source/font/NotoSansKR-Black.otf) format('opentype');
 }
+
 
 
 
@@ -55,14 +100,14 @@
 
 /* basic */
 @min-width: 1200px;
-@myfont: "S-CoreDream";
-@img-url: "../images";
-// @img-url: "/wp/assets/source/images";
+@myfont: "Noto Sans KR";
+// @img-url: "../images";
+@img-url: "/wp/assets/source/images";
 @header-height: 100px;
 
 /* color */
 
-@main:#EA609E;
+@main:#8a365c;
 @font01:#333;
 @font02: #555;
 @white:#fff;
@@ -435,6 +480,7 @@ body {
 
         .container {
             height: 132px;
+            font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
 
             h1 {
                 .absolute;
@@ -459,6 +505,7 @@ body {
             left:50%;
             top:40px;
             margin-left:-300px;
+            font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
 
             ul.menu {
                 list-style:none;
@@ -495,7 +542,7 @@ body {
 
                          &.on {
                             height:80px;
-                            border-top-color:#EA609E;
+                            border-top-color:#8a365c;
                             .opacity(1);
                          }
 
@@ -535,7 +582,8 @@ body {
                                 a {
                                     .block;
                                     padding:0 10px;
-                                    font-size:18px;
+                                    font-size:16px;
+                                    letter-spacing:-1px;
                                     color:#555;
                                     .ani(0.4s);
 
@@ -758,31 +806,31 @@ body {
                     background:#D4D4D4;
                 }
 
+
+                ul.mainSlider {
+                    margin:0 50%;
+                    margin-left:calc(50% - 188px);
+
+                    li {
+                        margin:0 36px 0 0;
+                        padding:40px 0 90px;
+                        
+                        a {
+                            display:block;
+                            img {
+                                width:376px;
+                                height:450px;
+                                border-radius:20px;
+                                box-shadow: 0px 10px 20px #0000004F;
+                            }
+                        }
+
+                    }
+                }
+
                 .bx-wrapper {
                     max-width:100% !important;
                     
-
-                    ul.main_img {
-                        margin:0 50%;
-                        margin-left:calc(50% - 188px);
-
-                        li {
-                            margin:0 36px 0 0;
-                            padding:40px 0 90px;
-                            
-                            a {
-                                display:block;
-                                img {
-                                    width:376px;
-                                    height:450px;
-                                    border-radius:20px;
-                                    box-shadow: 0px 10px 20px #0000004F;
-                                }
-                            }
-
-                        }
-                    }
-
 
                 }
 
@@ -817,12 +865,22 @@ body {
                     height:110px;
                     background:url('@{img-url}/slogan.svg') no-repeat center / 100% auto;
                 }
+
+                // h2 {
+                    
+                //     margin:50px 0;
+                //     text-align:center;
+                //     font-size:32px;
+                //     font-weight:200;
+
+                // }
             }
 
             section.main_news {
                 div.container {
                     .zero;
                     padding-bottom:60px;
+                    font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
 
                     &>div {
                         .relative;
@@ -831,11 +889,12 @@ body {
                         border:1px solid #ccc;
                         width:585px;
                         height:342px;
+                        padding:0 30px;
 
                         h3 {
                             font-weight:600;
                             font-size:30px;
-                            margin:30px;
+                            margin:30px 0;
 
                             a {
                                 .zero;
@@ -874,23 +933,23 @@ body {
                         &.notice {
                             margin-right:29.9px;
 
-                            div.outline {
+                            ul.outline {
                                 .hidden;
-                                margin:0 22px;
 
 
-                                div.item {
+                                li {
                                     display:inline-block;
                                     vertical-align:top;
                                     font-size:14px;
+                                    margin-right:16px;
     
     
     
                                     a {
                                         .block;
-                                        padding:0 8px;
 
                                         p.image {
+                                            display:block;
                                             height:122px;
                                             margin:0 0 10px;
     
@@ -898,7 +957,7 @@ body {
                                                 .none;
                                             }
                                         }
-                                        span {
+                                        span.title {
                                             display:block;
                                             max-height:48px;
                                             overflow:hidden;
@@ -911,13 +970,16 @@ body {
                         }
 
                         &.out_news {
-                            
-                            div.outline {
-                                padding:0 30px;
+                            .bx-viewport {
+                                height:168px !important;
+                            }
+
+                            ul.outline {
                                 overflow:hidden;
                                 font-size:0;
-                                
-                                div.item {
+                                padding:0;
+
+                                li {
                                     margin-bottom:12px;
 
                                     span {
@@ -925,8 +987,9 @@ body {
                                         vertical-align:top;
                                         color:#222;
                                         margin-bottom:4px;
+                                        padding-right:10px;
                                         .ellipse;
-                                        width:70%;
+                                        width:62%;
                                         font-size:16px;
                                     }
 
@@ -934,7 +997,7 @@ body {
                                         margin:0;
                                         .inline-block;
                                         vertical-align:top;
-                                        width:15%;
+                                        width:23%;
                                         color:#2276B6;
                                         font-size:14px;
                                     }
@@ -962,6 +1025,7 @@ body {
                 div.container {
                     .zero;
                     padding-bottom:60px;
+                    font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
 
                     h3 {
                         font-weight:600;
@@ -978,49 +1042,65 @@ body {
                         }
                     }
 
-                    div.item {
-                        display:inline-block;
-                        width:280px;
-                        border-radius:20px;
-                        margin-right:26px;
-                        overflow:hidden;
-                        box-shadow: 0px 4px 14px #0000004F;
+                    ul.outline {
+                        margin:0;
+                        padding:0;
+                        list-style:none;
 
-                        &:last-of-type {
-                            margin-right:0;
-                        }
-
-                        p.image {
-                            width:100%;
-                            height:270px;
-
-                            img {
-                                display:none;
+                        li {
+                            display:inline-block;
+                            width:280px;
+                            border-radius:20px;
+                            margin-right:26px;
+                            overflow:hidden;
+                            box-shadow: 0px 4px 14px #0000004F;
+    
+                            &:last-child {
+                                margin-right:0;
                             }
-                        }
 
-                        div.text {
-                            span {
-                                display:block;
-                                font-size:18px;
-                                font-weight:600;
-                                padding:20px 20px 10px;
-                                height:72px;
-                                overflow:hidden;
+                            a {
+                                .block;
+
+                                &:focus {
+                                    border:2px solid #000;
+                                }
+
+                                p.image {
+                                    display:block;
+                                    width:100%;
+                                    height:270px;
+        
+                                    img {
+                                        display:none;
+                                    }
+                                }
+        
+                                div.text {
+                                    span {
+                                        display:block;
+                                        font-size:18px;
+                                        font-weight:600;
+                                        padding:20px 20px 10px;
+                                        height:72px;
+                                        overflow:hidden;
+                                    }
+                                    i {
+                                        display:block;
+                                        font-size:14px;
+                                        font-weight:200;
+                                        font-style:normal;
+                                        color:#555;
+                                        padding:0 20px 20px;
+                                    }
+                                }
+
                             }
-                            i {
-                                display:block;
-                                font-size:14px;
-                                font-weight:200;
-                                font-style:normal;
-                                color:#555;
-                                padding:0 20px 20px;
-                            }
+    
+    
                         }
-
-
+    
                     }
-
                 }
             }
 
@@ -1028,6 +1108,7 @@ body {
             section.photo_zone {
                 background:#eee;
                 padding:55px 0;
+                font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
 
                 div.container {
 
@@ -1056,32 +1137,42 @@ body {
                         }
                     }
 
+                    .bx-wrapper {
+                        max-width:100% !important;
+                    }
 
                     div.photo_list {
                         .relative;
                         .zero;
+                        height:0px;
+                        overflow:hidden;
 
+                        &.on {
+                            height:auto;
+                            padding-bottom:60px;
+                        }
 
 
                         button.btn {
-                            display:none !important;
+                            display:block;
                             .absolute;
-                            top:140px;
+                            bottom:0px;
                             width:50px;
-                            height:50px;
+                            height:30px;
                             padding:0;
                             border:none;
                             background:#999;
                             margin:0 4px;
                             border-radius:5px;
                             text-align:center;
+                            left:50%;
 
                             &.left {
-                                left:-70px;
+                                margin-left:-60px;
                             }
 
                             &.right {
-                                right:-70px;
+                                margin-left:10px;
                             }
 
                             i {
@@ -1090,22 +1181,18 @@ body {
                             }
                         }
 
-                        div.outline {
+                        ul {
                             overflow:hidden;
-                            height:0px;
 
-                            div.slick-list {
-                                margin:0 -15px;
-                            }
-
-                            div.item {
+                            li {
                                 display:inline-block;
                                 .top;
                                 font-size:14px;
-                                width:280px;
-                                margin:0 15px;
+                                margin:0 30px 0 0;
 
                                 a {
+                                    .block;
+
                                     p.image {
                                         height:180px;
 
@@ -1125,16 +1212,6 @@ body {
                             }
 
                         }
-
-                        &.on {
-                            button.btn {
-                                display:block !important;
-                            }
-                            div.outline {
-                                height:auto;
-                            }
-                        }
-
                     }
 
                 }
@@ -1161,6 +1238,8 @@ body {
                 .mapazero;
                 background:#eee;
                 height:164px;
+                font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
+
                 &::before {
                     content:"";
                     .block;
@@ -1238,6 +1317,8 @@ body {
                 .inline-block;
                 margin-right:20px;
                 font-size:18px;
+                font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
+                text-align:left;
                 
                 h2 {
                     font-size:30px;
@@ -1253,10 +1334,10 @@ body {
                         a {
                             .relative;
                             .block;
-                            font-size:18px;
+                            font-size:17px;
                             line-height:54px;
-                            padding:0 20px;
-                            font-weight:600;
+                            padding:0 14px;
+                            font-weight:500;
                             overflow:hidden;
 
                             &::after {
@@ -1309,6 +1390,7 @@ body {
                     .mapazero;
                     .no-list;
                     .right;
+                    font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
 
                     li {
                         .inline-block;
@@ -1345,6 +1427,7 @@ body {
                     color: @main;
                     line-height: 30px;
                     margin: 50px auto;
+                    font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
 
                     span {
                         .block;
@@ -1403,6 +1486,7 @@ body {
                     font-weight: 600;
                     color: #333;
                     font-size: 20px;
+                    font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
                 }
 
                 p {
@@ -1436,6 +1520,7 @@ body {
                     margin: 0 auto;
                     border: 1px solid #ddd;
                     border-right: none;
+                    font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
 
                     &::after {
                         content: "";
@@ -1490,6 +1575,7 @@ body {
                         font-size:24px;
                         color:#333;
                         margin:25px 0 0;
+                        font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
                     }
 
                     h5 {
@@ -1500,6 +1586,7 @@ body {
                         margin: 0;
                         padding-left: 18px;
                         margin-top: 40px;
+                        font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
                      
                         small {
                             margin-right: 5px;
@@ -1532,6 +1619,7 @@ body {
 
                         h5 {
                             margin-top: 50px;
+                            font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
                         }
 
                         ul {
@@ -1844,7 +1932,7 @@ body {
                                     padding: 40px 24px 0 24px;
 
                                     small {
-                                        color: #3EB69C;
+                                        color: #2c6b74;
                                         font-size: 15px;
                                         .bold;
                                     }
@@ -2240,6 +2328,7 @@ body {
                     margin: 0;
                     padding-left: 18px;
                     margin-top: 60px;
+                    font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
                  
                     small {
                         margin-right: 5px;
@@ -2258,6 +2347,7 @@ body {
                         color: #555;
                         margin: 50px 0 0 0;
                         .center;
+                        font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
                     }
 
                     p {
@@ -2699,7 +2789,7 @@ body {
                             
                             p {
                                     font-size: 60px;
-                                    color: #E3DFDF;
+                                    color: #555555;
                                     font-weight: 600;
                                     .center;
                                     margin: 80px 0 15px 0;
@@ -2792,7 +2882,7 @@ body {
                                 margin-top: 80px;
 
                                 h6 {
-                                    color: #F8B616;
+                                    color: #6e520e;
                                     margin-left: -54.605px;
                                 }
                             }
@@ -3080,7 +3170,8 @@ body {
                                         height: 501px;
                                         
 
-                                        a {
+                                        strong {
+                                            font-weight:400;
                                             .absolute;
                                             width: 246px;
                                             height: 70px;
@@ -3094,7 +3185,7 @@ body {
 
                                         &:nth-child(1) {
 
-                                            &>a {
+                                            &>strong {
                                                 top: 0;
                                                 left: 50%;
                                                 margin-left: -123px;
@@ -3412,6 +3503,7 @@ body {
                     margin: 0;
                     padding-left: 18px;
                     margin-top: 60px;
+                    font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
                  
                     small {
                         margin-right: 5px;
@@ -3433,6 +3525,7 @@ body {
                         font-size: 20px;
                         color: #333;
                         .bold;
+                        font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
 
                         span {
                             color: @main;
@@ -3658,11 +3751,13 @@ body {
                     h3 {
                         font-size: 22px;
                         color: #333;
+                        font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
                     }
 
                     h4 {
                         font-size: 18px;
                         font-weight: 500;
+                        font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
                     }
 
                     p {
@@ -4611,6 +4706,7 @@ body {
     /* footer */
     footer#footer {
         border-top: 1px solid #eee;
+        font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
 
         .container {
             .relative;
@@ -4639,6 +4735,33 @@ body {
                 }
             }
 
+
+            div.sidebar {
+                .absolute;
+                z-index:100;
+                left:50%;
+                margin-left:60px;
+                top:16px;
+                .center;
+        
+                a {
+                    .inline-block;
+                    padding:10px 40px 0 0;
+                    font-size: 14px;
+        
+                    i {
+                        .block;
+                        font-size:30px;
+                        margin:0 0 10px;
+                    }
+        
+                }
+        
+            }
+
+
+
+
             div.agency {
                 .absolute;
                 z-index:401;
@@ -4648,7 +4771,7 @@ body {
                 height: 46px;
                 font-size: 12px;
                 color: #555;
-                min-width:230px;
+                min-width:240px;
 
                 input {
                     .none;
@@ -4739,46 +4862,25 @@ body {
                     font-style: normal;
                     color: #555;
             }
-        }
-    }
 
+            a.wa {
+                display:inline-block;
+                position:absolute;
+                right:0;
+                bottom:36px;
+                width:100px;
+                height:75px;
 
-
-    div.sidebar {
-        .fixed;
-        z-index:100;
-        left:50%;
-        margin-left:620px;
-        padding:10px 0 0;
-        top:700px;
-        background:#fff;
-        width:90px;
-        border:1px solid #ccc;
-        .center;
-
-        a {
-            .block;
-            padding:10px 0;
-
-            i {
-                .block;
-                font-size:38px;
-                margin:0 0 10px;
+                img {
+                    width:100%;
+                    height:auto;
+                }
             }
-
-        }
-
-        button {
-            .block;
-            width:100%;
-            border-radius:0;
-            border:none;
-            background:#222;
-            color:#fff;
-            padding:4px 0;
-            margin-top:10px;
         }
     }
+
+
+
 
 
 

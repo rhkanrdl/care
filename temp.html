@@ -1,153 +1,281 @@
-<ul class="menu">
-    <li>
-        <h2>
-            <a
-                href="/front/menu/MENU000000000000083/"
-                data-menu_id="MENU000000000000082"
-                target="_self">사업안내</a>
-        </h2>
-        <div>
-            <a href="/" class="home_btn" title="메인 이동">home<i class="icon-home-1"></i>
-            </a>
-            <h3>사업안내</h3>
-            <ul>
-                <li>
-                    <a
-                        href="/front/menu/MENU000000000000083"
-                        data-menu_id="MENU000000000000083"
-                        target="_self">사업안내</a>
-                </li>
-            </ul>
-        </div>
-    </li>
-    <li>
-        <h2>
-            <a
-                href="/front/board/theme/list.wp?boardId=notice&menuId=MENU000000000000085"
-                data-menu_id="MENU000000000000084"
-                target="_self">소식마당</a>
-        </h2>
-        <div>
-            <a href="/" class="home_btn" title="메인 이동">home<i class="icon-home-1"></i>
-            </a>
-            <h3>소식마당</h3>
-            <ul>
-                <li>
-                    <a
-                        href="/front/board/theme/list.wp?boardId=notice&menuId=MENU000000000000085"
-                        data-menu_id="MENU000000000000085"
-                        target="_self">공지사항</a>
-                </li>
-                <li>
-                    <a
-                        href="/front/board/theme/list.wp?boardId=carenews&menuId=MENU000000000000087"
-                        data-menu_id="MENU000000000000087"
-                        target="_self">통합돌봄소식</a>
-                </li>
-                <li>
-                    <a
-                        href="/front/board/theme/list.wp?boardId=media&menuId=MENU000000000000089"
-                        data-menu_id="MENU000000000000089"
-                        target="_self">언론보도</a>
-                </li>
-            </ul>
-        </div>
-    </li>
-    <li>
-        <h2>
-            <a
-                href="/front/board/theme/list.wp?boardId=resource&menuId=MENU000000000001007"
-                data-menu_id="MENU000000000000090"
-                target="_self">정보마당</a>
-        </h2>
-        <div>
-            <a href="/" class="home_btn" title="메인 이동">home<i class="icon-home-1"></i>
-            </a>
-            <h3>정보마당</h3>
-            <ul>
-                <li>
-                    <a
-                        href="/front/board/theme/list.wp?boardId=resource&menuId=MENU000000000001007"
-                        data-menu_id="MENU000000000001007"
-                        target="_self">문서자료</a>
-                </li>
-                <li>
-                    <a
-                        href="/front/board/theme/list.wp?boardId=education&menuId=MENU000000000000092"
-                        data-menu_id="MENU000000000000092"
-                        target="_self">복지뉴스</a>
-                </li>
-                <li>
-                    <a
-                        href="/front/board/theme/list.wp?boardId=gallery&menuId=MENU000000000000093"
-                        data-menu_id="MENU000000000000093"
-                        target="_self">사진자료</a>
-                </li>
-                <li>
-                    <a
-                        href="/front/board/theme/list.wp?boardId=mov&menuId=MENU000000000000094"
-                        data-menu_id="MENU000000000000094"
-                        target="_self">영상자료</a>
-                </li>
-                <li>
-                    <a
-                        href="/front/board/theme/list.wp?boardId=letter&menuId=MENU000000000000095"
-                        data-menu_id="MENU000000000000095"
-                        target="_self">웹진</a>
-                </li>
-            </ul>
-        </div>
-    </li>
-    <li>
-        <h2>
-            <a
-                href="/front/menu/MENU000000000001001/"
-                data-menu_id="MENU000000000000097"
-                target="_self">센터소개</a>
-        </h2>
-        <div>
-            <a href="/" class="home_btn" title="메인
-이동">home<i class="icon-home-1"></i>
-            </a>
-            <h3>센터소개</h3>
-            <ul>
-                <li>
-                    <a
-                        href="/front/menu/MENU000000000001001"
-                        data-menu_id="MENU000000000001001"
-                        target="_self">인사말</a>
-                </li>
-                <li>
-                    <a
-                        href="/front/menu/MENU000000000001002"
-                        data-menu_id="MENU000000000001002"
-                        target="_self">운영법인</a>
-                </li>
-                <li>
-                    <a
-                        href="/front/menu/MENU000000000001003"
-                        data-menu_id="MENU000000000001003"
-                        target="_self">센터소개</a>
-                </li>
-                <li>
-                    <a
-                        href="/front/menu/MENU000000000001004"
-                        data-menu_id="MENU000000000001004"
-                        target="_self">대관안내</a>
-                </li>
-                <li>
-                    <a
-                        href="/front/menu/MENU000000000001005"
-                        data-menu_id="MENU000000000001005"
-                        target="_self">후원 및 자원봉사</a>
-                </li>
-                <li>
-                    <a
-                        href="/front/menu/MENU000000000001006"
-                        data-menu_id="MENU000000000001006"
-                        target="_self">찾아오시는길</a>
-                </li>
-            </ul>
-        </div>
-    </li>
-</ul>
+
+    <ul class="main_img slider">
+
+    <c:forEach items="${popupList}" var="item">
+        <c:forEach items="${item.pop_pc_image_list}" var="image">
+
+            <li>
+                <c:choose>
+
+                    <c:when test="${item.pop_url == null}">
+                        <a><img src="${image.realViewUrl}" alt="" ></a>
+
+                    </c:when>
+
+
+                    <c:otherwise>
+                        <a href="${item.pop_url}" target="_blank">
+                            <img src="${image.realViewUrl}" alt="" >
+                        </a>
+                    </c:otherwise>
+
+                </c:choose>
+            </li>
+            
+        </c:forEach>
+
+    </c:forEach>
+
+
+
+    </ul>
+
+
+
+
+
+
+
+
+    <%@ page import="org.springframework.web.servlet.support.RequestContextUtils" %>
+    <%@ page import="com.infomind.wp.plugin.popup.service.WpPopupService" %>
+    <%@ page import="com.infomind.wp.plugin.popup.vo.WpPopup" %>
+    <%@ page import="java.util.List" %>
+    <%@ page import="org.springframework.web.context.WebApplicationContext" %>
+    <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+    <%
+    WebApplicationContext ctx = RequestContextUtils.findWebApplicationContext(request);
+    WpPopupService popupService = ctx.getBean(WpPopupService.class);
+    WpPopup popup = new WpPopup();
+    popup.setPop_group("main");
+    popup.setPop_use_yn("Y");
+    popup.getDefaultVO().getPaging().setRecordCountPerPage(99999);
+    List<WpPopup> popupList = popupService.selectList(popup);
+    request.setAttribute("popupList", popupList);
+    %>
+    
+    <!-- S:mainContent -->
+    <div id="content">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                <section class="main_issue">
+    
+    
+                    <ul class="main_img mainslider">
+    
+                        <li><a href="/front/menu/MENU000000000001016/" title="클릭하여 자세히보기" id="content-start"><img src="/wp/assets/source/images/main01.png" alt="따뜻한 동행 행복플래너 지원사업, 행복플래너란? 장애인들이 지역사회에서 생활하며 자립에 필요한 서비스를 정책대상자에게 연계하는 핵심인력입니다. "></a></li>
+                        <li><a href="/front/menu/MENU000000000000083/" title="클릭하여 자세히보기"><img src="/wp/assets/source/images/main02.png" alt="주거와 서비스의 결합 장애인 지원주택사업, 장애인들이 지역사회에서 자립하여 살 수 있도록 지원하기 위하여 서비스 체계를 마련하여 안심하고 지낼 수 있도록 주택지원"></a></li>
+                        <li><a href="/front/menu/MENU000000000001017/" title="클릭하여 자세히보기"><img src="/wp/assets/source/images/main03.png" alt="함께 지켜주고 돌봐주는 스마트홈케어 서비스, 장애인 가정에 활동량감지기, 응급호출기, 스마트 전등, 가스 차단기 등을 설치하여 응금상황 발생 시 보호자 및 응급안전요원에게 연락해 후속 조치를 제공하는 서비스입니다."></a></li>
+                        <li><a href="/front/menu/MENU000000000001015/" title="클릭하여 자세히보기"><img src="/wp/assets/source/images/main04.png" alt="함께 누리는 이동지원사업 누리카, 교통약자 이동지원서비스의 사각지대에 있는 정책대상 장애인들에게 지역사회에서 자유로운 이동권 보장을 위한 교통편의를 제공하여 접근성 강화 및 장애가 불편하지 않은 이동지원"></a></li>
+                    </ul>
+    
+    
+    
+                    <div class="controls">
+                        <button class="prev"><i class='bx bx-left-arrow-alt'></i>이전슬라이드</button>
+                        <button class="stop"><i class='bx bx-pause-circle' ></i>슬라이드 정지</button>
+                        <button class="next"><i class='bx bx-right-arrow-alt' ></i>다음슬라이드</button>
+    
+                    </div>
+                </section>
+    
+    
+    
+    
+    
+    
+        <section class="main_slogan">
+            <h2>누리고 싶은 삶! 당당하게 사는 삶!</h2>
+        </section>
+                <section class="main_news">
+                    <div class="container">
+                        <h2 class="sr-only">news</h2>
+    
+    
+                        <div class="notice">
+    
+                            <h3>공지사항 <a href="/front/board/theme/list.wp?boardId=notice&menuId=MENU000000000000085">공지사항 게시판 바로가기<i class='bx bx-plus' ></i></a></h3>
+    
+                            <ul class="outline">
+                                    <wp:boardLatest boardId="notice" skinName="notice" listCount="4" linkUrl="/front/board/theme/list.wp" menuId ="MENU000000000000085"  moreLink="/front/board/theme/view.wp"/>
+                                </ul>
+                            <div class="btn_set">
+                                <button class="btn left newsprev">이전게시물<i class='bx bxs-chevron-left'></i></button>
+                                <button class="btn right newsnext">다음게시물<i class='bx bxs-chevron-right'></i></button>
+                            </div>
+    
+    
+    
+                        </div>
+    
+    
+    
+                        <div class="out_news">
+    
+                            <h3>복지뉴스 <a href="/front/board/theme/list.wp?boardId=education&menuId=MENU000000000000092">복지뉴스 게시판 바로가기<i class='bx bx-plus' ></i></a></h3>
+    
+                            <ul class="outline">
+                                <wp:boardLatest boardId="education" skinName="notice" listCount="6" linkUrl="/front/board/theme/list.wp" menuId ="MENU000000000000088"  moreLink="/front/board/theme/view.wp"/>
+                            </ul>
+    
+    
+                            <div class="btn_set">
+                                <button class="btn left outprev">이전게시물<i class='bx bxs-chevron-left'></i></button>
+                                <button class="btn right outnext">다음게시물<i class='bx bxs-chevron-right'></i></button>
+                            </div>
+                        </div>
+    
+                    </div>
+                </section>
+    
+    
+    
+                <section class="main_carenews">
+                    <div class="container">
+    
+                        <h3>통합돌봄소식 <a href="/front/board/theme/list.wp?boardId=carenews&menuId=MENU000000000000087">통합돌봄소식 게시판 바로가기<i class='bx bx-plus' ></i></a></h3>
+                            <ul class="outline">
+                        <wp:boardLatest boardId="carenews" skinName="notice" listCount="4" linkUrl="/front/board/theme/list.wp" menuId ="MENU000000000000087"  moreLink="/front/board/theme/view.wp"/>
+                            </ul>
+    
+    
+                    </div>
+                </section>
+    
+        <section class="photo_zone">
+            <div class="container">
+    
+                <div class="tabs">
+                    <a href="#"data="tab01" class="on">WEBZINE</a>
+                    <a href="#" data="tab02">영상자료</a>
+                </div>
+    
+                <div class="photo_list tab01 on">
+                            <ul>
+                        <wp:boardLatest boardId="letter" skinName="gallery" listCount="8" linkUrl="/front/board/theme/list.wp" menuId ="MENU000000000000093"  moreLink="/front/board/theme/view.wp"/>
+                            </ul>
+    
+                            <button class="btn left tab01prev">이전게시물<i class='bx bxs-chevron-left'></i></button>
+                            <button class="btn right tab01next">다음게시물<i class='bx bxs-chevron-right'></i></button>
+    
+    
+    
+    <!--
+    <a href="/front/board/theme/list.wp?boardId=gallery&menuId=MENU000000000000093"><i class='bx bx-plus-circle' ></i>더보기</a>
+    -->
+                </div>
+    
+    
+    
+                <div class="photo_list tab02">
+                            <ul>
+                        <wp:boardLatest boardId="mov" skinName="mov" listCount="8" linkUrl="/front/board/theme/list.wp" menuId ="MENU000000000000094"  moreLink="/front/board/theme/view.wp"/>
+                            </ul>
+    
+                            <button class="btn left tab02prev">이전게시물<i class='bx bxs-chevron-left'></i></button>
+                            <button class="btn right tab02next">다음게시물<i class='bx bxs-chevron-right'></i></button>
+    
+    <!--
+    <a href="/front/board/theme/list.wp?boardId=mov&menuId=MENU000000000000094"><i class='bx bx-plus-circle' ></i>더보기</a>
+    
+    -->
+                </div>
+    
+            </div>
+        </section>
+    
+    </div>
+    <!-- E:mainContent -->  
+    
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.28.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bluebird/latest/bluebird.js"></script>
+    <script>
+        $(document.body).ready(function () {
+            initFn();
+            initFacebookFeedView();
+        });
+        function initFn() {
+            if (!String.prototype.format) {
+                String.prototype.format = function() {
+                    var args = arguments;
+                    return this.replace(/{(\d+)}/g, function(match, number) {
+                        return typeof args[number] != 'undefined' ? args[number] : match;
+                    });
+                };
+            }
+        }
+        function initFacebookFeedView() {
+    
+            var $facebookLayer = $('div[view-id=facebook] div.outline');
+    
+            var client_id               = "368935476982730";
+            var client_secret           = "790329ef6a40c8536b8f57b9771c9a4e";
+            var grant_type              = "client_credentials";
+            var facebook_token_url      = "https://graph.facebook.com/oauth/access_token?client_id={0}&client_secret={1}&grant_type={2}".format(client_id, client_secret, grant_type);
+    
+            var facebook_page_token_url = "https://graph.facebook.com/{0}?fields=access_token&access_token={1}";
+    
+            var fb_token                = "EAAFPi3wM88oBALe4UI13pPwceg9lTNNs8A5ulRxICfL0wTH9iueqp14m0ZA6VZCiccuBRZB9LcoK3M8KZB186lkvZAzZB6GzENgWznyretTjlBU7OhBW4KzMrYUYVzU9uv8SH1ZAUXhWZAYJwQ4h2e1BzeCOZB7FdZCZAZAgpZATVPkRyvN6Jq47kBIQH";
+    
+            var fb_uid                  = "103288871357707";
+            var facebook_feed_url       = "https://graph.facebook.com/v5.0/{0}/feed?access_token={1}&fields={2}&limit={3}";
+    
+            new Promise(function (resolve, reject) {
+                // UserAccess Token
+                $.ajax({ 
+                    url: facebook_token_url,
+                    type: "GET",
+                    success:function(res){
+                        //console.log(res);
+                        resolve(res);
+                    }
+                });
+            // }).then(function(_data) { // Page Public Content Access // pages_read_engagement 권한발급 후 사용할 것, 페이지 토큰 갱신
+            //     // PageAccess Token
+            //     $.ajax({
+            //         url: facebook_page_token_url.format(fb_uid, _data['access_token']),
+            //         type: "GET",
+            //         success:function(res){
+            //             resolve(res);
+            //         }
+            //     });
+            }).then(function(_data) {
+                // Get Feed
+                $.ajax({
+                    url: facebook_feed_url.format(fb_uid, fb_token, "attachments,picture,full_picture,message,updated_time,permalink_url", "10"),
+                    type: "GET",
+                    success:function(res) {
+                        // sources/images/noimg.png
+    
+                        $facebookLayer.empty();
+                        $facebookLayer.slick('removeSlide', null, null, true);
+    
+                        res.data.forEach(function(v, i) {
+                            var $div = $('<div />', {'class': 'item'});
+                            var $a = $('<a />', {'href': v['permalink_url'], 'target': '_blank'});
+                            var $p_image = $('<p />', {'class': 'image', 'style': 'background: url("{0}") no-repeat center / cover'.format(v['full_picture'])});
+    
+                            
+                            $p_image.append($('<img />', {'src': v['full_picture']}));
+                            $a.append($p_image);
+                            $a.append($('<span />', {'html': v['message']}));
+                            $a.append($('<p />', {'html': moment(v['updated_time']).format('YYYY-MM-DD')}));
+                            
+                            $div.append($a);
+                            $facebookLayer.append($div);
+                        });
+    
+                        $facebookLayer.slick('refresh');
+                    }
+                });
+            });
+        }
+    </script>
